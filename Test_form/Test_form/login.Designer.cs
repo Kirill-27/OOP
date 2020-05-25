@@ -34,6 +34,8 @@
             this.button2 = new System.Windows.Forms.Button();
             this.Login_but = new System.Windows.Forms.Button();
             this.Pass = new System.Windows.Forms.TextBox();
+            this.PassIMG = new System.Windows.Forms.PictureBox();
+            this.UserIMG = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -44,18 +46,16 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.PassIMG = new System.Windows.Forms.PictureBox();
-            this.UserIMG = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PassIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserIMG)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(12)))), ((int)(((byte)(53)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.log);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.Login_but);
@@ -69,7 +69,6 @@
             this.panel1.Size = new System.Drawing.Size(391, 354);
             this.panel1.TabIndex = 0;
             this.panel1.Text = "login";
-            
             // 
             // log
             // 
@@ -122,6 +121,27 @@
             this.Pass.TabIndex = 4;
             this.Pass.UseSystemPasswordChar = true;
             // 
+            // PassIMG
+            // 
+            this.PassIMG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(64)))));
+            this.PassIMG.Image = global::Test_form.Properties.Resources.Password;
+            this.PassIMG.Location = new System.Drawing.Point(26, 191);
+            this.PassIMG.Name = "PassIMG";
+            this.PassIMG.Size = new System.Drawing.Size(70, 60);
+            this.PassIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PassIMG.TabIndex = 3;
+            this.PassIMG.TabStop = false;
+            // 
+            // UserIMG
+            // 
+            this.UserIMG.Image = global::Test_form.Properties.Resources.User;
+            this.UserIMG.Location = new System.Drawing.Point(26, 111);
+            this.UserIMG.Name = "UserIMG";
+            this.UserIMG.Size = new System.Drawing.Size(70, 60);
+            this.UserIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UserIMG.TabIndex = 1;
+            this.UserIMG.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(7)))), ((int)(((byte)(125)))));
@@ -135,6 +155,7 @@
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(73)))), ((int)(((byte)(169)))));
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -204,27 +225,6 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // PassIMG
-            // 
-            this.PassIMG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(12)))), ((int)(((byte)(52)))));
-            this.PassIMG.Image = global::Test_form.Properties.Resources.Password;
-            this.PassIMG.Location = new System.Drawing.Point(26, 191);
-            this.PassIMG.Name = "PassIMG";
-            this.PassIMG.Size = new System.Drawing.Size(70, 60);
-            this.PassIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PassIMG.TabIndex = 3;
-            this.PassIMG.TabStop = false;
-            // 
-            // UserIMG
-            // 
-            this.UserIMG.Image = global::Test_form.Properties.Resources.User;
-            this.UserIMG.Location = new System.Drawing.Point(26, 111);
-            this.UserIMG.Name = "UserIMG";
-            this.UserIMG.Size = new System.Drawing.Size(70, 60);
-            this.UserIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.UserIMG.TabIndex = 1;
-            this.UserIMG.TabStop = false;
-            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -236,12 +236,12 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.login_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PassIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserIMG)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PassIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UserIMG)).EndInit();
             this.ResumeLayout(false);
 
         }

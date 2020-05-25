@@ -16,3 +16,21 @@ D:\2 сем\ООП\Курсач\Test_form\MyCarsTest\obj\Debug\MyCarsTest.csproj
 D:\2 сем\ООП\Курсач\Test_form\MyCarsTest\obj\Debug\MyCarsTest.csproj.CopyComplete
 D:\2 сем\ООП\Курсач\Test_form\MyCarsTest\obj\Debug\MyCarsTest.dll
 D:\2 сем\ООП\Курсач\Test_form\MyCarsTest\obj\Debug\MyCarsTest.pdb
+C:\КурсачГит\OOP\Test_form\MyCarsTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\КурсачГит\OOP\Test_form\MyCarsTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\КурсачГит\OOP\Test_form\MyCarsTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\КурсачГит\OOP\Test_form\MyCarsTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
+C:\КурсачГит\OOP\Test_form\MyCarsTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\КурсачГит\OOP\Test_form\MyCarsTest\bin\Debug\ru\Microsoft.VisualStudio.TestPlatform.TestFramework.resources.dll
+C:\КурсачГит\OOP\Test_form\MyCarsTest\bin\Debug\MyCarsTest.dll
+C:\КурсачГит\OOP\Test_form\MyCarsTest\bin\Debug\MyCarsTest.pdb
+C:\КурсачГит\OOP\Test_form\MyCarsTest\bin\Debug\CarShowroomLibrary.dll
+C:\КурсачГит\OOP\Test_form\MyCarsTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\КурсачГит\OOP\Test_form\MyCarsTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\КурсачГит\OOP\Test_form\MyCarsTest\bin\Debug\CarShowroomLibrary.pdb
+C:\КурсачГит\OOP\Test_form\MyCarsTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\КурсачГит\OOP\Test_form\MyCarsTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\КурсачГит\OOP\Test_form\MyCarsTest\obj\Debug\MyCarsTest.csprojAssemblyReference.cache
+C:\КурсачГит\OOP\Test_form\MyCarsTest\obj\Debug\MyCarsTest.csproj.CopyComplete
+C:\КурсачГит\OOP\Test_form\MyCarsTest\obj\Debug\MyCarsTest.dll
+C:\КурсачГит\OOP\Test_form\MyCarsTest\obj\Debug\MyCarsTest.pdb

@@ -18,7 +18,7 @@ namespace AdminApp
         {
             InitializeComponent();
             CarShowroom1 = new CarShowroom();
-            
+            //CarShowroom1.FillTestData(20);
             CarShowroom1.Load();
             listAllCars.DataSource = CarShowroom1.Cars;
             listAllCars.DisplayMember="Model";
@@ -63,6 +63,17 @@ namespace AdminApp
         {
             CarShowroom1.Save();
             CarShowroom1.ifSaved = true;
+        }
+
+        private void Delete_Click(object sender, EventArgs e)
+        {
+            var toDel = listAllCars.SelectedItem as Car;
+            MessageBox.Show($"Delete {toDel.Model} ?");
+            CarShowroom1.Cars.Remove(toDel);
+            CarShowroom1.ifSaved = false;
+            listAllCars.DataSource = null;
+            listAllCars.DataSource = CarShowroom1.Cars;
+            listAllCars.DisplayMember = "Model";
         }
     }
 }

@@ -13,7 +13,7 @@ namespace MyCarsTest
             CarShowroom CarShowroom1 = new CarShowroom();
             int n = 50;
             CarShowroom1.FillTestData(n);
-            Assert.AreEqual(CarShowroom1.mar.Length , CarShowroom1.coun.Length);
+            Assert.AreEqual(CarShowroom1.mar.Length , CarShowroom1.coun.Length+1);
             if (n > CarShowroom1.mar.Length * 2 + 1) n = CarShowroom1.mar.Length*2+1;
             for(int i=0;i<n;i++)
             {
@@ -21,5 +21,6 @@ namespace MyCarsTest
                 Assert.AreEqual(CarShowroom1.coun[i % CarShowroom1.mar.Length], CarShowroom1.Cars[i].ProdCountry);
             }
         }
+        
     }
 }

@@ -12,3 +12,17 @@ D:\2 сем\ООП\Курсач\Test_form\Test_form\bin\Debug\CarShowroomLibrary
 D:\2 сем\ООП\Курсач\Test_form\Test_form\obj\Debug\Test_form.csproj.CopyComplete
 D:\2 сем\ООП\Курсач\Test_form\Test_form\obj\Debug\Test_form.BuyerMenu.resources
 D:\2 сем\ООП\Курсач\Test_form\Test_form\obj\Debug\Test_form.BuyerAllCars.resources
+C:\КурсачГит\OOP\Test_form\Test_form\bin\Debug\Test_form.exe.config
+C:\КурсачГит\OOP\Test_form\Test_form\bin\Debug\Test_form.exe
+C:\КурсачГит\OOP\Test_form\Test_form\bin\Debug\Test_form.pdb
+C:\КурсачГит\OOP\Test_form\Test_form\bin\Debug\CarShowroomLibrary.dll
+C:\КурсачГит\OOP\Test_form\Test_form\bin\Debug\CarShowroomLibrary.pdb
+C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.csprojAssemblyReference.cache
+C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.BuyerAllCars.resources
+C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.BuyerMenu.resources
+C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.login.resources
+C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.Properties.Resources.resources
+C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.csproj.GenerateResource.cache
+C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.csproj.CopyComplete
+C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.exe
+C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.pdb

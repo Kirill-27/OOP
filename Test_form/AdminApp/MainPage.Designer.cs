@@ -32,6 +32,8 @@
             this.log = new System.Windows.Forms.TextBox();
             this.Login_but = new System.Windows.Forms.Button();
             this.Pass = new System.Windows.Forms.TextBox();
+            this.PassIMG = new System.Windows.Forms.PictureBox();
+            this.UserIMG = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -41,18 +43,16 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PassIMG = new System.Windows.Forms.PictureBox();
-            this.UserIMG = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PassIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserIMG)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(12)))), ((int)(((byte)(53)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(64)))));
             this.panel1.Controls.Add(this.log);
             this.panel1.Controls.Add(this.Login_but);
             this.panel1.Controls.Add(this.Pass);
@@ -77,16 +77,16 @@
             // 
             // Login_but
             // 
-            this.Login_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(115)))), ((int)(((byte)(10)))));
+            this.Login_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(138)))));
             this.Login_but.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Login_but.FlatAppearance.BorderSize = 0;
-            this.Login_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
-            this.Login_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(4)))));
+            this.Login_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(208)))), ((int)(((byte)(186)))));
+            this.Login_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
             this.Login_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Login_but.Font = new System.Drawing.Font("Stencil", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login_but.Location = new System.Drawing.Point(227, 252);
+            this.Login_but.Font = new System.Drawing.Font("Stencil", 16F);
+            this.Login_but.Location = new System.Drawing.Point(227, 255);
             this.Login_but.Name = "Login_but";
-            this.Login_but.Size = new System.Drawing.Size(132, 42);
+            this.Login_but.Size = new System.Drawing.Size(132, 39);
             this.Login_but.TabIndex = 5;
             this.Login_but.Text = "Вход";
             this.Login_but.UseVisualStyleBackColor = false;
@@ -99,6 +99,28 @@
             this.Pass.Size = new System.Drawing.Size(243, 50);
             this.Pass.TabIndex = 4;
             this.Pass.UseSystemPasswordChar = true;
+            // 
+            // PassIMG
+            // 
+            this.PassIMG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(64)))));
+            this.PassIMG.Image = global::AdminApp.Properties.Resources.Password;
+            this.PassIMG.Location = new System.Drawing.Point(26, 176);
+            this.PassIMG.Name = "PassIMG";
+            this.PassIMG.Size = new System.Drawing.Size(70, 60);
+            this.PassIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PassIMG.TabIndex = 3;
+            this.PassIMG.TabStop = false;
+            // 
+            // UserIMG
+            // 
+            this.UserIMG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(64)))));
+            this.UserIMG.Image = global::AdminApp.Properties.Resources.User;
+            this.UserIMG.Location = new System.Drawing.Point(26, 91);
+            this.UserIMG.Name = "UserIMG";
+            this.UserIMG.Size = new System.Drawing.Size(70, 60);
+            this.UserIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UserIMG.TabIndex = 1;
+            this.UserIMG.TabStop = false;
             // 
             // panel2
             // 
@@ -113,6 +135,7 @@
             // 
             // label1
             // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(73)))), ((int)(((byte)(169)))));
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -165,7 +188,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -174,27 +197,6 @@
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
             this.помощьToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.помощьToolStripMenuItem.Text = "Help";
-            // 
-            // PassIMG
-            // 
-            this.PassIMG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(89)))), ((int)(((byte)(12)))), ((int)(((byte)(52)))));
-            this.PassIMG.Image = global::AdminApp.Properties.Resources.Password;
-            this.PassIMG.Location = new System.Drawing.Point(26, 176);
-            this.PassIMG.Name = "PassIMG";
-            this.PassIMG.Size = new System.Drawing.Size(70, 60);
-            this.PassIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PassIMG.TabIndex = 3;
-            this.PassIMG.TabStop = false;
-            // 
-            // UserIMG
-            // 
-            this.UserIMG.Image = global::AdminApp.Properties.Resources.User;
-            this.UserIMG.Location = new System.Drawing.Point(26, 91);
-            this.UserIMG.Name = "UserIMG";
-            this.UserIMG.Size = new System.Drawing.Size(70, 60);
-            this.UserIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.UserIMG.TabIndex = 1;
-            this.UserIMG.TabStop = false;
             // 
             // MainPage
             // 
@@ -206,12 +208,12 @@
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PassIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserIMG)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PassIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UserIMG)).EndInit();
             this.ResumeLayout(false);
 
         }
