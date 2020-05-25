@@ -1,0 +1,8 @@
+D:\2 сем\ООП\Курсач\Test_form\CarShowroomLibrary\bin\Debug\netstandard2.0\CarShowroomLibrary.deps.json
+D:\2 сем\ООП\Курсач\Test_form\CarShowroomLibrary\bin\Debug\netstandard2.0\CarShowroomLibrary.dll
+D:\2 сем\ООП\Курсач\Test_form\CarShowroomLibrary\bin\Debug\netstandard2.0\CarShowroomLibrary.pdb
+D:\2 сем\ООП\Курсач\Test_form\CarShowroomLibrary\obj\Debug\netstandard2.0\CarShowroomLibrary.csprojAssemblyReference.cache
+D:\2 сем\ООП\Курсач\Test_form\CarShowroomLibrary\obj\Debug\netstandard2.0\CarShowroomLibrary.AssemblyInfoInputs.cache
+D:\2 сем\ООП\Курсач\Test_form\CarShowroomLibrary\obj\Debug\netstandard2.0\CarShowroomLibrary.AssemblyInfo.cs
+D:\2 сем\ООП\Курсач\Test_form\CarShowroomLibrary\obj\Debug\netstandard2.0\CarShowroomLibrary.dll
+D:\2 сем\ООП\Курсач\Test_form\CarShowroomLibrary\obj\Debug\netstandard2.0\CarShowroomLibrary.pdb
