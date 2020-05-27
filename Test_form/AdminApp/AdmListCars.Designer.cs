@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.CarsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.back = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
             this.listAllCars = new System.Windows.Forms.ListBox();
@@ -47,11 +48,10 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CarsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CarsBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CarsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -112,7 +112,7 @@
             this.listAllCars.FormattingEnabled = true;
             this.listAllCars.Location = new System.Drawing.Point(25, 91);
             this.listAllCars.Name = "listAllCars";
-            this.listAllCars.Size = new System.Drawing.Size(339, 264);
+            this.listAllCars.Size = new System.Drawing.Size(314, 264);
             this.listAllCars.TabIndex = 10;
             // 
             // AddCar
@@ -251,11 +251,11 @@
             this.Text = "AdmListCars";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdmListCars_FormClosing);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.CarsBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CarsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

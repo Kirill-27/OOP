@@ -13,12 +13,13 @@ namespace Test_form
 {
     public partial class BuyerAllCars : Form
     {
-        CarShowroom Carss = new CarShowroom();
+        CarShowroom CarShowroom1;
         public BuyerAllCars()
         {
+            CarShowroom1 = new CarShowroom();
             InitializeComponent();
-            Carss.FillTestData(20);
-            
+            CarShowroom1.FillTestData(20);
+            carBindingSource.DataSource = CarShowroom1.Cars;
         }
 
         private void Back_but_Click(object sender, EventArgs e)
@@ -30,5 +31,12 @@ namespace Test_form
         {
             this.Close();
         }
+
+        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CarShowroom1.Save();
+        }
+
+
     }
 }
