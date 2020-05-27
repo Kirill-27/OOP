@@ -20,7 +20,7 @@ namespace AdminApp
             CarShowroom1 = new CarShowroom();
             //CarShowroom1.FillTestData(20);
             CarShowroom1.Load();
-            listAllCars.DataSource = CarShowroom1.Cars;
+            CarsBindingSource.DataSource = CarShowroom1.Cars;
             listAllCars.DisplayMember="Model";
         }
 
@@ -38,8 +38,7 @@ namespace AdminApp
                 case DialogResult.Yes:
                     CarShowroom1.Cars.Remove(toDel);
                     CarShowroom1.ifSaved = false;
-                    listAllCars.DataSource = null;
-                    listAllCars.DataSource = CarShowroom1.Cars;
+                    CarsBindingSource.ResetBindings(false);
                     listAllCars.DisplayMember = "Model";
                     break;
                 case DialogResult.No:
@@ -81,8 +80,7 @@ namespace AdminApp
                 case DialogResult.Yes:
                     CarShowroom1.Cars.Remove(toDel);
                     CarShowroom1.ifSaved = false;
-                    listAllCars.DataSource = null;
-                    listAllCars.DataSource = CarShowroom1.Cars;
+                    CarsBindingSource.ResetBindings(false);
                     listAllCars.DisplayMember = "Model";
                     break;
                 case DialogResult.No:
@@ -94,11 +92,23 @@ namespace AdminApp
         private void LoadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CarShowroom1.Load();
-            CarShowroom1.ifSaved = false;
-            listAllCars.DataSource = null;
-            listAllCars.DataSource = CarShowroom1.Cars;
+            CarsBindingSource.ResetBindings(false);
             listAllCars.DisplayMember = "Model";
             CarShowroom1.ifSaved = true;
         }
+
+        private void AddCar_Click(object sender, EventArgs e)
+        {
+            var fo = new CarsDialog();
+            if(fo.ShowDialog()==DialogResult.OK);
+            {
+                CarShowroom1.ifSaved = false;
+                CarShowroom1.AddCar(fo.Car);
+                CarsBindingSource.ResetBindings(false);
+                listAllCars.DisplayMember = "Model";
+            }
+        }
+
+       
     }
 }

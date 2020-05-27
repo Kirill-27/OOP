@@ -128,6 +128,11 @@
             // Speed_numeric
             // 
             this.Speed_numeric.Location = new System.Drawing.Point(121, 207);
+            this.Speed_numeric.Maximum = new decimal(new int[] {
+            400,
+            0,
+            0,
+            0});
             this.Speed_numeric.Name = "Speed_numeric";
             this.Speed_numeric.Size = new System.Drawing.Size(120, 20);
             this.Speed_numeric.TabIndex = 20;
@@ -142,6 +147,11 @@
             // Prise_numericUp
             // 
             this.Prise_numericUp.Location = new System.Drawing.Point(121, 156);
+            this.Prise_numericUp.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
             this.Prise_numericUp.Name = "Prise_numericUp";
             this.Prise_numericUp.Size = new System.Drawing.Size(120, 20);
             this.Prise_numericUp.TabIndex = 18;
@@ -194,9 +204,24 @@
             // Year_numeric
             // 
             this.Year_numeric.Location = new System.Drawing.Point(121, 233);
+            this.Year_numeric.Maximum = new decimal(new int[] {
+            2020,
+            0,
+            0,
+            0});
+            this.Year_numeric.Minimum = new decimal(new int[] {
+            1900,
+            0,
+            0,
+            0});
             this.Year_numeric.Name = "Year_numeric";
             this.Year_numeric.Size = new System.Drawing.Size(120, 20);
             this.Year_numeric.TabIndex = 12;
+            this.Year_numeric.Value = new decimal(new int[] {
+            1900,
+            0,
+            0,
+            0});
             // 
             // label3
             // 
