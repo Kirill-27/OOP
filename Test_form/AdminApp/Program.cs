@@ -18,7 +18,7 @@ namespace AdminApp
             
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdmListCars());
+            Application.Run(new CarsDialog());
 
         }
     }

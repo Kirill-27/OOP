@@ -26,3 +26,4 @@ C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.csproj.GenerateR
 C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.csproj.CopyComplete
 C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.exe
 C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.pdb
+C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.CarsDialog.resources

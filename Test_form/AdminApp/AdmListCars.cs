@@ -32,12 +32,19 @@ namespace AdminApp
         private void removeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var toDel = listAllCars.SelectedItem as Car;
-            MessageBox.Show($"Delete {toDel.Model} ?");
-            CarShowroom1.Cars.Remove(toDel);
-            CarShowroom1.ifSaved = false;
-            listAllCars.DataSource = null;
-            listAllCars.DataSource = CarShowroom1.Cars;
-            listAllCars.DisplayMember = "Model";
+            var res = MessageBox.Show($"Delete {toDel.Model} ?", "Сonfirmation", MessageBoxButtons.YesNo);
+            switch (res)
+            {
+                case DialogResult.Yes:
+                    CarShowroom1.Cars.Remove(toDel);
+                    CarShowroom1.ifSaved = false;
+                    listAllCars.DataSource = null;
+                    listAllCars.DataSource = CarShowroom1.Cars;
+                    listAllCars.DisplayMember = "Model";
+                    break;
+                case DialogResult.No:
+                    break;
+            }
         }
 
         private void AdmListCars_FormClosing(object sender, FormClosingEventArgs e)
@@ -59,7 +66,7 @@ namespace AdminApp
             }
         }
 
-        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CarShowroom1.Save();
             CarShowroom1.ifSaved = true;
@@ -68,12 +75,30 @@ namespace AdminApp
         private void Delete_Click(object sender, EventArgs e)
         {
             var toDel = listAllCars.SelectedItem as Car;
-            MessageBox.Show($"Delete {toDel.Model} ?");
-            CarShowroom1.Cars.Remove(toDel);
+            var res = MessageBox.Show($"Delete {toDel.Model} ?", "Сonfirmation", MessageBoxButtons.YesNo);
+            switch (res)
+            {
+                case DialogResult.Yes:
+                    CarShowroom1.Cars.Remove(toDel);
+                    CarShowroom1.ifSaved = false;
+                    listAllCars.DataSource = null;
+                    listAllCars.DataSource = CarShowroom1.Cars;
+                    listAllCars.DisplayMember = "Model";
+                    break;
+                case DialogResult.No:
+                    break;
+            }
+            
+        }
+
+        private void LoadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CarShowroom1.Load();
             CarShowroom1.ifSaved = false;
             listAllCars.DataSource = null;
             listAllCars.DataSource = CarShowroom1.Cars;
             listAllCars.DisplayMember = "Model";
+            CarShowroom1.ifSaved = true;
         }
     }
 }
