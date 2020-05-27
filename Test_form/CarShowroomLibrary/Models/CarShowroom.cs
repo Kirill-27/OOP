@@ -25,7 +25,17 @@ namespace Test_form.Models
             Buyers = new List<Buyer>();
             Reports = new List<Report>();
         }
-        public void FillTestData(int n)
+        public void AddCar(Car NewCar)
+        {
+            int ma = 0;
+            foreach (var t in Cars)
+            {
+                if (t.ID > ma) ma = t.ID;
+            }
+            NewCar.ID = ma + 1;
+            Cars.Add(NewCar);
+        }
+            public void FillTestData(int n)
         {
             // Cars
             Cars.Clear();

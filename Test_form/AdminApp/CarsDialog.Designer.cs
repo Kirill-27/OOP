@@ -29,20 +29,21 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.back_but = new System.Windows.Forms.Button();
+            this.Save_but = new System.Windows.Forms.Button();
+            this.Speed_numeric = new System.Windows.Forms.NumericUpDown();
+            this.Tech_numeric = new System.Windows.Forms.NumericUpDown();
+            this.Prise_numericUp = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.Year_numeric = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.FeaturestextBox = new System.Windows.Forms.TextBox();
+            this.CountrytextBox = new System.Windows.Forms.TextBox();
             this.ModeltextBox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,10 +55,10 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Speed_numeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Tech_numeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Prise_numericUp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Year_numeric)).BeginInit();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -65,20 +66,21 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.numericUpDown4);
-            this.panel1.Controls.Add(this.numericUpDown3);
-            this.panel1.Controls.Add(this.numericUpDown2);
+            this.panel1.Controls.Add(this.back_but);
+            this.panel1.Controls.Add(this.Save_but);
+            this.panel1.Controls.Add(this.Speed_numeric);
+            this.panel1.Controls.Add(this.Tech_numeric);
+            this.panel1.Controls.Add(this.Prise_numericUp);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.numericUpDown1);
+            this.panel1.Controls.Add(this.Year_numeric);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox7);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.FeaturestextBox);
+            this.panel1.Controls.Add(this.CountrytextBox);
             this.panel1.Controls.Add(this.ModeltextBox);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -88,42 +90,61 @@
             this.panel1.TabIndex = 2;
             this.panel1.Text = "login";
             // 
-            // button3
+            // back_but
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(138)))));
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(208)))), ((int)(((byte)(186)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Stencil", 14F);
-            this.button3.Location = new System.Drawing.Point(336, 272);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(134, 39);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Добавить";
-            this.button3.UseVisualStyleBackColor = false;
+            this.back_but.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.back_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(76)))), ((int)(((byte)(0)))));
+            this.back_but.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.back_but.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.back_but.FlatAppearance.BorderSize = 0;
+            this.back_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(64)))));
+            this.back_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(49)))), ((int)(((byte)(0)))));
+            this.back_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.back_but.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back_but.Location = new System.Drawing.Point(396, 264);
+            this.back_but.Name = "back_but";
+            this.back_but.Size = new System.Drawing.Size(85, 45);
+            this.back_but.TabIndex = 22;
+            this.back_but.Text = "Назад";
+            this.back_but.UseVisualStyleBackColor = false;
             // 
-            // numericUpDown4
+            // Save_but
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(121, 207);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown4.TabIndex = 20;
+            this.Save_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(138)))));
+            this.Save_but.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Save_but.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.Save_but.FlatAppearance.BorderSize = 0;
+            this.Save_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(208)))), ((int)(((byte)(186)))));
+            this.Save_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
+            this.Save_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Save_but.Font = new System.Drawing.Font("Stencil", 14F);
+            this.Save_but.Location = new System.Drawing.Point(243, 264);
+            this.Save_but.Name = "Save_but";
+            this.Save_but.Size = new System.Drawing.Size(134, 45);
+            this.Save_but.TabIndex = 21;
+            this.Save_but.Text = "Сохранить";
+            this.Save_but.UseVisualStyleBackColor = false;
             // 
-            // numericUpDown3
+            // Speed_numeric
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(121, 182);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown3.TabIndex = 19;
+            this.Speed_numeric.Location = new System.Drawing.Point(121, 207);
+            this.Speed_numeric.Name = "Speed_numeric";
+            this.Speed_numeric.Size = new System.Drawing.Size(120, 20);
+            this.Speed_numeric.TabIndex = 20;
             // 
-            // numericUpDown2
+            // Tech_numeric
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(121, 156);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown2.TabIndex = 18;
+            this.Tech_numeric.Location = new System.Drawing.Point(121, 182);
+            this.Tech_numeric.Name = "Tech_numeric";
+            this.Tech_numeric.Size = new System.Drawing.Size(120, 20);
+            this.Tech_numeric.TabIndex = 19;
+            // 
+            // Prise_numericUp
+            // 
+            this.Prise_numericUp.Location = new System.Drawing.Point(121, 156);
+            this.Prise_numericUp.Name = "Prise_numericUp";
+            this.Prise_numericUp.Size = new System.Drawing.Size(120, 20);
+            this.Prise_numericUp.TabIndex = 18;
             // 
             // label8
             // 
@@ -155,7 +176,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(41, 240);
+            this.label5.Location = new System.Drawing.Point(41, 235);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 13);
             this.label5.TabIndex = 14;
@@ -170,22 +191,21 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "ProdCountry";
             // 
-            // numericUpDown1
+            // Year_numeric
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(121, 233);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 12;
+            this.Year_numeric.Location = new System.Drawing.Point(121, 233);
+            this.Year_numeric.Name = "Year_numeric";
+            this.Year_numeric.Size = new System.Drawing.Size(120, 20);
+            this.Year_numeric.TabIndex = 12;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(41, 158);
+            this.label3.Location = new System.Drawing.Point(40, 158);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 11;
             this.label3.Text = "Prise";
-            
             // 
             // label2
             // 
@@ -196,19 +216,19 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Model";
             // 
-            // textBox7
+            // FeaturestextBox
             // 
-            this.textBox7.Location = new System.Drawing.Point(121, 103);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(256, 20);
-            this.textBox7.TabIndex = 8;
+            this.FeaturestextBox.Location = new System.Drawing.Point(121, 103);
+            this.FeaturestextBox.Name = "FeaturestextBox";
+            this.FeaturestextBox.Size = new System.Drawing.Size(256, 20);
+            this.FeaturestextBox.TabIndex = 8;
             // 
-            // textBox3
+            // CountrytextBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(121, 129);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(256, 20);
-            this.textBox3.TabIndex = 4;
+            this.CountrytextBox.Location = new System.Drawing.Point(121, 129);
+            this.CountrytextBox.Name = "CountrytextBox";
+            this.CountrytextBox.Size = new System.Drawing.Size(256, 20);
+            this.CountrytextBox.TabIndex = 4;
             // 
             // ModeltextBox
             // 
@@ -238,7 +258,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(493, 47);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Добавить авто";
+            this.label1.Text = "Характиристики авто";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // menuStrip1
@@ -300,12 +320,13 @@
             this.Controls.Add(this.panel1);
             this.Name = "CarsDialog";
             this.Text = "CarsDialog";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CarsDialog_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Speed_numeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Tech_numeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Prise_numericUp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Year_numeric)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -327,19 +348,20 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem HelpToolStripMenuItem;
         private System.Windows.Forms.TextBox ModeltextBox;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox CountrytextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.TextBox FeaturestextBox;
+        private System.Windows.Forms.NumericUpDown Year_numeric;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.NumericUpDown Speed_numeric;
+        private System.Windows.Forms.NumericUpDown Tech_numeric;
+        private System.Windows.Forms.NumericUpDown Prise_numericUp;
+        private System.Windows.Forms.Button Save_but;
+        private System.Windows.Forms.Button back_but;
     }
 }
