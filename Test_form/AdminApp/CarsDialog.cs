@@ -30,7 +30,7 @@ namespace AdminApp
                 MaksSpeed = Convert.ToInt32(Speed_numeric.Value),
                 Price = Convert.ToInt32(Prise_numericUp.Value),
                 TechState = Convert.ToInt32(Tech_numeric.Value),
-                YearOfIss = Convert.ToInt32(Year_numeric.Value)
+                YearOfIssue = Convert.ToInt32(Year_numeric.Value)
             };
         }
     }

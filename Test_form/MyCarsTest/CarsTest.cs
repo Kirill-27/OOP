@@ -8,7 +8,7 @@ namespace MyCarsTest
     public class CarsTest
     {
         [TestMethod]
-        public void TestCountryAndModel()
+        public void TestCountryAndModel()//тестирует правильность работы метода FillTestData;
         {
             CarShowroom CarShowroom1 = new CarShowroom();
             int n = 50;

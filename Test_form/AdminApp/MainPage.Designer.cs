@@ -52,7 +52,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.log);
             this.panel1.Controls.Add(this.Login_but);
             this.panel1.Controls.Add(this.Pass);
@@ -77,18 +77,18 @@
             // 
             // Login_but
             // 
-            this.Login_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(138)))));
+            this.Login_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.Login_but.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Login_but.FlatAppearance.BorderSize = 0;
             this.Login_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(208)))), ((int)(((byte)(186)))));
             this.Login_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
             this.Login_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Login_but.Font = new System.Drawing.Font("Stencil", 16F);
+            this.Login_but.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_but.Location = new System.Drawing.Point(227, 255);
             this.Login_but.Name = "Login_but";
             this.Login_but.Size = new System.Drawing.Size(132, 39);
             this.Login_but.TabIndex = 5;
-            this.Login_but.Text = "Вход";
+            this.Login_but.Text = "Log in";
             this.Login_but.UseVisualStyleBackColor = false;
             // 
             // Pass
@@ -102,7 +102,7 @@
             // 
             // PassIMG
             // 
-            this.PassIMG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(64)))));
+            this.PassIMG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.PassIMG.Image = global::AdminApp.Properties.Resources.Password;
             this.PassIMG.Location = new System.Drawing.Point(26, 176);
             this.PassIMG.Name = "PassIMG";
@@ -113,7 +113,7 @@
             // 
             // UserIMG
             // 
-            this.UserIMG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(64)))));
+            this.UserIMG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.UserIMG.Image = global::AdminApp.Properties.Resources.User;
             this.UserIMG.Location = new System.Drawing.Point(26, 91);
             this.UserIMG.Name = "UserIMG";
@@ -135,7 +135,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(73)))), ((int)(((byte)(169)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -143,7 +143,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(390, 47);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Авторизация";
+            this.label1.Text = "Authorization";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // menuStrip1

@@ -18,7 +18,7 @@ namespace Test_form
         {
             CarShowroom1 = new CarShowroom();
             InitializeComponent();
-            CarShowroom1.FillTestData(20);
+            CarShowroom1.Load();
             carBindingSource.DataSource = CarShowroom1.Cars;
         }
 
@@ -32,11 +32,15 @@ namespace Test_form
             this.Close();
         }
 
-        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CarShowroom1.Save();
         }
 
-
+        private void LoadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CarShowroom1.Load();
+            carBindingSource.ResetBindings(false);
+        }
     }
 }

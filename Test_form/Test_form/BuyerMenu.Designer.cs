@@ -47,7 +47,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.FindCar_but);
             this.panel1.Controls.Add(this.AllCars_but);
             this.panel1.Controls.Add(this.panel2);
@@ -62,36 +62,36 @@
             // 
             this.FindCar_but.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.FindCar_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(138)))));
+            this.FindCar_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.FindCar_but.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FindCar_but.FlatAppearance.BorderSize = 0;
             this.FindCar_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(208)))), ((int)(((byte)(186)))));
             this.FindCar_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
             this.FindCar_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FindCar_but.Font = new System.Drawing.Font("Stencil", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FindCar_but.Font = new System.Drawing.Font("Rockwell", 20.25F);
             this.FindCar_but.Location = new System.Drawing.Point(121, 121);
             this.FindCar_but.Name = "FindCar_but";
             this.FindCar_but.Size = new System.Drawing.Size(427, 42);
             this.FindCar_but.TabIndex = 6;
-            this.FindCar_but.Text = "Найти лучшее авто под меня";
+            this.FindCar_but.Text = "Find best car for me";
             this.FindCar_but.UseVisualStyleBackColor = false;
             // 
             // AllCars_but
             // 
             this.AllCars_but.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AllCars_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(138)))));
+            this.AllCars_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.AllCars_but.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AllCars_but.FlatAppearance.BorderSize = 0;
             this.AllCars_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(208)))), ((int)(((byte)(186)))));
             this.AllCars_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
             this.AllCars_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AllCars_but.Font = new System.Drawing.Font("Stencil", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AllCars_but.Font = new System.Drawing.Font("Rockwell", 20.25F);
             this.AllCars_but.Location = new System.Drawing.Point(121, 199);
             this.AllCars_but.Name = "AllCars_but";
             this.AllCars_but.Size = new System.Drawing.Size(427, 42);
             this.AllCars_but.TabIndex = 5;
-            this.AllCars_but.Text = "Список всех машин";
+            this.AllCars_but.Text = "List of all cars";
             this.AllCars_but.UseVisualStyleBackColor = false;
             this.AllCars_but.Click += new System.EventHandler(this.AllCars_but_Click);
             // 
@@ -108,7 +108,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(73)))), ((int)(((byte)(169)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -116,7 +116,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(666, 47);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Главное меню";
+            this.label1.Text = "Main menu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // menuStrip1

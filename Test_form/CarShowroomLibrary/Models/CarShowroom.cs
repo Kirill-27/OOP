@@ -9,6 +9,9 @@ using Test_form.DAL;
 namespace Test_form.Models
 {
     [Serializable]
+    //Класс автосалон в котором содержатся все нужные для работы программы списки,
+    //методы создания тестовыйх данных, сохраниния в файл и загрузки от туда,
+    //добавления нового элемента в колекцию, флаг проверки синхронизации данных
     public class CarShowroom
     {
         public bool ifSaved = true;
@@ -50,7 +53,7 @@ namespace Test_form.Models
                     ProdCountry = coun[i % coun.Length],
                     Model = mar[i % mar.Length],
                     TechState = (3*i + 20) % 100,
-                    YearOfIss = 2000 + i % 20
+                    YearOfIssue = 2000 + i % 20
                 }) ; 
             }
             // Buyers
@@ -83,7 +86,7 @@ namespace Test_form.Models
                         Price = Cars[t * div + j].Price,
                         ProdCountry = Cars[t * div + j].ProdCountry,
                         TechState = Cars[t * div + j].TechState,
-                        YearOfIss = Cars[t * div + j].YearOfIss
+                        YearOfIssue = Cars[t * div + j].YearOfIssue
                     }) ;
                 }
                 Reports.Add(new Report(ps, Buyers[t],DateTime.Now+TimeSpan.FromDays(t)));

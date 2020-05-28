@@ -65,7 +65,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(64)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.back_but);
             this.panel1.Controls.Add(this.Save_but);
             this.panel1.Controls.Add(this.Speed_numeric);
@@ -93,7 +93,7 @@
             // back_but
             // 
             this.back_but.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.back_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(76)))), ((int)(((byte)(0)))));
+            this.back_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.back_but.Cursor = System.Windows.Forms.Cursors.Hand;
             this.back_but.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.back_but.FlatAppearance.BorderSize = 0;
@@ -110,7 +110,7 @@
             // 
             // Save_but
             // 
-            this.Save_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(138)))));
+            this.Save_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.Save_but.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Save_but.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.Save_but.FlatAppearance.BorderSize = 0;
@@ -188,9 +188,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(41, 235);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 13);
+            this.label5.Size = new System.Drawing.Size(65, 13);
             this.label5.TabIndex = 14;
-            this.label5.Text = "YearOfIss";
+            this.label5.Text = "YearOfIssue";
             // 
             // label4
             // 
@@ -275,7 +275,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(73)))), ((int)(((byte)(169)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -283,7 +283,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(493, 47);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Характиристики авто";
+            this.label1.Text = "Edit\\Add Car";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // menuStrip1

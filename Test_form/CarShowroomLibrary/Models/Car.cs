@@ -15,7 +15,7 @@ namespace Test_form.Models
         public string Model { set; get; }
         public int ID { set; get; }
         public string ProdCountry { set; get; }
-        public int YearOfIss { set; get; }
+        public int YearOfIssue { set; get; }
         public int TechState { set; get; }
         public int MaksSpeed { set; get; }
         public string Features { set; get; }

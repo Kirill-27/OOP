@@ -39,7 +39,7 @@ namespace Test_form.DAL
                     wr.WriteLine(p.Price);
                     wr.WriteLine(p.ProdCountry);
                     wr.WriteLine(p.TechState);
-                    wr.WriteLine(p.YearOfIss);
+                    wr.WriteLine(p.YearOfIssue);
                 }
             }
         }
@@ -81,7 +81,7 @@ namespace Test_form.DAL
                         wr.WriteLine(p.Price);
                         wr.WriteLine(p.ProdCountry);
                         wr.WriteLine(p.TechState);
-                        wr.WriteLine(p.YearOfIss);
+                        wr.WriteLine(p.YearOfIssue);
                     }
                 }
             }
@@ -114,7 +114,7 @@ namespace Test_form.DAL
                         Price = Convert.ToInt32(rd.ReadLine()),
                         ProdCountry = rd.ReadLine(),
                         TechState = Convert.ToInt32(rd.ReadLine()),
-                        YearOfIss = Convert.ToInt32(rd.ReadLine())
+                        YearOfIssue = Convert.ToInt32(rd.ReadLine())
                     });
                 }
             }
@@ -176,7 +176,7 @@ namespace Test_form.DAL
                     Price = Convert.ToInt32(rd.ReadLine()),
                     ProdCountry = rd.ReadLine(),
                     TechState = Convert.ToInt32(rd.ReadLine()),
-                    YearOfIss = Convert.ToInt32(rd.ReadLine())
+                    YearOfIssue = Convert.ToInt32(rd.ReadLine())
                 });
             }
             return ps;

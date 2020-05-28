@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Test_form.Models
 {
     [Serializable]
+    // класс отчет содерждит ,
     public class Report
     {
         public Report(List<Car> cars, Buyer buyer, DateTime? t = null)

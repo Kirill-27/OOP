@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Test_form.Models
 {
-    [Serializable]
-    public class Admin : User
+    [Serializable] 
+    public class Admin : User // Все что нужно админу есть в абстракном классе User
     {
 
     }

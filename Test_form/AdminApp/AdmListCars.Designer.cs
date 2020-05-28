@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.CarsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.AdminList = new System.Windows.Forms.Panel();
             this.back = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
             this.listAllCars = new System.Windows.Forms.ListBox();
+            this.CarsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.AddCar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,59 +48,59 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1.SuspendLayout();
+            this.AdminList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CarsBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // AdminList
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(170)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.back);
-            this.panel1.Controls.Add(this.Delete);
-            this.panel1.Controls.Add(this.listAllCars);
-            this.panel1.Controls.Add(this.AddCar);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(555, 379);
-            this.panel1.TabIndex = 2;
-            this.panel1.Text = "login";
+            this.AdminList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.AdminList.Controls.Add(this.back);
+            this.AdminList.Controls.Add(this.Delete);
+            this.AdminList.Controls.Add(this.listAllCars);
+            this.AdminList.Controls.Add(this.AddCar);
+            this.AdminList.Controls.Add(this.panel2);
+            this.AdminList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.AdminList.Location = new System.Drawing.Point(0, 0);
+            this.AdminList.Name = "AdminList";
+            this.AdminList.Size = new System.Drawing.Size(555, 379);
+            this.AdminList.TabIndex = 2;
+            this.AdminList.Text = "login";
             // 
             // back
             // 
             this.back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(76)))), ((int)(((byte)(0)))));
+            this.back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.back.FlatAppearance.BorderSize = 0;
             this.back.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(64)))));
             this.back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(49)))), ((int)(((byte)(0)))));
             this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.back.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.back.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back.Location = new System.Drawing.Point(449, 310);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(85, 45);
             this.back.TabIndex = 12;
-            this.back.Text = "Назад";
+            this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = false;
             // 
             // Delete
             // 
             this.Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(138)))));
+            this.Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.Delete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Delete.FlatAppearance.BorderSize = 0;
             this.Delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(208)))), ((int)(((byte)(186)))));
             this.Delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
             this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Delete.Font = new System.Drawing.Font("Rockwell", 20.25F);
             this.Delete.Location = new System.Drawing.Point(391, 156);
             this.Delete.Name = "Delete";
             this.Delete.Size = new System.Drawing.Size(143, 45);
             this.Delete.TabIndex = 11;
-            this.Delete.Text = "Удалить";
+            this.Delete.Text = "Remove";
             this.Delete.UseVisualStyleBackColor = false;
             this.Delete.Click += new System.EventHandler(this.Delete_Click);
             // 
@@ -118,18 +118,18 @@
             // AddCar
             // 
             this.AddCar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(138)))));
+            this.AddCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.AddCar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddCar.FlatAppearance.BorderSize = 0;
             this.AddCar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(208)))), ((int)(((byte)(186)))));
             this.AddCar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
             this.AddCar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddCar.Font = new System.Drawing.Font("Stencil", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddCar.Font = new System.Drawing.Font("Rockwell", 20.25F);
             this.AddCar.Location = new System.Drawing.Point(391, 91);
             this.AddCar.Name = "AddCar";
             this.AddCar.Size = new System.Drawing.Size(143, 45);
             this.AddCar.TabIndex = 11;
-            this.AddCar.Text = "Добавить";
+            this.AddCar.Text = "Add";
             this.AddCar.UseVisualStyleBackColor = false;
             this.AddCar.Click += new System.EventHandler(this.AddCar_Click);
             // 
@@ -146,7 +146,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(73)))), ((int)(((byte)(169)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
@@ -154,7 +154,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(555, 47);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Админменю";
+            this.label1.Text = "All Cars";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // menuStrip1
@@ -246,11 +246,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(555, 379);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.AdminList);
             this.Name = "AdmListCars";
             this.Text = "AdmListCars";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdmListCars_FormClosing);
-            this.panel1.ResumeLayout(false);
+            this.AdminList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CarsBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -262,7 +262,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel AdminList;
         private System.Windows.Forms.Button AddCar;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
