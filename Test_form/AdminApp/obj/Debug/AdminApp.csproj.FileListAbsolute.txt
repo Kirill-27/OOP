@@ -28,3 +28,4 @@ C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.exe
 C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.pdb
 C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.CarsDialog.resources
 C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.Help.resources
+C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.Buyers.resources

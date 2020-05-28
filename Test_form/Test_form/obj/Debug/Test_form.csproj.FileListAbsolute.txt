@@ -26,3 +26,4 @@ C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.csproj.Generat
 C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.csproj.CopyComplete
 C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.exe
 C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.pdb
+C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.Help.resources

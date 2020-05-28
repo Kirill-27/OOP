@@ -58,6 +58,12 @@
     <Compile Include="AdmListCars.Designer.cs">
       <DependentUpon>AdmListCars.cs</DependentUpon>
     </Compile>
+    <Compile Include="Buyers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buyers.Designer.cs">
+      <DependentUpon>Buyers.cs</DependentUpon>
+    </Compile>
     <Compile Include="CarsDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <EmbeddedResource Include="AdmListCars.resx">
       <DependentUpon>AdmListCars.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Buyers.resx">
+      <DependentUpon>Buyers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CarsDialog.resx">
       <DependentUpon>CarsDialog.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,6 +112,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\Test_form.Models.Buyer.datasource" />
     <None Include="Properties\DataSources\Test_form.Models.Car.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -94,7 +94,7 @@ namespace Test_form.DAL
         {
             LoadCars();
             LoadBuyers();
-            LoadReports();
+            //LoadReports();
         }
 
         private void LoadCars()
