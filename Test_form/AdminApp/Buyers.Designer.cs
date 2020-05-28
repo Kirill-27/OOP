@@ -32,14 +32,6 @@
             this.AdminList = new System.Windows.Forms.Panel();
             this.EditBut = new System.Windows.Forms.Button();
             this.BuyersdataGridView = new System.Windows.Forms.DataGridView();
-            this.contactsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.modelRequiredDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.perfomanceRequiredDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maksSpeedRequiredDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.financialOppDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buyerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.back = new System.Windows.Forms.Button();
             this.DeleteBut = new System.Windows.Forms.Button();
             this.AddBuyerBut = new System.Windows.Forms.Button();
@@ -56,11 +48,19 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contactsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modelRequiredDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.perfomanceRequiredDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maksSpeedRequiredDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.financialOppDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.buyerBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.AdminList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BuyersdataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buyerBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.buyerBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // AdminList
@@ -125,67 +125,14 @@
             this.BuyersdataGridView.Size = new System.Drawing.Size(608, 249);
             this.BuyersdataGridView.TabIndex = 13;
             // 
-            // contactsDataGridViewTextBoxColumn
-            // 
-            this.contactsDataGridViewTextBoxColumn.DataPropertyName = "Contacts";
-            this.contactsDataGridViewTextBoxColumn.HeaderText = "Contacts";
-            this.contactsDataGridViewTextBoxColumn.Name = "contactsDataGridViewTextBoxColumn";
-            this.contactsDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // modelRequiredDataGridViewTextBoxColumn
-            // 
-            this.modelRequiredDataGridViewTextBoxColumn.DataPropertyName = "ModelRequired";
-            this.modelRequiredDataGridViewTextBoxColumn.HeaderText = "ModelRequired";
-            this.modelRequiredDataGridViewTextBoxColumn.Name = "modelRequiredDataGridViewTextBoxColumn";
-            this.modelRequiredDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // perfomanceRequiredDataGridViewTextBoxColumn
-            // 
-            this.perfomanceRequiredDataGridViewTextBoxColumn.DataPropertyName = "PerfomanceRequired";
-            this.perfomanceRequiredDataGridViewTextBoxColumn.HeaderText = "PerfomanceRequired";
-            this.perfomanceRequiredDataGridViewTextBoxColumn.Name = "perfomanceRequiredDataGridViewTextBoxColumn";
-            this.perfomanceRequiredDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // maksSpeedRequiredDataGridViewTextBoxColumn
-            // 
-            this.maksSpeedRequiredDataGridViewTextBoxColumn.DataPropertyName = "MaksSpeedRequired";
-            this.maksSpeedRequiredDataGridViewTextBoxColumn.HeaderText = "MaksSpeedRequired";
-            this.maksSpeedRequiredDataGridViewTextBoxColumn.Name = "maksSpeedRequiredDataGridViewTextBoxColumn";
-            this.maksSpeedRequiredDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // financialOppDataGridViewTextBoxColumn
-            // 
-            this.financialOppDataGridViewTextBoxColumn.DataPropertyName = "FinancialOpp";
-            this.financialOppDataGridViewTextBoxColumn.HeaderText = "FinancialOpp";
-            this.financialOppDataGridViewTextBoxColumn.Name = "financialOppDataGridViewTextBoxColumn";
-            this.financialOppDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            this.passwordDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // buyerBindingSource
-            // 
-            this.buyerBindingSource.DataSource = typeof(Test_form.Models.Buyer);
-            // 
             // back
             // 
             this.back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.back.FlatAppearance.BorderSize = 0;
-            this.back.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
-            this.back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.back.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Salmon;
+            this.back.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.back.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.back.Location = new System.Drawing.Point(692, 295);
@@ -318,21 +265,21 @@
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.addToolStripMenuItem.Text = "Add";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.editToolStripMenuItem.Text = "Edit";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // removeToolStripMenuItem
             // 
             this.removeToolStripMenuItem.Name = "removeToolStripMenuItem";
-            this.removeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.removeToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.removeToolStripMenuItem.Text = "Remove";
             // 
             // HelpToolStripMenuItem
@@ -341,6 +288,59 @@
             this.HelpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.HelpToolStripMenuItem.Text = "Help";
             this.HelpToolStripMenuItem.Click += new System.EventHandler(this.HelpToolStripMenuItem_Click);
+            // 
+            // contactsDataGridViewTextBoxColumn
+            // 
+            this.contactsDataGridViewTextBoxColumn.DataPropertyName = "Contacts";
+            this.contactsDataGridViewTextBoxColumn.HeaderText = "Contacts";
+            this.contactsDataGridViewTextBoxColumn.Name = "contactsDataGridViewTextBoxColumn";
+            this.contactsDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // modelRequiredDataGridViewTextBoxColumn
+            // 
+            this.modelRequiredDataGridViewTextBoxColumn.DataPropertyName = "ModelRequired";
+            this.modelRequiredDataGridViewTextBoxColumn.HeaderText = "ModelRequired";
+            this.modelRequiredDataGridViewTextBoxColumn.Name = "modelRequiredDataGridViewTextBoxColumn";
+            this.modelRequiredDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // perfomanceRequiredDataGridViewTextBoxColumn
+            // 
+            this.perfomanceRequiredDataGridViewTextBoxColumn.DataPropertyName = "PerfomanceRequired";
+            this.perfomanceRequiredDataGridViewTextBoxColumn.HeaderText = "PerfomanceRequired";
+            this.perfomanceRequiredDataGridViewTextBoxColumn.Name = "perfomanceRequiredDataGridViewTextBoxColumn";
+            this.perfomanceRequiredDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // maksSpeedRequiredDataGridViewTextBoxColumn
+            // 
+            this.maksSpeedRequiredDataGridViewTextBoxColumn.DataPropertyName = "MaksSpeedRequired";
+            this.maksSpeedRequiredDataGridViewTextBoxColumn.HeaderText = "MaksSpeedRequired";
+            this.maksSpeedRequiredDataGridViewTextBoxColumn.Name = "maksSpeedRequiredDataGridViewTextBoxColumn";
+            this.maksSpeedRequiredDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // financialOppDataGridViewTextBoxColumn
+            // 
+            this.financialOppDataGridViewTextBoxColumn.DataPropertyName = "FinancialOpp";
+            this.financialOppDataGridViewTextBoxColumn.HeaderText = "FinancialOpp";
+            this.financialOppDataGridViewTextBoxColumn.Name = "financialOppDataGridViewTextBoxColumn";
+            this.financialOppDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // passwordDataGridViewTextBoxColumn
+            // 
+            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
+            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
+            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
+            this.passwordDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // buyerBindingSource
+            // 
+            this.buyerBindingSource.DataSource = typeof(Test_form.Models.Buyer);
             // 
             // Buyers
             // 
@@ -353,11 +353,11 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Buyers_FormClosing);
             this.AdminList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BuyersdataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buyerBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.buyerBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

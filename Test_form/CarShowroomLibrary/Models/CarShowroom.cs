@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarShowroomLibrary.Models;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace Test_form.Models
     public class CarShowroom
     {
         public bool ifSaved = true;
+        public List<CarInApplic> ApplicanFor { private set; get; }
         public List<Car> Cars { private set; get; }
         public List<Buyer> Buyers { private set; get; }
         public List<Report> Reports { private set; get; }
@@ -89,7 +91,7 @@ namespace Test_form.Models
                         YearOfIssue = Cars[t * div + j].YearOfIssue
                     }) ;
                 }
-                Reports.Add(new Report(ps, Buyers[t],DateTime.Now+TimeSpan.FromDays(t)));
+                Reports.Add(new Report(ps, Buyers[t].Name,DateTime.Now+TimeSpan.FromDays(t)));
             }
             
         }

@@ -58,6 +58,12 @@
     <Compile Include="AdmListCars.Designer.cs">
       <DependentUpon>AdmListCars.cs</DependentUpon>
     </Compile>
+    <Compile Include="Applicant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Applicant.Designer.cs">
+      <DependentUpon>Applicant.cs</DependentUpon>
+    </Compile>
     <Compile Include="BuyerDialog.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     <EmbeddedResource Include="AdmListCars.resx">
       <DependentUpon>AdmListCars.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Applicant.resx">
+      <DependentUpon>Applicant.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BuyerDialog.resx">
       <DependentUpon>BuyerDialog.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +130,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Properties\DataSources\CarShowroomLibrary.Models.CarInApplic.datasource" />
     <None Include="Properties\DataSources\Test_form.Models.Buyer.datasource" />
     <None Include="Properties\DataSources\Test_form.Models.Car.datasource" />
     <None Include="Properties\Settings.settings">

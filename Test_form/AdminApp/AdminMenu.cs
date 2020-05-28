@@ -17,11 +17,21 @@ namespace AdminApp
             InitializeComponent();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
 
+        private void AllCarsBut_Click(object sender, EventArgs e)
+        {
+            var f = new AdmListCars();
+            this.Hide();
+            f.ShowDialog();
+            this.Visible=true;
         }
 
-        
+        private void Buyersbut_Click(object sender, EventArgs e)
+        {
+            var f = new Buyers();
+            this.Hide();
+            f.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

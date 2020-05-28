@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ApplicationsBut = new System.Windows.Forms.Button();
+            this.Buyersbut = new System.Windows.Forms.Button();
+            this.Reportsbut = new System.Windows.Forms.Button();
             this.AllCarsBut = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,9 +42,6 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Reportsbut = new System.Windows.Forms.Button();
-            this.Buyersbut = new System.Windows.Forms.Button();
-            this.ApplicationsBut = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -61,15 +61,63 @@
             this.panel1.Size = new System.Drawing.Size(585, 329);
             this.panel1.TabIndex = 1;
             this.panel1.Text = "login";
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // ApplicationsBut
+            // 
+            this.ApplicationsBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ApplicationsBut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ApplicationsBut.FlatAppearance.BorderSize = 0;
+            this.ApplicationsBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ApplicationsBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.ApplicationsBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ApplicationsBut.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ApplicationsBut.Location = new System.Drawing.Point(311, 210);
+            this.ApplicationsBut.Name = "ApplicationsBut";
+            this.ApplicationsBut.Size = new System.Drawing.Size(214, 42);
+            this.ApplicationsBut.TabIndex = 9;
+            this.ApplicationsBut.Text = "Applications";
+            this.ApplicationsBut.UseVisualStyleBackColor = false;
+            // 
+            // Buyersbut
+            // 
+            this.Buyersbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Buyersbut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Buyersbut.FlatAppearance.BorderSize = 0;
+            this.Buyersbut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Buyersbut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Buyersbut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Buyersbut.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buyersbut.Location = new System.Drawing.Point(311, 129);
+            this.Buyersbut.Name = "Buyersbut";
+            this.Buyersbut.Size = new System.Drawing.Size(214, 42);
+            this.Buyersbut.TabIndex = 8;
+            this.Buyersbut.Text = "Buyers";
+            this.Buyersbut.UseVisualStyleBackColor = false;
+            this.Buyersbut.Click += new System.EventHandler(this.Buyersbut_Click);
+            // 
+            // Reportsbut
+            // 
+            this.Reportsbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Reportsbut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Reportsbut.FlatAppearance.BorderSize = 0;
+            this.Reportsbut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Reportsbut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Reportsbut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Reportsbut.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reportsbut.Location = new System.Drawing.Point(48, 210);
+            this.Reportsbut.Name = "Reportsbut";
+            this.Reportsbut.Size = new System.Drawing.Size(214, 42);
+            this.Reportsbut.TabIndex = 7;
+            this.Reportsbut.Text = "Reports";
+            this.Reportsbut.UseVisualStyleBackColor = false;
             // 
             // AllCarsBut
             // 
             this.AllCarsBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.AllCarsBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AllCarsBut.FlatAppearance.BorderSize = 0;
-            this.AllCarsBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(208)))), ((int)(((byte)(186)))));
-            this.AllCarsBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
+            this.AllCarsBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.AllCarsBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.AllCarsBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AllCarsBut.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AllCarsBut.Location = new System.Drawing.Point(48, 129);
@@ -78,6 +126,7 @@
             this.AllCarsBut.TabIndex = 6;
             this.AllCarsBut.Text = "Cars";
             this.AllCarsBut.UseVisualStyleBackColor = false;
+            this.AllCarsBut.Click += new System.EventHandler(this.AllCarsBut_Click);
             // 
             // panel2
             // 
@@ -102,7 +151,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "AdminMenu";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-           
             // 
             // menuStrip1
             // 
@@ -154,54 +202,6 @@
             this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
             this.помощьToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.помощьToolStripMenuItem.Text = "Help";
-            // 
-            // Reportsbut
-            // 
-            this.Reportsbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Reportsbut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Reportsbut.FlatAppearance.BorderSize = 0;
-            this.Reportsbut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(208)))), ((int)(((byte)(186)))));
-            this.Reportsbut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
-            this.Reportsbut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Reportsbut.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Reportsbut.Location = new System.Drawing.Point(48, 210);
-            this.Reportsbut.Name = "Reportsbut";
-            this.Reportsbut.Size = new System.Drawing.Size(214, 42);
-            this.Reportsbut.TabIndex = 7;
-            this.Reportsbut.Text = "Reports";
-            this.Reportsbut.UseVisualStyleBackColor = false;
-            // 
-            // Buyersbut
-            // 
-            this.Buyersbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Buyersbut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Buyersbut.FlatAppearance.BorderSize = 0;
-            this.Buyersbut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(208)))), ((int)(((byte)(186)))));
-            this.Buyersbut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
-            this.Buyersbut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Buyersbut.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Buyersbut.Location = new System.Drawing.Point(311, 129);
-            this.Buyersbut.Name = "Buyersbut";
-            this.Buyersbut.Size = new System.Drawing.Size(214, 42);
-            this.Buyersbut.TabIndex = 8;
-            this.Buyersbut.Text = "Buyers";
-            this.Buyersbut.UseVisualStyleBackColor = false;
-            // 
-            // ApplicationsBut
-            // 
-            this.ApplicationsBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.ApplicationsBut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ApplicationsBut.FlatAppearance.BorderSize = 0;
-            this.ApplicationsBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(208)))), ((int)(((byte)(186)))));
-            this.ApplicationsBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
-            this.ApplicationsBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ApplicationsBut.Font = new System.Drawing.Font("Rockwell", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ApplicationsBut.Location = new System.Drawing.Point(311, 210);
-            this.ApplicationsBut.Name = "ApplicationsBut";
-            this.ApplicationsBut.Size = new System.Drawing.Size(214, 42);
-            this.ApplicationsBut.TabIndex = 9;
-            this.ApplicationsBut.Text = "Applications";
-            this.ApplicationsBut.UseVisualStyleBackColor = false;
             // 
             // AdminMenu
             // 
