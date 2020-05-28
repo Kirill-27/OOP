@@ -66,6 +66,10 @@ namespace Test_form
             this.Close();
         }
 
-        
+        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new Help();
+            f.ShowDialog();
+        }
     }
 }

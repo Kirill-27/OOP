@@ -32,9 +32,10 @@ namespace Test_form
             Close();
         }
 
-        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //CarShowroom1.Save();
+            var f = new Help();
+            f.ShowDialog();
         }
     }
 }

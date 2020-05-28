@@ -43,8 +43,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.FeaturestextBox = new System.Windows.Forms.TextBox();
-            this.CountrytextBox = new System.Windows.Forms.TextBox();
-            this.ModeltextBox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -54,6 +52,8 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ModelcomboBox = new System.Windows.Forms.ComboBox();
+            this.CountrycomboBox = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Speed_numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Tech_numeric)).BeginInit();
@@ -66,6 +66,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel1.Controls.Add(this.CountrycomboBox);
+            this.panel1.Controls.Add(this.ModelcomboBox);
             this.panel1.Controls.Add(this.BackBut);
             this.panel1.Controls.Add(this.SaveBut);
             this.panel1.Controls.Add(this.Speed_numeric);
@@ -80,13 +82,11 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.FeaturestextBox);
-            this.panel1.Controls.Add(this.CountrytextBox);
-            this.panel1.Controls.Add(this.ModeltextBox);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(493, 334);
+            this.panel1.Size = new System.Drawing.Size(493, 300);
             this.panel1.TabIndex = 2;
             this.panel1.Text = "login";
             // 
@@ -101,7 +101,7 @@
             this.BackBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.BackBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BackBut.Font = new System.Drawing.Font("Rockwell", 14F);
-            this.BackBut.Location = new System.Drawing.Point(396, 264);
+            this.BackBut.Location = new System.Drawing.Point(396, 231);
             this.BackBut.Name = "BackBut";
             this.BackBut.Size = new System.Drawing.Size(85, 45);
             this.BackBut.TabIndex = 22;
@@ -118,7 +118,7 @@
             this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.SaveBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBut.Font = new System.Drawing.Font("Rockwell", 14F);
-            this.SaveBut.Location = new System.Drawing.Point(243, 264);
+            this.SaveBut.Location = new System.Drawing.Point(347, 92);
             this.SaveBut.Name = "SaveBut";
             this.SaveBut.Size = new System.Drawing.Size(134, 45);
             this.SaveBut.TabIndex = 21;
@@ -127,39 +127,69 @@
             // 
             // Speed_numeric
             // 
-            this.Speed_numeric.Location = new System.Drawing.Point(121, 207);
+            this.Speed_numeric.Location = new System.Drawing.Point(121, 197);
             this.Speed_numeric.Maximum = new decimal(new int[] {
             400,
+            0,
+            0,
+            0});
+            this.Speed_numeric.Minimum = new decimal(new int[] {
+            1,
             0,
             0,
             0});
             this.Speed_numeric.Name = "Speed_numeric";
             this.Speed_numeric.Size = new System.Drawing.Size(120, 20);
             this.Speed_numeric.TabIndex = 20;
+            this.Speed_numeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // Tech_numeric
             // 
-            this.Tech_numeric.Location = new System.Drawing.Point(121, 182);
+            this.Tech_numeric.Location = new System.Drawing.Point(120, 171);
+            this.Tech_numeric.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.Tech_numeric.Name = "Tech_numeric";
             this.Tech_numeric.Size = new System.Drawing.Size(120, 20);
             this.Tech_numeric.TabIndex = 19;
+            this.Tech_numeric.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // Prise_numericUp
             // 
-            this.Prise_numericUp.Location = new System.Drawing.Point(121, 156);
+            this.Prise_numericUp.Location = new System.Drawing.Point(120, 145);
             this.Prise_numericUp.Maximum = new decimal(new int[] {
             100000,
+            0,
+            0,
+            0});
+            this.Prise_numericUp.Minimum = new decimal(new int[] {
+            1,
             0,
             0,
             0});
             this.Prise_numericUp.Name = "Prise_numericUp";
             this.Prise_numericUp.Size = new System.Drawing.Size(120, 20);
             this.Prise_numericUp.TabIndex = 18;
+            this.Prise_numericUp.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(41, 103);
+            this.label8.Location = new System.Drawing.Point(42, 249);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(48, 13);
             this.label8.TabIndex = 17;
@@ -168,7 +198,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(40, 209);
+            this.label7.Location = new System.Drawing.Point(41, 197);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(64, 13);
             this.label7.TabIndex = 16;
@@ -177,7 +207,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(41, 184);
+            this.label6.Location = new System.Drawing.Point(41, 171);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(57, 13);
             this.label6.TabIndex = 15;
@@ -186,7 +216,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(41, 235);
+            this.label5.Location = new System.Drawing.Point(41, 223);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(65, 13);
             this.label5.TabIndex = 14;
@@ -195,7 +225,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(40, 132);
+            this.label4.Location = new System.Drawing.Point(42, 119);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 13);
             this.label4.TabIndex = 13;
@@ -203,7 +233,7 @@
             // 
             // Year_numeric
             // 
-            this.Year_numeric.Location = new System.Drawing.Point(121, 233);
+            this.Year_numeric.Location = new System.Drawing.Point(120, 223);
             this.Year_numeric.Maximum = new decimal(new int[] {
             2020,
             0,
@@ -226,7 +256,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 158);
+            this.label3.Location = new System.Drawing.Point(42, 145);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 13);
             this.label3.TabIndex = 11;
@@ -235,7 +265,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 77);
+            this.label2.Location = new System.Drawing.Point(42, 92);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(36, 13);
             this.label2.TabIndex = 10;
@@ -243,24 +273,10 @@
             // 
             // FeaturestextBox
             // 
-            this.FeaturestextBox.Location = new System.Drawing.Point(121, 103);
+            this.FeaturestextBox.Location = new System.Drawing.Point(120, 249);
             this.FeaturestextBox.Name = "FeaturestextBox";
-            this.FeaturestextBox.Size = new System.Drawing.Size(256, 20);
+            this.FeaturestextBox.Size = new System.Drawing.Size(221, 20);
             this.FeaturestextBox.TabIndex = 8;
-            // 
-            // CountrytextBox
-            // 
-            this.CountrytextBox.Location = new System.Drawing.Point(121, 129);
-            this.CountrytextBox.Name = "CountrytextBox";
-            this.CountrytextBox.Size = new System.Drawing.Size(256, 20);
-            this.CountrytextBox.TabIndex = 4;
-            // 
-            // ModeltextBox
-            // 
-            this.ModeltextBox.Location = new System.Drawing.Point(121, 77);
-            this.ModeltextBox.Name = "ModeltextBox";
-            this.ModeltextBox.Size = new System.Drawing.Size(256, 20);
-            this.ModeltextBox.TabIndex = 1;
             // 
             // panel2
             // 
@@ -330,18 +346,57 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // HelpToolStripMenuItem
             // 
             this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
             this.HelpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.HelpToolStripMenuItem.Text = "Help";
+            this.HelpToolStripMenuItem.Click += new System.EventHandler(this.HelpToolStripMenuItem_Click);
+            // 
+            // ModelcomboBox
+            // 
+            this.ModelcomboBox.FormattingEnabled = true;
+            this.ModelcomboBox.Items.AddRange(new object[] {
+            "Lifan",
+            "Tesl",
+            "Toyota",
+            "BMW",
+            "Kia",
+            "TATA Motors",
+            "SEAT",
+            "Suzuki",
+            "Audi",
+            "Porsche",
+            "Mitsubishi",
+            "Subaru"});
+            this.ModelcomboBox.Location = new System.Drawing.Point(120, 92);
+            this.ModelcomboBox.Name = "ModelcomboBox";
+            this.ModelcomboBox.Size = new System.Drawing.Size(121, 21);
+            this.ModelcomboBox.TabIndex = 23;
+            // 
+            // CountrycomboBox
+            // 
+            this.CountrycomboBox.FormattingEnabled = true;
+            this.CountrycomboBox.Items.AddRange(new object[] {
+            "China",
+            "USA",
+            "Japan",
+            "Germany",
+            "South Korea",
+            "India",
+            "Spain"});
+            this.CountrycomboBox.Location = new System.Drawing.Point(121, 119);
+            this.CountrycomboBox.Name = "CountrycomboBox";
+            this.CountrycomboBox.Size = new System.Drawing.Size(121, 21);
+            this.CountrycomboBox.TabIndex = 24;
             // 
             // CarsDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(493, 334);
+            this.ClientSize = new System.Drawing.Size(493, 300);
             this.Controls.Add(this.panel1);
             this.Name = "CarsDialog";
             this.Text = "CarsDialog";
@@ -372,8 +427,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem HelpToolStripMenuItem;
-        private System.Windows.Forms.TextBox ModeltextBox;
-        private System.Windows.Forms.TextBox CountrytextBox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox FeaturestextBox;
@@ -388,5 +441,7 @@
         private System.Windows.Forms.NumericUpDown Prise_numericUp;
         private System.Windows.Forms.Button SaveBut;
         private System.Windows.Forms.Button BackBut;
+        private System.Windows.Forms.ComboBox ModelcomboBox;
+        private System.Windows.Forms.ComboBox CountrycomboBox;
     }
 }

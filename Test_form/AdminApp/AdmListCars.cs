@@ -25,7 +25,7 @@ namespace AdminApp
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Close();
+              Close();
         }
 
         private void removeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -124,6 +124,12 @@ namespace AdminApp
                 CarShowroom1.ifSaved = false;
                 carBindingSource.ResetBindings(false);
             }
+        }
+
+        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new Help();
+            f.ShowDialog();
         }
     }
 }

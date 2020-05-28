@@ -42,5 +42,11 @@ namespace Test_form
             CarShowroom1.Load();
             carBindingSource.ResetBindings(false);
         }
+
+        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new Help();
+            f.ShowDialog();
+        }
     }
 }

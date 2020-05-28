@@ -1,4 +1,4 @@
-17
+18
 green
 25
 160
@@ -103,14 +103,14 @@ BMW
 Germany
 95
 2018
-gold
+good car
 54
-60
+138
 DreamCar
 100
 Ukraine
-1
-1999
+99
+2001
 none
 55
 160
@@ -134,4 +134,12 @@ Lifan
 4500
 China
 100
+2020
+
+59
+200
+TATA Motors
+1000
+South Korea
+54
 2020
