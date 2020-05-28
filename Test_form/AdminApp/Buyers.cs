@@ -79,5 +79,55 @@ namespace AdminApp
                     break;
             }
         }
+
+        private void AddBuyerBut_Click(object sender, EventArgs e)
+        {
+            var fo = new BuyerDialog();
+            if (fo.ShowDialog() == DialogResult.OK) ;
+            {
+                CarShowroom1.ifSaved = false;
+                CarShowroom1.Buyers.Add(fo.Buyer);
+                buyerBindingSource.ResetBindings(false);
+            }
+        }
+
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var fo = new BuyerDialog();
+            if (fo.ShowDialog() == DialogResult.OK) ;
+            {
+                CarShowroom1.ifSaved = false;
+                CarShowroom1.Buyers.Add(fo.Buyer);
+                buyerBindingSource.ResetBindings(false);
+            }
+        }
+
+        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var help = new Help();
+            help.ShowDialog();
+        }
+
+        private void EditBut_Click(object sender, EventArgs e)
+        {
+            var ToEdit = BuyersdataGridView.SelectedRows[0].DataBoundItem as Buyer;
+            var fo = new BuyerDialog(ToEdit);
+            if (fo.ShowDialog() == DialogResult.OK)
+            {
+                CarShowroom1.ifSaved = false;
+                buyerBindingSource.ResetBindings(false);
+            }
+        }
+
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ToEdit = BuyersdataGridView.SelectedRows[0].DataBoundItem as Buyer;
+            var fo = new BuyerDialog(ToEdit);
+            if (fo.ShowDialog() == DialogResult.OK)
+            {
+                CarShowroom1.ifSaved = false;
+                buyerBindingSource.ResetBindings(false);
+            }
+        }
     }
 }

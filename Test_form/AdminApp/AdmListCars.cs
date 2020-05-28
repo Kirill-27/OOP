@@ -131,5 +131,21 @@ namespace AdminApp
             var f = new Help();
             f.ShowDialog();
         }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var fo = new CarsDialog();
+            if (fo.ShowDialog() == DialogResult.OK) ;
+            {
+                CarShowroom1.ifSaved = false;
+                CarShowroom1.AddCar(fo.Car);
+                carBindingSource.ResetBindings(false);
+            }
+        }
     }
 }
