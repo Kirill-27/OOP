@@ -69,7 +69,7 @@ namespace Test_form.DAL
                 wr.WriteLine(carShowroom.Reports.Count);
                 foreach (var o in carShowroom.Reports)
                 {
-                    wr.WriteLine(o.Buyer.Name);
+                    wr.WriteLine(o.Buyer);
                     wr.WriteLine(o.DateTime);
                     wr.WriteLine(o.Cars_R.Count);
                     foreach (var p in o.Cars_R)
@@ -94,7 +94,7 @@ namespace Test_form.DAL
         {
             LoadCars();
             LoadBuyers();
-            //LoadReports();
+            LoadReports();
         }
 
         private void LoadCars()
@@ -153,13 +153,13 @@ namespace Test_form.DAL
                     var name = rd.ReadLine();
                     var time = Convert.ToDateTime(rd.ReadLine());
                     var ps = ReadReports(rd);
-                    carShowroom.Reports.Add(new Report(ps, GetBuyerByName(name), time));
+                    carShowroom.Reports.Add(new Report(ps, name, time));
 
                 }
             }
         }
 
-        private Buyer GetBuyerByName(string name) => carShowroom.Buyers.Single(b => b.Name == name);
+       // private Buyer GetBuyerByName(string name) => carShowroom.Buyers.Single(b => b.Name == name);
 
         private List<Car> ReadReports(StreamReader rd)
         {
@@ -182,6 +182,6 @@ namespace Test_form.DAL
             return ps;
         }
 
-        private Car GetCarById(int carId) => carShowroom.Cars.Single(p => p.ID == carId);
+        //private Car GetCarById(int carId) => carShowroom.Cars.Single(p => p.ID == carId);
     }
 }

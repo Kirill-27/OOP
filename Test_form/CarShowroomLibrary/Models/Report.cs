@@ -10,7 +10,7 @@ namespace Test_form.Models
     // класс отчет содерждит ,
     public class Report
     {
-        public Report(List<Car> cars, Buyer buyer, DateTime? t = null)
+        public Report(List<Car> cars, string buyer, DateTime? t = null)
         {
             Cars_R = cars;
             Buyer = buyer;
@@ -21,7 +21,7 @@ namespace Test_form.Models
         }
 
         public List<Car> Cars_R { private set; get; }
-        public Buyer Buyer { private set; get; }
+        public string Buyer { private set; get; }
         public DateTime DateTime { private set; get; }
     }
 }

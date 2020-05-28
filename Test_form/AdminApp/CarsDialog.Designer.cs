@@ -134,8 +134,8 @@
             this.BackBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BackBut.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BackBut.FlatAppearance.BorderSize = 0;
-            this.BackBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.BackBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.BackBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.BackBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.BackBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BackBut.Font = new System.Drawing.Font("Rockwell", 14F);
             this.BackBut.Location = new System.Drawing.Point(396, 231);
