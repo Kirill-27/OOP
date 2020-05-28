@@ -74,7 +74,13 @@
             // 
             this.CarsdataGridView.AllowUserToAddRows = false;
             this.CarsdataGridView.AllowUserToDeleteRows = false;
+            this.CarsdataGridView.AllowUserToOrderColumns = true;
+            this.CarsdataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.CarsdataGridView.AutoGenerateColumns = false;
+            this.CarsdataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.CarsdataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.CarsdataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.CarsdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CarsdataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.modelDataGridViewTextBoxColumn,
@@ -85,9 +91,12 @@
             this.featuresDataGridViewTextBoxColumn});
             this.CarsdataGridView.DataSource = this.carBindingSource;
             this.CarsdataGridView.Location = new System.Drawing.Point(21, 91);
+            this.CarsdataGridView.MultiSelect = false;
             this.CarsdataGridView.Name = "CarsdataGridView";
             this.CarsdataGridView.ReadOnly = true;
-            this.CarsdataGridView.Size = new System.Drawing.Size(761, 150);
+            this.CarsdataGridView.RowHeadersVisible = false;
+            this.CarsdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.CarsdataGridView.Size = new System.Drawing.Size(620, 193);
             this.CarsdataGridView.TabIndex = 7;
             // 
             // Buy_but
@@ -100,9 +109,9 @@
             this.Buy_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
             this.Buy_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Buy_but.Font = new System.Drawing.Font("Rockwell", 20.25F);
-            this.Buy_but.Location = new System.Drawing.Point(498, 264);
+            this.Buy_but.Location = new System.Drawing.Point(670, 91);
             this.Buy_but.Name = "Buy_but";
-            this.Buy_but.Size = new System.Drawing.Size(156, 42);
+            this.Buy_but.Size = new System.Drawing.Size(116, 42);
             this.Buy_but.TabIndex = 6;
             this.Buy_but.Text = "Buy";
             this.Buy_but.UseVisualStyleBackColor = false;
@@ -117,7 +126,7 @@
             this.Back_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(49)))), ((int)(((byte)(0)))));
             this.Back_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Back_but.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Back_but.Location = new System.Drawing.Point(678, 264);
+            this.Back_but.Location = new System.Drawing.Point(697, 259);
             this.Back_but.Name = "Back_but";
             this.Back_but.Size = new System.Drawing.Size(89, 42);
             this.Back_but.TabIndex = 5;

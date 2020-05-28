@@ -20,8 +20,7 @@ namespace AdminApp
             CarShowroom1 = new CarShowroom();
             //CarShowroom1.FillTestData(20);
             CarShowroom1.Load();
-            CarsBindingSource.DataSource = CarShowroom1.Cars;
-            listAllCars.DisplayMember="Model";
+            carBindingSource.DataSource = CarShowroom1.Cars; 
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -31,15 +30,14 @@ namespace AdminApp
 
         private void removeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var toDel = listAllCars.SelectedItem as Car;
+            var toDel = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
             var res = MessageBox.Show($"Delete {toDel.Model} ?", "Сonfirmation", MessageBoxButtons.YesNo);
             switch (res)
             {
                 case DialogResult.Yes:
                     CarShowroom1.Cars.Remove(toDel);
                     CarShowroom1.ifSaved = false;
-                    CarsBindingSource.ResetBindings(false);
-                    listAllCars.DisplayMember = "Model";
+                    carBindingSource.ResetBindings(false);
                     break;
                 case DialogResult.No:
                     break;
@@ -73,27 +71,25 @@ namespace AdminApp
 
         private void Delete_Click(object sender, EventArgs e)
         {
-            var toDel = listAllCars.SelectedItem as Car;
+            var toDel = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
             var res = MessageBox.Show($"Delete {toDel.Model} ?", "Сonfirmation", MessageBoxButtons.YesNo);
             switch (res)
             {
                 case DialogResult.Yes:
                     CarShowroom1.Cars.Remove(toDel);
                     CarShowroom1.ifSaved = false;
-                    CarsBindingSource.ResetBindings(false);
-                    listAllCars.DisplayMember = "Model";
+                    carBindingSource.ResetBindings(false);
                     break;
                 case DialogResult.No:
                     break;
             }
-            
+
         }
 
         private void LoadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             CarShowroom1.Load();
-            CarsBindingSource.ResetBindings(false);
-            listAllCars.DisplayMember = "Model";
+            carBindingSource.ResetBindings(false);
             CarShowroom1.ifSaved = true;
         }
 
@@ -104,11 +100,30 @@ namespace AdminApp
             {
                 CarShowroom1.ifSaved = false;
                 CarShowroom1.AddCar(fo.Car);
-                CarsBindingSource.ResetBindings(false);
-                listAllCars.DisplayMember = "Model";
+                carBindingSource.ResetBindings(false);
             }
         }
 
-       
+        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var ToEdit= CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
+            var fo = new CarsDialog(ToEdit);
+            if (fo.ShowDialog() == DialogResult.OK)
+            {
+                CarShowroom1.ifSaved = false;
+                carBindingSource.ResetBindings(false);
+            }
+        }
+
+        private void EditBut_Click(object sender, EventArgs e)
+        {
+            var ToEdit = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
+            var fo = new CarsDialog(ToEdit);
+            if (fo.ShowDialog() == DialogResult.OK)
+            {
+                CarShowroom1.ifSaved = false;
+                carBindingSource.ResetBindings(false);
+            }
+        }
     }
 }
