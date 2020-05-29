@@ -66,17 +66,20 @@ namespace AdminApp
 
         private void DeleteBut_Click(object sender, EventArgs e)
         {
-            var toDel = BuyersdataGridView.SelectedRows[0].DataBoundItem as Buyer;
-            var res = MessageBox.Show($"Delete {toDel.Name} ?", "Сonfirmation", MessageBoxButtons.YesNo);
-            switch (res)
+            if (CarShowroom1.Buyers.Count != 0)
             {
-                case DialogResult.Yes:
-                    CarShowroom1.Buyers.Remove(toDel);
-                    CarShowroom1.ifSaved = false;
-                    buyerBindingSource.ResetBindings(false);
-                    break;
-                case DialogResult.No:
-                    break;
+                var toDel = BuyersdataGridView.SelectedRows[0].DataBoundItem as Buyer;
+                var res = MessageBox.Show($"Delete {toDel.Name} ?", "Сonfirmation", MessageBoxButtons.YesNo);
+                switch (res)
+                {
+                    case DialogResult.Yes:
+                        CarShowroom1.Buyers.Remove(toDel);
+                        CarShowroom1.ifSaved = false;
+                        buyerBindingSource.ResetBindings(false);
+                        break;
+                    case DialogResult.No:
+                        break;
+                }
             }
         }
 
@@ -93,13 +96,13 @@ namespace AdminApp
 
         private void addToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var fo = new BuyerDialog();
-            if (fo.ShowDialog() == DialogResult.OK) 
-            {
-                CarShowroom1.ifSaved = false;
-                CarShowroom1.Buyers.Add(fo.Buyer);
-                buyerBindingSource.ResetBindings(false);
-            }
+                var fo = new BuyerDialog();
+                if (fo.ShowDialog() == DialogResult.OK)
+                {
+                    CarShowroom1.ifSaved = false;
+                    CarShowroom1.Buyers.Add(fo.Buyer);
+                    buyerBindingSource.ResetBindings(false);
+                }
         }
 
         private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
@@ -110,23 +113,48 @@ namespace AdminApp
 
         private void EditBut_Click(object sender, EventArgs e)
         {
-            var ToEdit = BuyersdataGridView.SelectedRows[0].DataBoundItem as Buyer;
-            var fo = new BuyerDialog(ToEdit);
-            if (fo.ShowDialog() == DialogResult.OK)
+            if (CarShowroom1.Buyers.Count != 0)
             {
-                CarShowroom1.ifSaved = false;
-                buyerBindingSource.ResetBindings(false);
+                var ToEdit = BuyersdataGridView.SelectedRows[0].DataBoundItem as Buyer;
+                var fo = new BuyerDialog(ToEdit);
+                if (fo.ShowDialog() == DialogResult.OK)
+                {
+                    CarShowroom1.ifSaved = false;
+                    buyerBindingSource.ResetBindings(false);
+                }
             }
         }
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var ToEdit = BuyersdataGridView.SelectedRows[0].DataBoundItem as Buyer;
-            var fo = new BuyerDialog(ToEdit);
-            if (fo.ShowDialog() == DialogResult.OK)
+            if (CarShowroom1.Buyers.Count != 0)
             {
-                CarShowroom1.ifSaved = false;
-                buyerBindingSource.ResetBindings(false);
+                var ToEdit = BuyersdataGridView.SelectedRows[0].DataBoundItem as Buyer;
+                var fo = new BuyerDialog(ToEdit);
+                if (fo.ShowDialog() == DialogResult.OK)
+                {
+                    CarShowroom1.ifSaved = false;
+                    buyerBindingSource.ResetBindings(false);
+                }
+            }
+        }
+
+        private void removeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (CarShowroom1.Buyers.Count != 0)
+            {
+                var toDel = BuyersdataGridView.SelectedRows[0].DataBoundItem as Buyer;
+                var res = MessageBox.Show($"Delete {toDel.Name} ?", "Сonfirmation", MessageBoxButtons.YesNo);
+                switch (res)
+                {
+                    case DialogResult.Yes:
+                        CarShowroom1.Buyers.Remove(toDel);
+                        CarShowroom1.ifSaved = false;
+                        buyerBindingSource.ResetBindings(false);
+                        break;
+                    case DialogResult.No:
+                        break;
+                }
             }
         }
     }

@@ -11,19 +11,26 @@ using System.Windows.Forms;
 
 namespace AdminApp
 {
-    public partial class ApplicantDialog : Form
+    public partial class ApplicationDialog : Form
     {
         public CarInApplic Appl { get; set; }
-        public ApplicantDialog()
+        public ApplicationDialog()
         {
             InitializeComponent();
         }
 
         private void BackBut_Click(object sender, EventArgs e)
         {
-            Close();
+            if (Appl != null)
+            {
+                AmountNumretic.Value = Appl.Amount;
+                ModelcomboBox.Text = Appl.Model;
+                Yearnumeric.Value = Appl.YearOfIssue;
+                CountrycomboBox.Text = Appl.ProdCountry;
+                Technumeric.Value = Appl.TechState;
+            }
         }
-        public ApplicantDialog(CarInApplic Edited) : this()
+        public ApplicationDialog(CarInApplic Edited) : this()
         {
             Appl = Edited;
             AmountNumretic.Value = Appl.Amount;
@@ -40,6 +47,12 @@ namespace AdminApp
             Appl.ProdCountry = CountrycomboBox.Text;
             Appl.TechState = Convert.ToInt32(Technumeric.Value);
             Appl.YearOfIssue = Convert.ToInt32(Yearnumeric.Value);
+        }
+
+        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var he = new Help();
+            he.ShowDialog();
         }
     }
 }

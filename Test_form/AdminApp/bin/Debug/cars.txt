@@ -26,7 +26,7 @@ Japan
 none
 43
 160
-SEAT
+Toyota
 8000
 Spain
 46

@@ -40,5 +40,39 @@ namespace AdminApp
             Buyer.Password = PastextBox.Text;
             Buyer.PerfomanceRequired = Convert.ToInt32(Perf_numeric.Value);
         }
+
+        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var he = new Help();
+            he.ShowDialog();
+        }
+
+       
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var res = MessageBox.Show("Exit(without saving data)?", "Exit", MessageBoxButtons.YesNo);
+            switch (res)
+            {
+                case DialogResult.Yes:
+                    Close();
+                    break;
+                case DialogResult.No:
+                    break;
+            }
+        }
+
+        private void BackBut_Click(object sender, EventArgs e)
+        {
+            if (Buyer != null)
+            {
+                ContacttextBox.Text = Buyer.Contacts;
+                Prise_numericUp.Value = Buyer.FinancialOpp;
+                Speed_numeric.Value = Buyer.MaksSpeedRequired;
+                ModelcomboBox.Text = Buyer.ModelRequired;
+                NametextBox.Text = Buyer.Name;
+                PastextBox.Text = Buyer.Password;
+                Perf_numeric.Value = Buyer.PerfomanceRequired;
+            }
+        }
     }
 }

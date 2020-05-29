@@ -30,17 +30,20 @@ namespace AdminApp
 
         private void removeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var toDel = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
-            var res = MessageBox.Show($"Delete {toDel.Model} ?", "Сonfirmation", MessageBoxButtons.YesNo);
-            switch (res)
+            if (CarShowroom1.Cars.Count != 0)
             {
-                case DialogResult.Yes:
-                    CarShowroom1.Cars.Remove(toDel);
-                    CarShowroom1.ifSaved = false;
-                    carBindingSource.ResetBindings(false);
-                    break;
-                case DialogResult.No:
-                    break;
+                var toDel = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
+                var res = MessageBox.Show($"Delete {toDel.Model} ?", "Сonfirmation", MessageBoxButtons.YesNo);
+                switch (res)
+                {
+                    case DialogResult.Yes:
+                        CarShowroom1.Cars.Remove(toDel);
+                        CarShowroom1.ifSaved = false;
+                        carBindingSource.ResetBindings(false);
+                        break;
+                    case DialogResult.No:
+                        break;
+                }
             }
         }
 
@@ -71,17 +74,21 @@ namespace AdminApp
 
         private void Delete_Click(object sender, EventArgs e)
         {
-            var toDel = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
-            var res = MessageBox.Show($"Delete {toDel.Model} ?", "Сonfirmation", MessageBoxButtons.YesNo);
-            switch (res)
+
+            if (CarShowroom1.Cars.Count != 0)
             {
-                case DialogResult.Yes:
-                    CarShowroom1.Cars.Remove(toDel);
-                    CarShowroom1.ifSaved = false;
-                    carBindingSource.ResetBindings(false);
-                    break;
-                case DialogResult.No:
-                    break;
+                var toDel = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
+                var res = MessageBox.Show($"Delete {toDel.Model} ?", "Сonfirmation", MessageBoxButtons.YesNo);
+                switch (res)
+                {
+                    case DialogResult.Yes:
+                        CarShowroom1.Cars.Remove(toDel);
+                        CarShowroom1.ifSaved = false;
+                        carBindingSource.ResetBindings(false);
+                        break;
+                    case DialogResult.No:
+                        break;
+                }
             }
 
         }
@@ -106,23 +113,30 @@ namespace AdminApp
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var ToEdit= CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
-            var fo = new CarsDialog(ToEdit);
-            if (fo.ShowDialog() == DialogResult.OK)
+            if (CarShowroom1.Cars.Count != 0)
             {
-                CarShowroom1.ifSaved = false;
-                carBindingSource.ResetBindings(false);
+                var ToEdit = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
+                var fo = new CarsDialog(ToEdit);
+                if (fo.ShowDialog() == DialogResult.OK)
+                {
+                    CarShowroom1.ifSaved = false;
+                    carBindingSource.ResetBindings(false);
+                }
             }
         }
 
         private void EditBut_Click(object sender, EventArgs e)
         {
-            var ToEdit = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
-            var fo = new CarsDialog(ToEdit);
-            if (fo.ShowDialog() == DialogResult.OK)
+
+            if (CarShowroom1.Cars.Count != 0)
             {
-                CarShowroom1.ifSaved = false;
-                carBindingSource.ResetBindings(false);
+                var ToEdit = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
+                var fo = new CarsDialog(ToEdit);
+                if (fo.ShowDialog() == DialogResult.OK)
+                {
+                    CarShowroom1.ifSaved = false;
+                    carBindingSource.ResetBindings(false);
+                }
             }
         }
 

@@ -35,6 +35,7 @@ namespace CarShowroomLibrary.DAL
             {
                 wr.WriteLine($"Date: {DateTime.Now}");
                 wr.WriteLine($"Number of positions: {carShowroom.Application.Count}");
+                wr.WriteLine($"  ");
                 foreach (var p in carShowroom.Application)
                 {
                     wr.WriteLine($"Amount: { p.Amount}");

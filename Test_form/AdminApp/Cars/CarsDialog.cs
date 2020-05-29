@@ -60,5 +60,19 @@ namespace AdminApp
             var f = new Help();
             f.ShowDialog();
         }
+
+        private void BackBut_Click(object sender, EventArgs e)
+        {
+            if (Car != null)
+            {
+                ModelcomboBox.Text = Car.Model;
+                Speed_numeric.Value = Car.MaksSpeed;
+                Prise_numericUp.Value = Car.Price;
+                FeaturestextBox.Text = Car.Features;
+                Year_numeric.Value = Car.YearOfIssue;
+                CountrycomboBox.Text = Car.ProdCountry;
+                Tech_numeric.Value = Car.TechState;
+            }
+        }
     }
 }

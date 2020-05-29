@@ -104,7 +104,7 @@ namespace CarShowroomLibrary.Models
         {
             new Dao(this).Load();
         }
-        public void SaveAppl()
+        public void Send()
         {
             new Dao(this).SaveAppl();
         }

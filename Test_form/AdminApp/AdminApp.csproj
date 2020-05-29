@@ -52,40 +52,40 @@
     <Compile Include="AdminMenu.Designer.cs">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="AdmListCars.cs">
+    <Compile Include="Cars\AdmListCars.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdmListCars.Designer.cs">
+    <Compile Include="Cars\AdmListCars.Designer.cs">
       <DependentUpon>AdmListCars.cs</DependentUpon>
     </Compile>
-    <Compile Include="ApplicantDialog.cs">
+    <Compile Include="Applications\ApplicationDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ApplicantDialog.Designer.cs">
-      <DependentUpon>ApplicantDialog.cs</DependentUpon>
+    <Compile Include="Applications\ApplicationDialog.Designer.cs">
+      <DependentUpon>ApplicationDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="Application.cs">
+    <Compile Include="Applications\Application.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Application.Designer.cs">
+    <Compile Include="Applications\Application.Designer.cs">
       <DependentUpon>Application.cs</DependentUpon>
     </Compile>
-    <Compile Include="BuyerDialog.cs">
+    <Compile Include="Buyers\BuyerDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BuyerDialog.Designer.cs">
+    <Compile Include="Buyers\BuyerDialog.Designer.cs">
       <DependentUpon>BuyerDialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="Buyers.cs">
+    <Compile Include="Buyers\Buyers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Buyers.Designer.cs">
+    <Compile Include="Buyers\Buyers.Designer.cs">
       <DependentUpon>Buyers.cs</DependentUpon>
     </Compile>
-    <Compile Include="CarsDialog.cs">
+    <Compile Include="Cars\CarsDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CarsDialog.Designer.cs">
+    <Compile Include="Cars\CarsDialog.Designer.cs">
       <DependentUpon>CarsDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Help.cs">
@@ -105,22 +105,22 @@
     <EmbeddedResource Include="AdminMenu.resx">
       <DependentUpon>AdminMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdmListCars.resx">
+    <EmbeddedResource Include="Cars\AdmListCars.resx">
       <DependentUpon>AdmListCars.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ApplicantDialog.resx">
-      <DependentUpon>ApplicantDialog.cs</DependentUpon>
+    <EmbeddedResource Include="Applications\ApplicationDialog.resx">
+      <DependentUpon>ApplicationDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Application.resx">
+    <EmbeddedResource Include="Applications\Application.resx">
       <DependentUpon>Application.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BuyerDialog.resx">
+    <EmbeddedResource Include="Buyers\BuyerDialog.resx">
       <DependentUpon>BuyerDialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Buyers.resx">
+    <EmbeddedResource Include="Buyers\Buyers.resx">
       <DependentUpon>Buyers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CarsDialog.resx">
+    <EmbeddedResource Include="Cars\CarsDialog.resx">
       <DependentUpon>CarsDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Help.resx">
