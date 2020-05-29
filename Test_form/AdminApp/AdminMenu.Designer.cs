@@ -77,6 +77,7 @@
             this.ApplicationsBut.TabIndex = 9;
             this.ApplicationsBut.Text = "Applications";
             this.ApplicationsBut.UseVisualStyleBackColor = false;
+            this.ApplicationsBut.Click += new System.EventHandler(this.ApplicationsBut_Click);
             // 
             // Buyersbut
             // 

@@ -58,11 +58,17 @@
     <Compile Include="AdmListCars.Designer.cs">
       <DependentUpon>AdmListCars.cs</DependentUpon>
     </Compile>
-    <Compile Include="Applicant.cs">
+    <Compile Include="ApplicantDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Applicant.Designer.cs">
-      <DependentUpon>Applicant.cs</DependentUpon>
+    <Compile Include="ApplicantDialog.Designer.cs">
+      <DependentUpon>ApplicantDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Application.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Application.Designer.cs">
+      <DependentUpon>Application.cs</DependentUpon>
     </Compile>
     <Compile Include="BuyerDialog.cs">
       <SubType>Form</SubType>
@@ -102,8 +108,11 @@
     <EmbeddedResource Include="AdmListCars.resx">
       <DependentUpon>AdmListCars.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Applicant.resx">
-      <DependentUpon>Applicant.cs</DependentUpon>
+    <EmbeddedResource Include="ApplicantDialog.resx">
+      <DependentUpon>ApplicantDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Application.resx">
+      <DependentUpon>Application.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BuyerDialog.resx">
       <DependentUpon>BuyerDialog.cs</DependentUpon>

@@ -1,4 +1,4 @@
-﻿namespace Test_form
+﻿namespace CarShowroomLibrary
 {
     partial class BuyerMenu
     {

@@ -356,7 +356,7 @@
             // 
             // carBindingSource
             // 
-            this.carBindingSource.DataSource = typeof(Test_form.Models.Car);
+            this.carBindingSource.DataSource = typeof(CarShowroomLibrary.Models.Car);
             // 
             // AdmListCars
             // 

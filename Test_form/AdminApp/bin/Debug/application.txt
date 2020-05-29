@@ -1,0 +1,17 @@
+Date: 29.05.2020 11:55:16
+Number of positions: 3
+Amount: 25
+Model: Toyota
+ProdCountry: USA
+TechState: 66
+YearOfIssue: 2001
+Amount: 5
+Model: TATA Motors
+ProdCountry: USA
+TechState: 42
+YearOfIssue: 2017
+Amount: 2
+Model: Porsche
+ProdCountry: Germany
+TechState: 100
+YearOfIssue: 2020

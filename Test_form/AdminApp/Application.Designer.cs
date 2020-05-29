@@ -1,6 +1,6 @@
 ﻿namespace AdminApp
 {
-    partial class Applicant
+    partial class Application
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AdminList = new System.Windows.Forms.Panel();
+            this.SaveBut = new System.Windows.Forms.Button();
             this.EditBut = new System.Windows.Forms.Button();
             this.AppldataGridView = new System.Windows.Forms.DataGridView();
             this.back = new System.Windows.Forms.Button();
@@ -48,12 +49,12 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.carInApplicBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prodCountryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearOfIssueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.techStateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.carInApplicBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.AdminList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AppldataGridView)).BeginInit();
             this.panel2.SuspendLayout();
@@ -64,6 +65,7 @@
             // AdminList
             // 
             this.AdminList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.AdminList.Controls.Add(this.SaveBut);
             this.AdminList.Controls.Add(this.EditBut);
             this.AdminList.Controls.Add(this.AppldataGridView);
             this.AdminList.Controls.Add(this.back);
@@ -77,16 +79,34 @@
             this.AdminList.TabIndex = 3;
             this.AdminList.Text = "login";
             // 
+            // SaveBut
+            // 
+            this.SaveBut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SaveBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.SaveBut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SaveBut.FlatAppearance.BorderSize = 0;
+            this.SaveBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.SaveBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveBut.Font = new System.Drawing.Font("Rockwell", 16F);
+            this.SaveBut.Location = new System.Drawing.Point(438, 296);
+            this.SaveBut.Name = "SaveBut";
+            this.SaveBut.Size = new System.Drawing.Size(145, 45);
+            this.SaveBut.TabIndex = 15;
+            this.SaveBut.Text = "Send";
+            this.SaveBut.UseVisualStyleBackColor = false;
+            this.SaveBut.Click += new System.EventHandler(this.SaveBut_Click);
+            // 
             // EditBut
             // 
             this.EditBut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.EditBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.EditBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.EditBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EditBut.FlatAppearance.BorderSize = 0;
             this.EditBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.EditBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.EditBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.EditBut.Font = new System.Drawing.Font("Rockwell", 16F);
+            this.EditBut.Font = new System.Drawing.Font("Rockwell", 14F);
             this.EditBut.Location = new System.Drawing.Point(578, 155);
             this.EditBut.Name = "EditBut";
             this.EditBut.Size = new System.Drawing.Size(122, 45);
@@ -118,7 +138,7 @@
             this.AppldataGridView.ReadOnly = true;
             this.AppldataGridView.RowHeadersVisible = false;
             this.AppldataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.AppldataGridView.Size = new System.Drawing.Size(513, 223);
+            this.AppldataGridView.Size = new System.Drawing.Size(513, 173);
             this.AppldataGridView.TabIndex = 13;
             // 
             // back
@@ -137,17 +157,18 @@
             this.back.TabIndex = 12;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = false;
+            this.back.Click += new System.EventHandler(this.back_Click);
             // 
             // Delete
             // 
             this.Delete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Delete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Delete.FlatAppearance.BorderSize = 0;
             this.Delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Delete.Font = new System.Drawing.Font("Rockwell", 16F);
+            this.Delete.Font = new System.Drawing.Font("Rockwell", 14F);
             this.Delete.Location = new System.Drawing.Point(578, 219);
             this.Delete.Name = "Delete";
             this.Delete.Size = new System.Drawing.Size(122, 45);
@@ -158,19 +179,20 @@
             // AddCar
             // 
             this.AddCar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AddCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.AddCar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.AddCar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddCar.FlatAppearance.BorderSize = 0;
             this.AddCar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.AddCar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.AddCar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddCar.Font = new System.Drawing.Font("Rockwell", 16F);
+            this.AddCar.Font = new System.Drawing.Font("Rockwell", 14F);
             this.AddCar.Location = new System.Drawing.Point(578, 91);
             this.AddCar.Name = "AddCar";
             this.AddCar.Size = new System.Drawing.Size(122, 45);
             this.AddCar.TabIndex = 11;
             this.AddCar.Text = "Add";
             this.AddCar.UseVisualStyleBackColor = false;
+            this.AddCar.Click += new System.EventHandler(this.AddCar_Click);
             // 
             // panel2
             // 
@@ -249,8 +271,8 @@
             this.editToolStripMenuItem,
             this.removeToolStripMenuItem});
             this.carsToolStripMenuItem.Name = "carsToolStripMenuItem";
-            this.carsToolStripMenuItem.Size = new System.Drawing.Size(42, 20);
-            this.carsToolStripMenuItem.Text = "Cars";
+            this.carsToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.carsToolStripMenuItem.Text = "Application";
             // 
             // addToolStripMenuItem
             // 
@@ -275,10 +297,6 @@
             this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
             this.HelpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.HelpToolStripMenuItem.Text = "Help";
-            // 
-            // carInApplicBindingSource
-            // 
-            this.carInApplicBindingSource.DataSource = typeof(CarShowroomLibrary.Models.CarInApplic);
             // 
             // amountDataGridViewTextBoxColumn
             // 
@@ -315,14 +333,19 @@
             this.techStateDataGridViewTextBoxColumn.Name = "techStateDataGridViewTextBoxColumn";
             this.techStateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // Applicant
+            // carInApplicBindingSource
+            // 
+            this.carInApplicBindingSource.DataSource = typeof(CarShowroomLibrary.Models.CarInApplic);
+            // 
+            // Application
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(723, 353);
             this.Controls.Add(this.AdminList);
-            this.Name = "Applicant";
+            this.Name = "Application";
             this.Text = "Applicant";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Application_FormClosing);
             this.AdminList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AppldataGridView)).EndInit();
             this.panel2.ResumeLayout(false);
@@ -361,5 +384,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn yearOfIssueDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn techStateDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource carInApplicBindingSource;
+        private System.Windows.Forms.Button SaveBut;
     }
 }

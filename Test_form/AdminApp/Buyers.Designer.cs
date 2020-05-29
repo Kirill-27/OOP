@@ -340,7 +340,7 @@
             // 
             // buyerBindingSource
             // 
-            this.buyerBindingSource.DataSource = typeof(Test_form.Models.Buyer);
+            this.buyerBindingSource.DataSource = typeof(CarShowroomLibrary.Models.Buyer);
             // 
             // Buyers
             // 

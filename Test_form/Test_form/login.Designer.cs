@@ -1,4 +1,4 @@
-﻿namespace Test_form
+﻿namespace CarShowroomLibrary
 {
     partial class login
     {
@@ -124,7 +124,7 @@
             // PassIMG
             // 
             this.PassIMG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.PassIMG.Image = global::Test_form.Properties.Resources.Password;
+            this.PassIMG.Image = global::CarShowroomLibrary.Properties.Resources.Password;
             this.PassIMG.Location = new System.Drawing.Point(26, 191);
             this.PassIMG.Name = "PassIMG";
             this.PassIMG.Size = new System.Drawing.Size(70, 60);
@@ -134,7 +134,7 @@
             // 
             // UserIMG
             // 
-            this.UserIMG.Image = global::Test_form.Properties.Resources.User;
+            this.UserIMG.Image = global::CarShowroomLibrary.Properties.Resources.User;
             this.UserIMG.Location = new System.Drawing.Point(26, 111);
             this.UserIMG.Name = "UserIMG";
             this.UserIMG.Size = new System.Drawing.Size(70, 60);

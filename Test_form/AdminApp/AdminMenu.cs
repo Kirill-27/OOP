@@ -33,5 +33,13 @@ namespace AdminApp
             f.ShowDialog();
             this.Visible = true;
         }
+
+        private void ApplicationsBut_Click(object sender, EventArgs e)
+        {
+            var f = new Application();
+            this.Hide();
+            f.ShowDialog();
+            this.Visible = true;
+        }
     }
 }
