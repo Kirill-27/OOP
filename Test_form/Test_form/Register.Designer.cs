@@ -100,6 +100,7 @@
             this.NametextBox.Name = "NametextBox";
             this.NametextBox.Size = new System.Drawing.Size(142, 20);
             this.NametextBox.TabIndex = 28;
+            this.NametextBox.Click += new System.EventHandler(this.NametextBox_Click);
             // 
             // PastextBox
             // 
@@ -107,6 +108,7 @@
             this.PastextBox.Name = "PastextBox";
             this.PastextBox.Size = new System.Drawing.Size(142, 20);
             this.PastextBox.TabIndex = 27;
+            this.PastextBox.Click += new System.EventHandler(this.PastextBox_Click);
             // 
             // ContacttextBox
             // 
@@ -114,6 +116,7 @@
             this.ContacttextBox.Name = "ContacttextBox";
             this.ContacttextBox.Size = new System.Drawing.Size(142, 20);
             this.ContacttextBox.TabIndex = 26;
+            this.ContacttextBox.Click += new System.EventHandler(this.ContacttextBox_Click);
             // 
             // label7
             // 
@@ -314,6 +317,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Register";
             this.Text = "Register";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Register_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Speed_numeric)).EndInit();

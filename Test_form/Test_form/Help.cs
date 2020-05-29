@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CarShowroomLibrary
+namespace BuyerApp
 {
     public partial class Help : Form
     {

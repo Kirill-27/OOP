@@ -72,7 +72,6 @@ namespace AdminApp
                 text.BackColor = Color.LightPink;
                 e.Cancel = true;
             }
-            else text.BackColor = Color.White;
         }
 
 

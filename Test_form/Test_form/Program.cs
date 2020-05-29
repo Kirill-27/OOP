@@ -17,7 +17,7 @@ namespace CarShowroomLibrary
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new BuyerAllCars());
+            Application.Run(new login());
         }
     }
 }

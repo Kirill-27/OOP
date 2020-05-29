@@ -110,6 +110,7 @@
             this.PassIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PassIMG.TabIndex = 3;
             this.PassIMG.TabStop = false;
+          
             // 
             // UserIMG
             // 

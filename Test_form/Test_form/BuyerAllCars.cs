@@ -43,11 +43,7 @@ namespace CarShowroomLibrary
             carBindingSource.ResetBindings(false);
         }
 
-        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var f = new Help();
-            f.ShowDialog();
-        }
+        
 
         private void Buy_but_Click(object sender, EventArgs e)
         {

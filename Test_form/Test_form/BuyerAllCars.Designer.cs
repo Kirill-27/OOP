@@ -151,8 +151,8 @@
             this.Buy_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.Buy_but.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Buy_but.FlatAppearance.BorderSize = 0;
-            this.Buy_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(208)))), ((int)(((byte)(186)))));
-            this.Buy_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
+            this.Buy_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Buy_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.Buy_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Buy_but.Font = new System.Drawing.Font("Rockwell", 20.25F);
             this.Buy_but.Location = new System.Drawing.Point(670, 91);
@@ -169,8 +169,8 @@
             this.Back_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.Back_but.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Back_but.FlatAppearance.BorderSize = 0;
-            this.Back_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(64)))));
-            this.Back_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(166)))), ((int)(((byte)(49)))), ((int)(((byte)(0)))));
+            this.Back_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Back_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.Back_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Back_but.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Back_but.Location = new System.Drawing.Point(697, 259);
@@ -258,7 +258,6 @@
             this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
             this.HelpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.HelpToolStripMenuItem.Text = "Help";
-            this.HelpToolStripMenuItem.Click += new System.EventHandler(this.HelpToolStripMenuItem_Click);
             // 
             // BuyerAllCars
             // 

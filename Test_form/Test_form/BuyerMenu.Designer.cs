@@ -93,7 +93,7 @@
             this.AllCarsBut.TabIndex = 5;
             this.AllCarsBut.Text = "List of all cars";
             this.AllCarsBut.UseVisualStyleBackColor = false;
-            this.AllCarsBut.Click += new System.EventHandler(this.AllCars_but_Click);
+            this.AllCarsBut.Click += new System.EventHandler(this.AllCarsBut_Click);
             // 
             // panel2
             // 
@@ -144,33 +144,31 @@
             // SaceToolStripMenuItem
             // 
             this.SaceToolStripMenuItem.Name = "SaceToolStripMenuItem";
-            this.SaceToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.SaceToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.SaceToolStripMenuItem.Text = "Save";
             // 
             // LoadToolStripMenuItem
             // 
             this.LoadToolStripMenuItem.Name = "LoadToolStripMenuItem";
-            this.LoadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.LoadToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.LoadToolStripMenuItem.Text = "Load";
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(97, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // HelpToolStripMenuItem
             // 
             this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
             this.HelpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.HelpToolStripMenuItem.Text = "Help";
-            this.HelpToolStripMenuItem.Click += new System.EventHandler(this.HelpToolStripMenuItem_Click);
             // 
             // BuyerMenu
             // 

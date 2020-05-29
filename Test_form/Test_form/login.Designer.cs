@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.log = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.Login_but = new System.Windows.Forms.Button();
+            this.RegistrationBut = new System.Windows.Forms.Button();
+            this.Loginbut = new System.Windows.Forms.Button();
             this.Pass = new System.Windows.Forms.TextBox();
-            this.PassIMG = new System.Windows.Forms.PictureBox();
-            this.UserIMG = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -45,10 +45,10 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PassIMG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UserIMG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -56,12 +56,12 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.log);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.Login_but);
+            this.panel1.Controls.Add(this.RegistrationBut);
+            this.panel1.Controls.Add(this.Loginbut);
             this.panel1.Controls.Add(this.Pass);
-            this.panel1.Controls.Add(this.PassIMG);
-            this.panel1.Controls.Add(this.UserIMG);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -69,6 +69,25 @@
             this.panel1.Size = new System.Drawing.Size(391, 354);
             this.panel1.TabIndex = 0;
             this.panel1.Text = "login";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::BuyerApp.Properties.Resources.User2;
+            this.pictureBox2.Location = new System.Drawing.Point(36, 111);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(65, 60);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Image = global::BuyerApp.Properties.Resources.Password;
+            this.pictureBox1.Location = new System.Drawing.Point(36, 191);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(65, 60);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
             // 
             // log
             // 
@@ -79,38 +98,39 @@
             this.log.Size = new System.Drawing.Size(243, 50);
             this.log.TabIndex = 7;
             // 
-            // button2
+            // RegistrationBut
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(4)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(62, 280);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(179, 42);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Registration";
-            this.button2.UseVisualStyleBackColor = false;
+            this.RegistrationBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.RegistrationBut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RegistrationBut.FlatAppearance.BorderSize = 0;
+            this.RegistrationBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.RegistrationBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.RegistrationBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RegistrationBut.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegistrationBut.Location = new System.Drawing.Point(62, 280);
+            this.RegistrationBut.Name = "RegistrationBut";
+            this.RegistrationBut.Size = new System.Drawing.Size(179, 42);
+            this.RegistrationBut.TabIndex = 6;
+            this.RegistrationBut.Text = "Registration";
+            this.RegistrationBut.UseVisualStyleBackColor = false;
+            this.RegistrationBut.Click += new System.EventHandler(this.RegistrationBut_Click);
             // 
-            // Login_but
+            // Loginbut
             // 
-            this.Login_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Login_but.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Login_but.FlatAppearance.BorderSize = 0;
-            this.Login_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
-            this.Login_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(74)))), ((int)(((byte)(4)))));
-            this.Login_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Login_but.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login_but.Location = new System.Drawing.Point(256, 280);
-            this.Login_but.Name = "Login_but";
-            this.Login_but.Size = new System.Drawing.Size(113, 42);
-            this.Login_but.TabIndex = 5;
-            this.Login_but.Text = "Lod in";
-            this.Login_but.UseVisualStyleBackColor = false;
-            this.Login_but.Click += new System.EventHandler(this.Login_but_Click);
+            this.Loginbut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Loginbut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Loginbut.FlatAppearance.BorderSize = 0;
+            this.Loginbut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Loginbut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Loginbut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Loginbut.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Loginbut.Location = new System.Drawing.Point(256, 280);
+            this.Loginbut.Name = "Loginbut";
+            this.Loginbut.Size = new System.Drawing.Size(113, 42);
+            this.Loginbut.TabIndex = 5;
+            this.Loginbut.Text = "Lod in";
+            this.Loginbut.UseVisualStyleBackColor = false;
+            this.Loginbut.Click += new System.EventHandler(this.Login_but_Click);
             // 
             // Pass
             // 
@@ -120,27 +140,6 @@
             this.Pass.Size = new System.Drawing.Size(243, 50);
             this.Pass.TabIndex = 4;
             this.Pass.UseSystemPasswordChar = true;
-            // 
-            // PassIMG
-            // 
-            this.PassIMG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.PassIMG.Image = global::CarShowroomLibrary.Properties.Resources.Password;
-            this.PassIMG.Location = new System.Drawing.Point(26, 191);
-            this.PassIMG.Name = "PassIMG";
-            this.PassIMG.Size = new System.Drawing.Size(70, 60);
-            this.PassIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PassIMG.TabIndex = 3;
-            this.PassIMG.TabStop = false;
-            // 
-            // UserIMG
-            // 
-            this.UserIMG.Image = global::CarShowroomLibrary.Properties.Resources.User;
-            this.UserIMG.Location = new System.Drawing.Point(26, 111);
-            this.UserIMG.Name = "UserIMG";
-            this.UserIMG.Size = new System.Drawing.Size(70, 60);
-            this.UserIMG.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.UserIMG.TabIndex = 1;
-            this.UserIMG.TabStop = false;
             // 
             // panel2
             // 
@@ -193,14 +192,12 @@
             this.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem";
             this.SaveToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.SaveToolStripMenuItem.Text = "Save";
-            this.SaveToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
             // 
             // LoadToolStripMenuItem
             // 
             this.LoadToolStripMenuItem.Name = "LoadToolStripMenuItem";
             this.LoadToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.LoadToolStripMenuItem.Text = "Load";
-            this.LoadToolStripMenuItem.Click += new System.EventHandler(this.LoadToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -219,7 +216,6 @@
             this.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem";
             this.HelpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.HelpToolStripMenuItem.Text = "Help";
-            this.HelpToolStripMenuItem.Click += new System.EventHandler(this.HelpToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
             // 
@@ -234,11 +230,10 @@
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "login";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.login_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PassIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UserIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -253,10 +248,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Pass;
-        private System.Windows.Forms.PictureBox PassIMG;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button Login_but;
-        public System.Windows.Forms.PictureBox UserIMG;
+        private System.Windows.Forms.Button RegistrationBut;
+        private System.Windows.Forms.Button Loginbut;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SaveToolStripMenuItem;
@@ -266,5 +259,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.TextBox log;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

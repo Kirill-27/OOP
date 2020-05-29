@@ -32,10 +32,12 @@ namespace CarShowroomLibrary
             Close();
         }
 
-        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AllCarsBut_Click(object sender, EventArgs e)
         {
-            var f = new Help();
+            var f = new BuyerAllCars();
+            Hide();
             f.ShowDialog();
+            Visible = true;
         }
     }
 }
