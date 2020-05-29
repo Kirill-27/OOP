@@ -28,14 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.log = new System.Windows.Forms.TextBox();
+            this.LogTextbox = new System.Windows.Forms.TextBox();
             this.RegistrationBut = new System.Windows.Forms.Button();
             this.Loginbut = new System.Windows.Forms.Button();
-            this.Pass = new System.Windows.Forms.TextBox();
+            this.PassTextBox = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -45,7 +46,7 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,10 +59,10 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.log);
+            this.panel1.Controls.Add(this.LogTextbox);
             this.panel1.Controls.Add(this.RegistrationBut);
             this.panel1.Controls.Add(this.Loginbut);
-            this.panel1.Controls.Add(this.Pass);
+            this.panel1.Controls.Add(this.PassTextBox);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -89,14 +90,14 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // log
+            // LogTextbox
             // 
-            this.log.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.log.Location = new System.Drawing.Point(126, 121);
-            this.log.Multiline = true;
-            this.log.Name = "log";
-            this.log.Size = new System.Drawing.Size(243, 50);
-            this.log.TabIndex = 7;
+            this.LogTextbox.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LogTextbox.Location = new System.Drawing.Point(126, 121);
+            this.LogTextbox.Multiline = true;
+            this.LogTextbox.Name = "LogTextbox";
+            this.LogTextbox.Size = new System.Drawing.Size(243, 50);
+            this.LogTextbox.TabIndex = 7;
             // 
             // RegistrationBut
             // 
@@ -132,14 +133,14 @@
             this.Loginbut.UseVisualStyleBackColor = false;
             this.Loginbut.Click += new System.EventHandler(this.Login_but_Click);
             // 
-            // Pass
+            // PassTextBox
             // 
-            this.Pass.Font = new System.Drawing.Font("Calibri", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Pass.Location = new System.Drawing.Point(126, 201);
-            this.Pass.Name = "Pass";
-            this.Pass.Size = new System.Drawing.Size(243, 50);
-            this.Pass.TabIndex = 4;
-            this.Pass.UseSystemPasswordChar = true;
+            this.PassTextBox.Font = new System.Drawing.Font("Calibri", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PassTextBox.Location = new System.Drawing.Point(126, 201);
+            this.PassTextBox.Name = "PassTextBox";
+            this.PassTextBox.Size = new System.Drawing.Size(243, 50);
+            this.PassTextBox.TabIndex = 4;
+            this.PassTextBox.UseSystemPasswordChar = true;
             // 
             // panel2
             // 
@@ -247,7 +248,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox Pass;
+        private System.Windows.Forms.TextBox PassTextBox;
         private System.Windows.Forms.Button RegistrationBut;
         private System.Windows.Forms.Button Loginbut;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -258,7 +259,7 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.TextBox log;
+        private System.Windows.Forms.TextBox LogTextbox;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
     }

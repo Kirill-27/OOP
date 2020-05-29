@@ -27,9 +27,35 @@ namespace CarShowroomLibrary
             this.Close();
         }
 
-
         private void Login_but_Click(object sender, EventArgs e)
         {
+            bool chek = false;
+            if (string.IsNullOrWhiteSpace(PassTextBox.Text))
+            {
+                PassTextBox.BackColor = Color.LightPink;
+                chek = true;
+            }
+            if (string.IsNullOrWhiteSpace(LogTextbox.Text))
+            {
+                LogTextbox.BackColor = Color.LightPink;
+                chek = true;
+            }
+            if (chek == true) return;
+            string cheklog = LogTextbox.Text;
+            string chekpass= PassTextBox.Text;
+            CarShowroom1.Load();
+            foreach(var b in CarShowroom1.Buyers)
+            {
+                if (b.Name.Equals(cheklog)&&b.Password.Equals(chekpass))
+                {
+                    chek = true;
+                }
+            }
+            if (chek == false)
+            {
+                MessageBox.Show("No user with this username and password", "Attantion!", MessageBoxButtons.OK);
+                return;
+            }
             var buyerF = new BuyerMenu();
             this.Hide();
             buyerF.ShowDialog();
