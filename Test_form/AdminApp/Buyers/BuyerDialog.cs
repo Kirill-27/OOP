@@ -37,17 +37,31 @@ namespace AdminApp
             ChekText(PastextBox, e);
             if (e.Cancel == false)
             {
-                if (Buyer == null) Buyer = new Buyer();
-                Buyer.Contacts = ContacttextBox.Text;
-                Buyer.FinancialOpp = Convert.ToInt32(Prise_numericUp.Value);
-                Buyer.MaksSpeedRequired = Convert.ToInt32(Speed_numeric.Value);
-                Buyer.ModelRequired = ModelcomboBox.Text;
-                Buyer.Name = NametextBox.Text;
-                Buyer.Password = PastextBox.Text;
-                Buyer.PerfomanceRequired = Convert.ToInt32(Perf_numeric.Value);
-                if(string.IsNullOrWhiteSpace(ModelcomboBox.Text))
+                CarShowroom CarShowroom1 = new CarShowroom();
+                CarShowroom1.Load();
+                foreach(var b in CarShowroom1.Buyers)
                 {
-                    Buyer.ModelRequired = "nope";
+                    if (b.Name.Equals(NametextBox.Text))
+                    {
+                        e.Cancel = true;
+                        NametextBox.BackColor = Color.LightPink;
+                        MessageBox.Show("User with the same name already exists", "Attantion!", MessageBoxButtons.OK);
+                    }
+                }
+                if (e.Cancel == false)
+                {
+                    if (Buyer == null) Buyer = new Buyer();
+                    Buyer.Contacts = ContacttextBox.Text;
+                    Buyer.FinancialOpp = Convert.ToInt32(Prise_numericUp.Value);
+                    Buyer.MaksSpeedRequired = Convert.ToInt32(Speed_numeric.Value);
+                    Buyer.ModelRequired = ModelcomboBox.Text;
+                    Buyer.Name = NametextBox.Text;
+                    Buyer.Password = PastextBox.Text;
+                    Buyer.PerfomanceRequired = Convert.ToInt32(Perf_numeric.Value);
+                    if (string.IsNullOrWhiteSpace(ModelcomboBox.Text))
+                    {
+                        Buyer.ModelRequired = "nope";
+                    }
                 }
             }
         }

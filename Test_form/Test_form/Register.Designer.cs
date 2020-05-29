@@ -46,6 +46,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Speed_numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perf_numeric)).BeginInit();
@@ -55,6 +56,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.NametextBox);
             this.panel1.Controls.Add(this.PastextBox);
@@ -75,7 +77,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(593, 295);
+            this.panel1.Size = new System.Drawing.Size(502, 295);
             this.panel1.TabIndex = 4;
             this.panel1.Text = "login";
             // 
@@ -87,9 +89,9 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(593, 58);
+            this.label1.Size = new System.Drawing.Size(502, 58);
             this.label1.TabIndex = 29;
-            this.label1.Text = "Add\\Edit Buyer";
+            this.label1.Text = "Registration";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // NametextBox
@@ -154,7 +156,7 @@
             this.BackBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.BackBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BackBut.Font = new System.Drawing.Font("Rockwell", 14F);
-            this.BackBut.Location = new System.Drawing.Point(496, 231);
+            this.BackBut.Location = new System.Drawing.Point(405, 231);
             this.BackBut.Name = "BackBut";
             this.BackBut.Size = new System.Drawing.Size(85, 45);
             this.BackBut.TabIndex = 22;
@@ -172,7 +174,7 @@
             this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.SaveBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBut.Font = new System.Drawing.Font("Rockwell", 14F);
-            this.SaveBut.Location = new System.Drawing.Point(447, 90);
+            this.SaveBut.Location = new System.Drawing.Point(356, 90);
             this.SaveBut.Name = "SaveBut";
             this.SaveBut.Size = new System.Drawing.Size(134, 45);
             this.SaveBut.TabIndex = 21;
@@ -294,11 +296,21 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Name";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(314, 193);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(15, 20);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "*";
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 295);
+            this.ClientSize = new System.Drawing.Size(502, 295);
             this.Controls.Add(this.panel1);
             this.Name = "Register";
             this.Text = "Register";
@@ -331,5 +343,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label9;
     }
 }
