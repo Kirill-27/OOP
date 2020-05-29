@@ -31,48 +31,33 @@ namespace AdminApp
         }
         private void CarsDialog_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (Car == null) Car = new Car { ID = -1 };
-            Car.Features = FeaturestextBox.Text;
-            Car.Model = ModelcomboBox.Text;
-            Car.ProdCountry = CountrycomboBox.Text;
-            Car.MaksSpeed = Convert.ToInt32(Speed_numeric.Value);
-            Car.Price = Convert.ToInt32(Prise_numericUp.Value);
-            Car.TechState = Convert.ToInt32(Tech_numeric.Value);
-            Car.YearOfIssue = Convert.ToInt32(Year_numeric.Value);
+            if (DialogResult != DialogResult.OK) return;
+            ChekText(ModelcomboBox, e);
+            ChekText(CountrycomboBox, e);
+            if (e.Cancel == false)
+            {
+                if (Car == null) Car = new Car { ID = -1 };
+                Car.Model = ModelcomboBox.Text;
+                Car.ProdCountry = CountrycomboBox.Text;
+                Car.MaksSpeed = Convert.ToInt32(Speed_numeric.Value);
+                Car.Price = Convert.ToInt32(Prise_numericUp.Value);
+                Car.TechState = Convert.ToInt32(Tech_numeric.Value);
+                Car.YearOfIssue = Convert.ToInt32(Year_numeric.Value);
+                if (string.IsNullOrWhiteSpace(FeaturestextBox.Text))Car.Features = "none";
+                
+            }
            
         }
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ChekText(Control text, FormClosingEventArgs e)
         {
-            var res = MessageBox.Show("Exit(without saving data)?", "Exit", MessageBoxButtons.YesNo);
-            switch (res)
+            if (string.IsNullOrWhiteSpace(text.Text)||text.Text.Length>=25)
             {
-                case DialogResult.Yes:
-                    Close();
-                    break;
-                case DialogResult.No:
-                    break;
+                text.BackColor = Color.LightPink;
+                e.Cancel = true;
             }
         }
 
-        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var f = new Help();
-            f.ShowDialog();
-        }
-
-        private void BackBut_Click(object sender, EventArgs e)
-        {
-            if (Car != null)
-            {
-                ModelcomboBox.Text = Car.Model;
-                Speed_numeric.Value = Car.MaksSpeed;
-                Prise_numericUp.Value = Car.Price;
-                FeaturestextBox.Text = Car.Features;
-                Year_numeric.Value = Car.YearOfIssue;
-                CountrycomboBox.Text = Car.ProdCountry;
-                Tech_numeric.Value = Car.TechState;
-            }
-        }
+        
+        
     }
 }

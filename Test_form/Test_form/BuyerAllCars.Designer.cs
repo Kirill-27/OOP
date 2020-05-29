@@ -161,6 +161,7 @@
             this.Buy_but.TabIndex = 6;
             this.Buy_but.Text = "Buy";
             this.Buy_but.UseVisualStyleBackColor = false;
+            this.Buy_but.Click += new System.EventHandler(this.Buy_but_Click);
             // 
             // Back_but
             // 

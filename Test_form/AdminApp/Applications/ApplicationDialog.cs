@@ -19,17 +19,6 @@ namespace AdminApp
             InitializeComponent();
         }
 
-        private void BackBut_Click(object sender, EventArgs e)
-        {
-            if (Appl != null)
-            {
-                AmountNumretic.Value = Appl.Amount;
-                ModelcomboBox.Text = Appl.Model;
-                Yearnumeric.Value = Appl.YearOfIssue;
-                CountrycomboBox.Text = Appl.ProdCountry;
-                Technumeric.Value = Appl.TechState;
-            }
-        }
         public ApplicationDialog(CarInApplic Edited) : this()
         {
             Appl = Edited;
@@ -41,18 +30,28 @@ namespace AdminApp
         }
         private void ApplicantDialog_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (Appl == null) Appl = new CarInApplic();
-            Appl.Amount = Convert.ToInt32(AmountNumretic.Value);
-            Appl.Model= ModelcomboBox.Text;
-            Appl.ProdCountry = CountrycomboBox.Text;
-            Appl.TechState = Convert.ToInt32(Technumeric.Value);
-            Appl.YearOfIssue = Convert.ToInt32(Yearnumeric.Value);
+            if (DialogResult != DialogResult.OK) return;
+            ChekText(ModelcomboBox, e);
+            ChekText(CountrycomboBox, e);
+            if (e.Cancel==false)
+            {
+                if (Appl == null) Appl = new CarInApplic();
+                Appl.Amount = Convert.ToInt32(AmountNumretic.Value);
+                Appl.Model = ModelcomboBox.Text;
+                Appl.ProdCountry = CountrycomboBox.Text;
+                Appl.TechState = Convert.ToInt32(Technumeric.Value);
+                Appl.YearOfIssue = Convert.ToInt32(Yearnumeric.Value);
+            }
+            
         }
 
-        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ChekText(Control text, FormClosingEventArgs e)
         {
-            var he = new Help();
-            he.ShowDialog();
+            if (string.IsNullOrWhiteSpace(text.Text) || text.Text.Length >= 25 )
+            {
+                text.BackColor = Color.LightPink;
+                e.Cancel = true;
+            }
         }
     }
 }

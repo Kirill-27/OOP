@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.AmountNumretic = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.CountrycomboBox = new System.Windows.Forms.ComboBox();
@@ -41,7 +42,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Yearnumeric = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AmountNumretic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Technumeric)).BeginInit();
@@ -70,6 +70,19 @@
             this.panel1.Size = new System.Drawing.Size(481, 240);
             this.panel1.TabIndex = 3;
             this.panel1.Text = "login";
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(481, 59);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Add\\Edit Application";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // AmountNumretic
             // 
@@ -156,7 +169,7 @@
             this.BackBut.TabIndex = 22;
             this.BackBut.Text = "Back";
             this.BackBut.UseVisualStyleBackColor = false;
-            this.BackBut.Click += new System.EventHandler(this.BackBut_Click);
+           
             // 
             // SaveBut
             // 
@@ -250,19 +263,6 @@
             this.label2.Size = new System.Drawing.Size(36, 13);
             this.label2.TabIndex = 10;
             this.label2.Text = "Model";
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(481, 59);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Add\\Edit Application";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // ApplicationDialog
             // 

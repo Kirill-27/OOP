@@ -18,6 +18,7 @@ namespace AdminApp
         {
             InitializeComponent();
             CarShowroom1 = new CarShowroom();
+            CarShowroom1.ifSaved = false;
             carInApplicBindingSource.DataSource = CarShowroom1.Application;
         }
 
@@ -29,7 +30,7 @@ namespace AdminApp
         private void Application_FormClosing(object sender, FormClosingEventArgs e)
         {
            
-                if (CarShowroom1.Application.Count != 0)
+                if (CarShowroom1.Application.Count != 0 && CarShowroom1.ifSaved == true)
                 {
                     var res = MessageBox.Show("Send the application before exit?", "Verification", MessageBoxButtons.YesNoCancel);
                     switch (res)
@@ -51,6 +52,7 @@ namespace AdminApp
         private void SaveBut_Click(object sender, EventArgs e)
         {
             if(CarShowroom1.Application.Count!=0) CarShowroom1.Send();
+            CarShowroom1.ifSaved = true;
             Close();
         }
 
@@ -67,6 +69,7 @@ namespace AdminApp
         private void SendToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (CarShowroom1.Application.Count != 0) CarShowroom1.Send();
+            CarShowroom1.ifSaved = true;
             Close();
         }
 

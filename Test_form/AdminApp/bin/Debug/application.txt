@@ -1,9 +1,21 @@
-Date: 29.05.2020 12:52:46
-Number of positions: 1
+Date: 29.05.2020 14:10:01
+Number of positions: 3
   
-Amount: 1
+Amount: 4
 Model: BMW
+ProdCountry: Germany
+TechState: 93
+YearOfIssue: 2018
+  
+Amount: 10
+Model: Mitsubishi
 ProdCountry: Japan
-TechState: 1
-YearOfIssue: 1900
+TechState: 70
+YearOfIssue: 2014
+  
+Amount: 2
+Model: Tesla
+ProdCountry: USA
+TechState: 100
+YearOfIssue: 2019
   

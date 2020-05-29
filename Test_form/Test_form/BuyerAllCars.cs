@@ -48,5 +48,10 @@ namespace CarShowroomLibrary
             var f = new Help();
             f.ShowDialog();
         }
+
+        private void Buy_but_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -160,7 +160,7 @@
             this.BackBut.TabIndex = 22;
             this.BackBut.Text = "Back";
             this.BackBut.UseVisualStyleBackColor = false;
-            this.BackBut.Click += new System.EventHandler(this.BackBut_Click);
+         
             // 
             // SaveBut
             // 

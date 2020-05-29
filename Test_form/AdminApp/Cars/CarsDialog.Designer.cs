@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.CountrycomboBox = new System.Windows.Forms.ComboBox();
             this.ModelcomboBox = new System.Windows.Forms.ComboBox();
             this.BackBut = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.FeaturestextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Speed_numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Tech_numeric)).BeginInit();
@@ -79,6 +79,19 @@
             this.panel1.Size = new System.Drawing.Size(493, 282);
             this.panel1.TabIndex = 2;
             this.panel1.Text = "login";
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(493, 58);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "Add\\Edit Car";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // CountrycomboBox
             // 
@@ -136,7 +149,7 @@
             this.BackBut.TabIndex = 22;
             this.BackBut.Text = "Back";
             this.BackBut.UseVisualStyleBackColor = false;
-            this.BackBut.Click += new System.EventHandler(this.BackBut_Click);
+          
             // 
             // SaveBut
             // 
@@ -320,19 +333,6 @@
             this.FeaturestextBox.Name = "FeaturestextBox";
             this.FeaturestextBox.Size = new System.Drawing.Size(185, 20);
             this.FeaturestextBox.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(493, 58);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Add\\Edit Car";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // CarsDialog
             // 

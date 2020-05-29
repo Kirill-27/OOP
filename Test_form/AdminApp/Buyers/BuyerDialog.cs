@@ -31,48 +31,32 @@ namespace AdminApp
         }
         private void BuyerDialog_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (Buyer == null) Buyer = new Buyer();
-            Buyer.Contacts = ContacttextBox.Text;
-            Buyer.FinancialOpp= Convert.ToInt32(Prise_numericUp.Value);
-            Buyer.MaksSpeedRequired = Convert.ToInt32(Speed_numeric.Value);
-            Buyer.ModelRequired = ModelcomboBox.Text;
-            Buyer.Name = NametextBox.Text;
-            Buyer.Password = PastextBox.Text;
-            Buyer.PerfomanceRequired = Convert.ToInt32(Perf_numeric.Value);
-        }
-
-        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var he = new Help();
-            he.ShowDialog();
-        }
-
-       
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var res = MessageBox.Show("Exit(without saving data)?", "Exit", MessageBoxButtons.YesNo);
-            switch (res)
+            if (DialogResult != DialogResult.OK) return;
+            ChekText(ContacttextBox, e);
+            ChekText(ModelcomboBox, e);
+            ChekText(NametextBox, e);
+            ChekText(PastextBox, e);
+            if (e.Cancel == false)
             {
-                case DialogResult.Yes:
-                    Close();
-                    break;
-                case DialogResult.No:
-                    break;
+                if (Buyer == null) Buyer = new Buyer();
+                Buyer.Contacts = ContacttextBox.Text;
+                Buyer.FinancialOpp = Convert.ToInt32(Prise_numericUp.Value);
+                Buyer.MaksSpeedRequired = Convert.ToInt32(Speed_numeric.Value);
+                Buyer.ModelRequired = ModelcomboBox.Text;
+                Buyer.Name = NametextBox.Text;
+                Buyer.Password = PastextBox.Text;
+                Buyer.PerfomanceRequired = Convert.ToInt32(Perf_numeric.Value);
+            }
+        }
+        private void ChekText(Control text, FormClosingEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(text.Text) || text.Text.Length >= 25)
+            {
+                text.BackColor = Color.LightPink;
+                e.Cancel = true;
             }
         }
 
-        private void BackBut_Click(object sender, EventArgs e)
-        {
-            if (Buyer != null)
-            {
-                ContacttextBox.Text = Buyer.Contacts;
-                Prise_numericUp.Value = Buyer.FinancialOpp;
-                Speed_numeric.Value = Buyer.MaksSpeedRequired;
-                ModelcomboBox.Text = Buyer.ModelRequired;
-                NametextBox.Text = Buyer.Name;
-                PastextBox.Text = Buyer.Password;
-                Perf_numeric.Value = Buyer.PerfomanceRequired;
-            }
-        }
+        
     }
 }
