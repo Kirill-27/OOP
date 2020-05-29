@@ -28,16 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.CarsdataGridView = new System.Windows.Forms.DataGridView();
-            this.modelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prodCountryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.techStateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maksSpeedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.featuresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.carBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Buy_but = new System.Windows.Forms.Button();
             this.Back_but = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -49,17 +40,17 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CarsdataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel1.Controls.Add(this.CarsdataGridView);
+            this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.Buy_but);
             this.panel1.Controls.Add(this.Back_but);
             this.panel1.Controls.Add(this.panel2);
@@ -69,81 +60,6 @@
             this.panel1.Size = new System.Drawing.Size(802, 330);
             this.panel1.TabIndex = 2;
             this.panel1.Text = "login";
-            // 
-            // CarsdataGridView
-            // 
-            this.CarsdataGridView.AllowUserToAddRows = false;
-            this.CarsdataGridView.AllowUserToDeleteRows = false;
-            this.CarsdataGridView.AllowUserToOrderColumns = true;
-            this.CarsdataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.CarsdataGridView.AutoGenerateColumns = false;
-            this.CarsdataGridView.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.CarsdataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.CarsdataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.CarsdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.CarsdataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.modelDataGridViewTextBoxColumn,
-            this.priceDataGridViewTextBoxColumn,
-            this.prodCountryDataGridViewTextBoxColumn,
-            this.techStateDataGridViewTextBoxColumn,
-            this.maksSpeedDataGridViewTextBoxColumn,
-            this.featuresDataGridViewTextBoxColumn});
-            this.CarsdataGridView.DataSource = this.carBindingSource;
-            this.CarsdataGridView.Location = new System.Drawing.Point(21, 91);
-            this.CarsdataGridView.MultiSelect = false;
-            this.CarsdataGridView.Name = "CarsdataGridView";
-            this.CarsdataGridView.ReadOnly = true;
-            this.CarsdataGridView.RowHeadersVisible = false;
-            this.CarsdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.CarsdataGridView.Size = new System.Drawing.Size(620, 193);
-            this.CarsdataGridView.TabIndex = 7;
-            // 
-            // modelDataGridViewTextBoxColumn
-            // 
-            this.modelDataGridViewTextBoxColumn.DataPropertyName = "Model";
-            this.modelDataGridViewTextBoxColumn.HeaderText = "Model";
-            this.modelDataGridViewTextBoxColumn.Name = "modelDataGridViewTextBoxColumn";
-            this.modelDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // priceDataGridViewTextBoxColumn
-            // 
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // prodCountryDataGridViewTextBoxColumn
-            // 
-            this.prodCountryDataGridViewTextBoxColumn.DataPropertyName = "ProdCountry";
-            this.prodCountryDataGridViewTextBoxColumn.HeaderText = "ProdCountry";
-            this.prodCountryDataGridViewTextBoxColumn.Name = "prodCountryDataGridViewTextBoxColumn";
-            this.prodCountryDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // techStateDataGridViewTextBoxColumn
-            // 
-            this.techStateDataGridViewTextBoxColumn.DataPropertyName = "TechState";
-            this.techStateDataGridViewTextBoxColumn.HeaderText = "TechState";
-            this.techStateDataGridViewTextBoxColumn.Name = "techStateDataGridViewTextBoxColumn";
-            this.techStateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // maksSpeedDataGridViewTextBoxColumn
-            // 
-            this.maksSpeedDataGridViewTextBoxColumn.DataPropertyName = "MaksSpeed";
-            this.maksSpeedDataGridViewTextBoxColumn.HeaderText = "MaksSpeed";
-            this.maksSpeedDataGridViewTextBoxColumn.Name = "maksSpeedDataGridViewTextBoxColumn";
-            this.maksSpeedDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // featuresDataGridViewTextBoxColumn
-            // 
-            this.featuresDataGridViewTextBoxColumn.DataPropertyName = "Features";
-            this.featuresDataGridViewTextBoxColumn.HeaderText = "Features";
-            this.featuresDataGridViewTextBoxColumn.Name = "featuresDataGridViewTextBoxColumn";
-            this.featuresDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // carBindingSource
-            // 
-            this.carBindingSource.DataSource = typeof(Test_form.Models.Car);
             // 
             // Buy_but
             // 
@@ -259,6 +175,14 @@
             this.HelpToolStripMenuItem.Text = "Help";
             this.HelpToolStripMenuItem.Click += new System.EventHandler(this.HelpToolStripMenuItem_Click);
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(134, 124);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 7;
+            // 
             // BuyerAllCars
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -268,12 +192,11 @@
             this.Name = "BuyerAllCars";
             this.Text = "BuyerAllCars";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.CarsdataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -292,13 +215,12 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem HelpToolStripMenuItem;
-        private System.Windows.Forms.BindingSource carBindingSource;
-        private System.Windows.Forms.DataGridView CarsdataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn modelDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn prodCountryDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn techStateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn maksSpeedDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn featuresDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

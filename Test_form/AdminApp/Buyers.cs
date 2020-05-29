@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Test_form.Models;
+using CarShowroomLibrary.Models;
 
 namespace AdminApp
 {
@@ -83,7 +83,7 @@ namespace AdminApp
         private void AddBuyerBut_Click(object sender, EventArgs e)
         {
             var fo = new BuyerDialog();
-            if (fo.ShowDialog() == DialogResult.OK) ;
+            if (fo.ShowDialog() == DialogResult.OK) 
             {
                 CarShowroom1.ifSaved = false;
                 CarShowroom1.Buyers.Add(fo.Buyer);
@@ -94,7 +94,7 @@ namespace AdminApp
         private void addToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var fo = new BuyerDialog();
-            if (fo.ShowDialog() == DialogResult.OK) ;
+            if (fo.ShowDialog() == DialogResult.OK) 
             {
                 CarShowroom1.ifSaved = false;
                 CarShowroom1.Buyers.Add(fo.Buyer);
