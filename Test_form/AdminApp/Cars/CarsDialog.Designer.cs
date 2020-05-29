@@ -175,6 +175,11 @@
             // Speed_numeric
             // 
             this.Speed_numeric.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Speed_numeric.Increment = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
             this.Speed_numeric.Location = new System.Drawing.Point(121, 179);
             this.Speed_numeric.Maximum = new decimal(new int[] {
             400,
@@ -190,7 +195,7 @@
             this.Speed_numeric.Size = new System.Drawing.Size(184, 20);
             this.Speed_numeric.TabIndex = 20;
             this.Speed_numeric.Value = new decimal(new int[] {
-            1,
+            120,
             0,
             0,
             0});
@@ -198,6 +203,11 @@
             // Tech_numeric
             // 
             this.Tech_numeric.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Tech_numeric.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.Tech_numeric.Location = new System.Drawing.Point(120, 153);
             this.Tech_numeric.Minimum = new decimal(new int[] {
             1,
@@ -208,7 +218,7 @@
             this.Tech_numeric.Size = new System.Drawing.Size(185, 20);
             this.Tech_numeric.TabIndex = 19;
             this.Tech_numeric.Value = new decimal(new int[] {
-            1,
+            50,
             0,
             0,
             0});
@@ -216,6 +226,11 @@
             // Prise_numericUp
             // 
             this.Prise_numericUp.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Prise_numericUp.Increment = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
             this.Prise_numericUp.Location = new System.Drawing.Point(120, 127);
             this.Prise_numericUp.Maximum = new decimal(new int[] {
             100000,
@@ -231,7 +246,7 @@
             this.Prise_numericUp.Size = new System.Drawing.Size(185, 20);
             this.Prise_numericUp.TabIndex = 18;
             this.Prise_numericUp.Value = new decimal(new int[] {
-            1,
+            10000,
             0,
             0,
             0});
@@ -304,7 +319,7 @@
             this.Year_numeric.Size = new System.Drawing.Size(185, 20);
             this.Year_numeric.TabIndex = 12;
             this.Year_numeric.Value = new decimal(new int[] {
-            1900,
+            2000,
             0,
             0,
             0});

@@ -96,7 +96,7 @@
             // 
             // NametextBox
             // 
-            this.NametextBox.Location = new System.Drawing.Point(166, 89);
+            this.NametextBox.Location = new System.Drawing.Point(82, 72);
             this.NametextBox.Name = "NametextBox";
             this.NametextBox.Size = new System.Drawing.Size(142, 20);
             this.NametextBox.TabIndex = 28;
@@ -104,7 +104,7 @@
             // 
             // PastextBox
             // 
-            this.PastextBox.Location = new System.Drawing.Point(166, 115);
+            this.PastextBox.Location = new System.Drawing.Point(318, 72);
             this.PastextBox.Name = "PastextBox";
             this.PastextBox.Size = new System.Drawing.Size(142, 20);
             this.PastextBox.TabIndex = 27;
@@ -112,7 +112,7 @@
             // 
             // ContacttextBox
             // 
-            this.ContacttextBox.Location = new System.Drawing.Point(166, 141);
+            this.ContacttextBox.Location = new System.Drawing.Point(82, 103);
             this.ContacttextBox.Name = "ContacttextBox";
             this.ContacttextBox.Size = new System.Drawing.Size(142, 20);
             this.ContacttextBox.TabIndex = 26;
@@ -121,7 +121,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(70, 199);
+            this.label7.Location = new System.Drawing.Point(68, 146);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 13);
             this.label7.TabIndex = 25;
@@ -143,7 +143,7 @@
             "Porsche",
             "Mitsubishi",
             "Subaru"});
-            this.ModelcomboBox.Location = new System.Drawing.Point(166, 193);
+            this.ModelcomboBox.Location = new System.Drawing.Point(204, 136);
             this.ModelcomboBox.Name = "ModelcomboBox";
             this.ModelcomboBox.Size = new System.Drawing.Size(142, 21);
             this.ModelcomboBox.TabIndex = 23;
@@ -159,7 +159,7 @@
             this.BackBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.BackBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BackBut.Font = new System.Drawing.Font("Rockwell", 14F);
-            this.BackBut.Location = new System.Drawing.Point(405, 231);
+            this.BackBut.Location = new System.Drawing.Point(375, 230);
             this.BackBut.Name = "BackBut";
             this.BackBut.Size = new System.Drawing.Size(85, 45);
             this.BackBut.TabIndex = 22;
@@ -177,16 +177,21 @@
             this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.SaveBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBut.Font = new System.Drawing.Font("Rockwell", 14F);
-            this.SaveBut.Location = new System.Drawing.Point(356, 90);
+            this.SaveBut.Location = new System.Drawing.Point(263, 230);
             this.SaveBut.Name = "SaveBut";
-            this.SaveBut.Size = new System.Drawing.Size(134, 45);
+            this.SaveBut.Size = new System.Drawing.Size(85, 45);
             this.SaveBut.TabIndex = 21;
             this.SaveBut.Text = "Save";
             this.SaveBut.UseVisualStyleBackColor = false;
             // 
             // Speed_numeric
             // 
-            this.Speed_numeric.Location = new System.Drawing.Point(166, 220);
+            this.Speed_numeric.Increment = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.Speed_numeric.Location = new System.Drawing.Point(204, 163);
             this.Speed_numeric.Maximum = new decimal(new int[] {
             400,
             0,
@@ -201,14 +206,19 @@
             this.Speed_numeric.Size = new System.Drawing.Size(142, 20);
             this.Speed_numeric.TabIndex = 20;
             this.Speed_numeric.Value = new decimal(new int[] {
-            1,
+            80,
             0,
             0,
             0});
             // 
             // Perf_numeric
             // 
-            this.Perf_numeric.Location = new System.Drawing.Point(166, 246);
+            this.Perf_numeric.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.Perf_numeric.Location = new System.Drawing.Point(204, 191);
             this.Perf_numeric.Minimum = new decimal(new int[] {
             1,
             0,
@@ -218,14 +228,19 @@
             this.Perf_numeric.Size = new System.Drawing.Size(142, 20);
             this.Perf_numeric.TabIndex = 19;
             this.Perf_numeric.Value = new decimal(new int[] {
-            1,
+            50,
             0,
             0,
             0});
             // 
             // Prise_numericUp
             // 
-            this.Prise_numericUp.Location = new System.Drawing.Point(166, 167);
+            this.Prise_numericUp.Increment = new decimal(new int[] {
+            5000,
+            0,
+            0,
+            0});
+            this.Prise_numericUp.Location = new System.Drawing.Point(318, 104);
             this.Prise_numericUp.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -240,7 +255,7 @@
             this.Prise_numericUp.Size = new System.Drawing.Size(142, 20);
             this.Prise_numericUp.TabIndex = 18;
             this.Prise_numericUp.Value = new decimal(new int[] {
-            1,
+            30000,
             0,
             0,
             0});
@@ -248,7 +263,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(42, 249);
+            this.label8.Location = new System.Drawing.Point(68, 198);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(107, 13);
             this.label8.TabIndex = 17;
@@ -257,7 +272,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(79, 173);
+            this.label6.Location = new System.Drawing.Point(243, 106);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 13);
             this.label6.TabIndex = 15;
@@ -266,7 +281,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(41, 223);
+            this.label5.Location = new System.Drawing.Point(68, 170);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 13);
             this.label5.TabIndex = 14;
@@ -275,7 +290,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(95, 119);
+            this.label4.Location = new System.Drawing.Point(243, 79);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 13;
@@ -284,7 +299,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(99, 145);
+            this.label3.Location = new System.Drawing.Point(25, 106);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 11;
@@ -293,7 +308,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(113, 96);
+            this.label2.Location = new System.Drawing.Point(25, 79);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 10;
@@ -303,7 +318,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(314, 193);
+            this.label9.Location = new System.Drawing.Point(352, 139);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(15, 20);
             this.label9.TabIndex = 30;

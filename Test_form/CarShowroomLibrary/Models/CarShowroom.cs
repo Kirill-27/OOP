@@ -18,6 +18,7 @@ namespace CarShowroomLibrary.Models
         public bool ifSaved = true;
         public List<CarInApplic> Application { private set; get; }
         public List<Car> Cars { private set; get; }
+        public List<Car> ShoppingCart { private set; get; }
         public List<Buyer> Buyers { private set; get; }
         public List<Report> Reports { private set; get; }
         public string[] coun = new string[] { "China","USA","Japan","Germany","South Korea","India","Spain",
@@ -30,15 +31,18 @@ namespace CarShowroomLibrary.Models
             Buyers = new List<Buyer>();
             Reports = new List<Report>();
             Application = new List<CarInApplic>();
+            ShoppingCart = new List<Car>();
         }
         public void AddCar(Car NewCar)
         {
             int ma = 0;
+            bool chek = true;
             foreach (var t in Cars)
             {
                 if (t.ID > ma) ma = t.ID;
+                if (t.ID.Equals(NewCar.ID)) chek = false;
             }
-            NewCar.ID = ma + 1;
+            if(chek== true|| NewCar.ID.Equals(null) || NewCar.ID.Equals(-1)) NewCar.ID = ma + 1;
             Cars.Add(NewCar);
         }
             public void FillTestData(int n)

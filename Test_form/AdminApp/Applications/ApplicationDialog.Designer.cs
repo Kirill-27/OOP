@@ -101,7 +101,7 @@
             this.AmountNumretic.Size = new System.Drawing.Size(185, 20);
             this.AmountNumretic.TabIndex = 26;
             this.AmountNumretic.Value = new decimal(new int[] {
-            1,
+            5,
             0,
             0,
             0});
@@ -192,6 +192,11 @@
             // 
             // Technumeric
             // 
+            this.Technumeric.Increment = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
             this.Technumeric.Location = new System.Drawing.Point(120, 146);
             this.Technumeric.Minimum = new decimal(new int[] {
             1,
@@ -202,7 +207,7 @@
             this.Technumeric.Size = new System.Drawing.Size(185, 20);
             this.Technumeric.TabIndex = 19;
             this.Technumeric.Value = new decimal(new int[] {
-            1,
+            50,
             0,
             0,
             0});
@@ -251,7 +256,7 @@
             this.Yearnumeric.Size = new System.Drawing.Size(185, 20);
             this.Yearnumeric.TabIndex = 12;
             this.Yearnumeric.Value = new decimal(new int[] {
-            1900,
+            2000,
             0,
             0,
             0});

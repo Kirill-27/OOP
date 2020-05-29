@@ -31,15 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.CarsdataGridView = new System.Windows.Forms.DataGridView();
-            this.modelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prodCountryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.techStateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maksSpeedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.featuresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.carBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.Buy_but = new System.Windows.Forms.Button();
-            this.Back_but = new System.Windows.Forms.Button();
+            this.BuyBut = new System.Windows.Forms.Button();
+            this.BackBut = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -49,24 +42,38 @@
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.YearOfIssue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ShowBut = new System.Windows.Forms.Button();
+            this.AllCars = new System.Windows.Forms.Button();
+            this.AddCarBut = new System.Windows.Forms.Button();
+            this.modelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prodCountryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.techStateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maksSpeedDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.featuresDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.carBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CarsdataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel1.Controls.Add(this.AddCarBut);
+            this.panel1.Controls.Add(this.AllCars);
+            this.panel1.Controls.Add(this.ShowBut);
             this.panel1.Controls.Add(this.CarsdataGridView);
-            this.panel1.Controls.Add(this.Buy_but);
-            this.panel1.Controls.Add(this.Back_but);
+            this.panel1.Controls.Add(this.BuyBut);
+            this.panel1.Controls.Add(this.BackBut);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(802, 330);
+            this.panel1.Size = new System.Drawing.Size(756, 421);
             this.panel1.TabIndex = 2;
             this.panel1.Text = "login";
             // 
@@ -74,7 +81,6 @@
             // 
             this.CarsdataGridView.AllowUserToAddRows = false;
             this.CarsdataGridView.AllowUserToDeleteRows = false;
-            this.CarsdataGridView.AllowUserToOrderColumns = true;
             this.CarsdataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.CarsdataGridView.AutoGenerateColumns = false;
@@ -84,102 +90,57 @@
             this.CarsdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CarsdataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.modelDataGridViewTextBoxColumn,
-            this.priceDataGridViewTextBoxColumn,
             this.prodCountryDataGridViewTextBoxColumn,
+            this.priceDataGridViewTextBoxColumn,
             this.techStateDataGridViewTextBoxColumn,
+            this.YearOfIssue,
             this.maksSpeedDataGridViewTextBoxColumn,
             this.featuresDataGridViewTextBoxColumn});
             this.CarsdataGridView.DataSource = this.carBindingSource;
-            this.CarsdataGridView.Location = new System.Drawing.Point(21, 91);
+            this.CarsdataGridView.Location = new System.Drawing.Point(21, 94);
             this.CarsdataGridView.MultiSelect = false;
             this.CarsdataGridView.Name = "CarsdataGridView";
             this.CarsdataGridView.ReadOnly = true;
             this.CarsdataGridView.RowHeadersVisible = false;
             this.CarsdataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.CarsdataGridView.Size = new System.Drawing.Size(620, 193);
+            this.CarsdataGridView.Size = new System.Drawing.Size(573, 231);
             this.CarsdataGridView.TabIndex = 7;
             // 
-            // modelDataGridViewTextBoxColumn
+            // BuyBut
             // 
-            this.modelDataGridViewTextBoxColumn.DataPropertyName = "Model";
-            this.modelDataGridViewTextBoxColumn.HeaderText = "Model";
-            this.modelDataGridViewTextBoxColumn.Name = "modelDataGridViewTextBoxColumn";
-            this.modelDataGridViewTextBoxColumn.ReadOnly = true;
+            this.BuyBut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BuyBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BuyBut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BuyBut.FlatAppearance.BorderSize = 0;
+            this.BuyBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BuyBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.BuyBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BuyBut.Font = new System.Drawing.Font("Rockwell", 20.25F);
+            this.BuyBut.Location = new System.Drawing.Point(611, 283);
+            this.BuyBut.Name = "BuyBut";
+            this.BuyBut.Size = new System.Drawing.Size(116, 42);
+            this.BuyBut.TabIndex = 6;
+            this.BuyBut.Text = "Buy";
+            this.BuyBut.UseVisualStyleBackColor = false;
+            this.BuyBut.Click += new System.EventHandler(this.Buy_but_Click);
             // 
-            // priceDataGridViewTextBoxColumn
+            // BackBut
             // 
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // prodCountryDataGridViewTextBoxColumn
-            // 
-            this.prodCountryDataGridViewTextBoxColumn.DataPropertyName = "ProdCountry";
-            this.prodCountryDataGridViewTextBoxColumn.HeaderText = "ProdCountry";
-            this.prodCountryDataGridViewTextBoxColumn.Name = "prodCountryDataGridViewTextBoxColumn";
-            this.prodCountryDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // techStateDataGridViewTextBoxColumn
-            // 
-            this.techStateDataGridViewTextBoxColumn.DataPropertyName = "TechState";
-            this.techStateDataGridViewTextBoxColumn.HeaderText = "TechState";
-            this.techStateDataGridViewTextBoxColumn.Name = "techStateDataGridViewTextBoxColumn";
-            this.techStateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // maksSpeedDataGridViewTextBoxColumn
-            // 
-            this.maksSpeedDataGridViewTextBoxColumn.DataPropertyName = "MaksSpeed";
-            this.maksSpeedDataGridViewTextBoxColumn.HeaderText = "MaksSpeed";
-            this.maksSpeedDataGridViewTextBoxColumn.Name = "maksSpeedDataGridViewTextBoxColumn";
-            this.maksSpeedDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // featuresDataGridViewTextBoxColumn
-            // 
-            this.featuresDataGridViewTextBoxColumn.DataPropertyName = "Features";
-            this.featuresDataGridViewTextBoxColumn.HeaderText = "Features";
-            this.featuresDataGridViewTextBoxColumn.Name = "featuresDataGridViewTextBoxColumn";
-            this.featuresDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // carBindingSource
-            // 
-            this.carBindingSource.DataSource = typeof(CarShowroomLibrary.Models.Car);
-            // 
-            // Buy_but
-            // 
-            this.Buy_but.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Buy_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.Buy_but.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Buy_but.FlatAppearance.BorderSize = 0;
-            this.Buy_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.Buy_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
-            this.Buy_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Buy_but.Font = new System.Drawing.Font("Rockwell", 20.25F);
-            this.Buy_but.Location = new System.Drawing.Point(670, 91);
-            this.Buy_but.Name = "Buy_but";
-            this.Buy_but.Size = new System.Drawing.Size(116, 42);
-            this.Buy_but.TabIndex = 6;
-            this.Buy_but.Text = "Buy";
-            this.Buy_but.UseVisualStyleBackColor = false;
-            this.Buy_but.Click += new System.EventHandler(this.Buy_but_Click);
-            // 
-            // Back_but
-            // 
-            this.Back_but.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.Back_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.Back_but.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Back_but.FlatAppearance.BorderSize = 0;
-            this.Back_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Back_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.Back_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Back_but.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Back_but.Location = new System.Drawing.Point(697, 259);
-            this.Back_but.Name = "Back_but";
-            this.Back_but.Size = new System.Drawing.Size(89, 42);
-            this.Back_but.TabIndex = 5;
-            this.Back_but.Text = "Back";
-            this.Back_but.UseVisualStyleBackColor = false;
-            this.Back_but.Click += new System.EventHandler(this.Back_but_Click);
+            this.BackBut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BackBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.BackBut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackBut.FlatAppearance.BorderSize = 0;
+            this.BackBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.BackBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackBut.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BackBut.Location = new System.Drawing.Point(611, 344);
+            this.BackBut.Name = "BackBut";
+            this.BackBut.Size = new System.Drawing.Size(116, 42);
+            this.BackBut.TabIndex = 5;
+            this.BackBut.Text = "Back";
+            this.BackBut.UseVisualStyleBackColor = false;
+            this.BackBut.Click += new System.EventHandler(this.Back_but_Click);
             // 
             // panel2
             // 
@@ -189,7 +150,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(802, 71);
+            this.panel2.Size = new System.Drawing.Size(756, 71);
             this.panel2.TabIndex = 0;
             // 
             // label1
@@ -200,7 +161,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(0, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(802, 47);
+            this.label1.Size = new System.Drawing.Size(756, 47);
             this.label1.TabIndex = 0;
             this.label1.Text = "All cars in the Carshowroom";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -212,7 +173,7 @@
             this.HelpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(802, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(756, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -259,21 +220,133 @@
             this.HelpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.HelpToolStripMenuItem.Text = "Help";
             // 
+            // YearOfIssue
+            // 
+            this.YearOfIssue.DataPropertyName = "YearOfIssue";
+            this.YearOfIssue.HeaderText = "YearOfIssue";
+            this.YearOfIssue.Name = "YearOfIssue";
+            this.YearOfIssue.ReadOnly = true;
+            this.YearOfIssue.Width = 75;
+            // 
+            // ShowBut
+            // 
+            this.ShowBut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.ShowBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ShowBut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ShowBut.FlatAppearance.BorderSize = 0;
+            this.ShowBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ShowBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.ShowBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ShowBut.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ShowBut.Location = new System.Drawing.Point(21, 345);
+            this.ShowBut.Name = "ShowBut";
+            this.ShowBut.Size = new System.Drawing.Size(174, 42);
+            this.ShowBut.TabIndex = 9;
+            this.ShowBut.Text = "My shopping cart";
+            this.ShowBut.UseVisualStyleBackColor = false;
+            this.ShowBut.Click += new System.EventHandler(this.ShowBut_Click);
+            // 
+            // AllCars
+            // 
+            this.AllCars.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.AllCars.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.AllCars.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AllCars.FlatAppearance.BorderSize = 0;
+            this.AllCars.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.AllCars.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.AllCars.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AllCars.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AllCars.Location = new System.Drawing.Point(211, 345);
+            this.AllCars.Name = "AllCars";
+            this.AllCars.Size = new System.Drawing.Size(103, 42);
+            this.AllCars.TabIndex = 10;
+            this.AllCars.Text = "All cars";
+            this.AllCars.UseVisualStyleBackColor = false;
+            this.AllCars.Click += new System.EventHandler(this.AllCars_Click);
+            // 
+            // AddCarBut
+            // 
+            this.AddCarBut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.AddCarBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.AddCarBut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddCarBut.FlatAppearance.BorderSize = 0;
+            this.AddCarBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.AddCarBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.AddCarBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddCarBut.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddCarBut.Location = new System.Drawing.Point(365, 344);
+            this.AddCarBut.Name = "AddCarBut";
+            this.AddCarBut.Size = new System.Drawing.Size(194, 51);
+            this.AddCarBut.TabIndex = 11;
+            this.AddCarBut.Text = "Add to cart\\Remove from cart";
+            this.AddCarBut.UseVisualStyleBackColor = false;
+            this.AddCarBut.Click += new System.EventHandler(this.AddCarBut_Click);
+            // 
+            // modelDataGridViewTextBoxColumn
+            // 
+            this.modelDataGridViewTextBoxColumn.DataPropertyName = "Model";
+            this.modelDataGridViewTextBoxColumn.HeaderText = "Model";
+            this.modelDataGridViewTextBoxColumn.Name = "modelDataGridViewTextBoxColumn";
+            this.modelDataGridViewTextBoxColumn.ReadOnly = true;
+            this.modelDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // prodCountryDataGridViewTextBoxColumn
+            // 
+            this.prodCountryDataGridViewTextBoxColumn.DataPropertyName = "ProdCountry";
+            this.prodCountryDataGridViewTextBoxColumn.HeaderText = "ProdCountry";
+            this.prodCountryDataGridViewTextBoxColumn.Name = "prodCountryDataGridViewTextBoxColumn";
+            this.prodCountryDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
+            this.priceDataGridViewTextBoxColumn.Width = 80;
+            // 
+            // techStateDataGridViewTextBoxColumn
+            // 
+            this.techStateDataGridViewTextBoxColumn.DataPropertyName = "TechState";
+            this.techStateDataGridViewTextBoxColumn.HeaderText = "TechState";
+            this.techStateDataGridViewTextBoxColumn.Name = "techStateDataGridViewTextBoxColumn";
+            this.techStateDataGridViewTextBoxColumn.ReadOnly = true;
+            this.techStateDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // maksSpeedDataGridViewTextBoxColumn
+            // 
+            this.maksSpeedDataGridViewTextBoxColumn.DataPropertyName = "MaksSpeed";
+            this.maksSpeedDataGridViewTextBoxColumn.HeaderText = "MaksSpeed";
+            this.maksSpeedDataGridViewTextBoxColumn.Name = "maksSpeedDataGridViewTextBoxColumn";
+            this.maksSpeedDataGridViewTextBoxColumn.ReadOnly = true;
+            this.maksSpeedDataGridViewTextBoxColumn.Width = 65;
+            // 
+            // featuresDataGridViewTextBoxColumn
+            // 
+            this.featuresDataGridViewTextBoxColumn.DataPropertyName = "Features";
+            this.featuresDataGridViewTextBoxColumn.HeaderText = "Features";
+            this.featuresDataGridViewTextBoxColumn.Name = "featuresDataGridViewTextBoxColumn";
+            this.featuresDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // carBindingSource
+            // 
+            this.carBindingSource.DataSource = typeof(CarShowroomLibrary.Models.Car);
+            // 
             // BuyerAllCars
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(802, 330);
+            this.ClientSize = new System.Drawing.Size(756, 421);
             this.Controls.Add(this.panel1);
             this.Name = "BuyerAllCars";
             this.Text = "BuyerAllCars";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.CarsdataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.carBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -281,8 +354,8 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button Buy_but;
-        private System.Windows.Forms.Button Back_but;
+        private System.Windows.Forms.Button BuyBut;
+        private System.Windows.Forms.Button BackBut;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
@@ -295,10 +368,14 @@
         private System.Windows.Forms.BindingSource carBindingSource;
         private System.Windows.Forms.DataGridView CarsdataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn modelDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn prodCountryDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn techStateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn YearOfIssue;
         private System.Windows.Forms.DataGridViewTextBoxColumn maksSpeedDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn featuresDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button AllCars;
+        private System.Windows.Forms.Button ShowBut;
+        private System.Windows.Forms.Button AddCarBut;
     }
 }

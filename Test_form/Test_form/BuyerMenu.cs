@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CarShowroomLibrary.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,13 +13,16 @@ namespace CarShowroomLibrary
 {
     public partial class BuyerMenu : Form
     {
-       // CarShowroom CarShowroom1=
+        public Buyer CurentBuyer { get; set; }
         public BuyerMenu()
         {
             InitializeComponent();
-
         }
-
+        public BuyerMenu(Buyer curent)
+        {
+            InitializeComponent();
+            this.CurentBuyer = curent;
+        }
         private void AllCars_but_Click(object sender, EventArgs e)
         {
             var AllCar = new BuyerAllCars();
@@ -34,7 +38,7 @@ namespace CarShowroomLibrary
 
         private void AllCarsBut_Click(object sender, EventArgs e)
         {
-            var f = new BuyerAllCars();
+            var f = new BuyerAllCars(CurentBuyer);
             Hide();
             f.ShowDialog();
             Visible = true;
