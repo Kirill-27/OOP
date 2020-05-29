@@ -1,6 +1,6 @@
-﻿namespace AdminApp
+﻿namespace BuyerApp
 {
-    partial class BuyerDialog
+    partial class Register
     {
         /// <summary>
         /// Required designer variable.
@@ -75,8 +75,8 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(495, 309);
-            this.panel1.TabIndex = 3;
+            this.panel1.Size = new System.Drawing.Size(593, 295);
+            this.panel1.TabIndex = 4;
             this.panel1.Text = "login";
             // 
             // label1
@@ -87,7 +87,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(495, 58);
+            this.label1.Size = new System.Drawing.Size(593, 58);
             this.label1.TabIndex = 29;
             this.label1.Text = "Add\\Edit Buyer";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -98,7 +98,6 @@
             this.NametextBox.Name = "NametextBox";
             this.NametextBox.Size = new System.Drawing.Size(142, 20);
             this.NametextBox.TabIndex = 28;
-            this.NametextBox.Click += new System.EventHandler(this.NametextBox_Click);
             // 
             // PastextBox
             // 
@@ -106,7 +105,6 @@
             this.PastextBox.Name = "PastextBox";
             this.PastextBox.Size = new System.Drawing.Size(142, 20);
             this.PastextBox.TabIndex = 27;
-            this.PastextBox.Click += new System.EventHandler(this.PastextBox_Click);
             // 
             // ContacttextBox
             // 
@@ -114,7 +112,6 @@
             this.ContacttextBox.Name = "ContacttextBox";
             this.ContacttextBox.Size = new System.Drawing.Size(142, 20);
             this.ContacttextBox.TabIndex = 26;
-            this.ContacttextBox.Click += new System.EventHandler(this.ContacttextBox_Click);
             // 
             // label7
             // 
@@ -145,7 +142,6 @@
             this.ModelcomboBox.Name = "ModelcomboBox";
             this.ModelcomboBox.Size = new System.Drawing.Size(142, 21);
             this.ModelcomboBox.TabIndex = 23;
-            
             // 
             // BackBut
             // 
@@ -158,7 +154,7 @@
             this.BackBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.BackBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BackBut.Font = new System.Drawing.Font("Rockwell", 14F);
-            this.BackBut.Location = new System.Drawing.Point(398, 231);
+            this.BackBut.Location = new System.Drawing.Point(496, 231);
             this.BackBut.Name = "BackBut";
             this.BackBut.Size = new System.Drawing.Size(85, 45);
             this.BackBut.TabIndex = 22;
@@ -176,7 +172,7 @@
             this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.SaveBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBut.Font = new System.Drawing.Font("Rockwell", 14F);
-            this.SaveBut.Location = new System.Drawing.Point(349, 90);
+            this.SaveBut.Location = new System.Drawing.Point(447, 90);
             this.SaveBut.Name = "SaveBut";
             this.SaveBut.Size = new System.Drawing.Size(134, 45);
             this.SaveBut.TabIndex = 21;
@@ -298,16 +294,14 @@
             this.label2.TabIndex = 10;
             this.label2.Text = "Name";
             // 
-            // BuyerDialog
+            // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(495, 309);
+            this.ClientSize = new System.Drawing.Size(593, 295);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Name = "BuyerDialog";
-            this.Text = "BuyerDialog";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BuyerDialog_FormClosing);
+            this.Name = "Register";
+            this.Text = "Register";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Speed_numeric)).EndInit();
@@ -320,6 +314,11 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox NametextBox;
+        private System.Windows.Forms.TextBox PastextBox;
+        private System.Windows.Forms.TextBox ContacttextBox;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox ModelcomboBox;
         private System.Windows.Forms.Button BackBut;
         private System.Windows.Forms.Button SaveBut;
@@ -332,10 +331,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox NametextBox;
-        private System.Windows.Forms.TextBox PastextBox;
-        private System.Windows.Forms.TextBox ContacttextBox;
-        private System.Windows.Forms.Label label1;
     }
 }

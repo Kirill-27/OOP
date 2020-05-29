@@ -57,7 +57,14 @@ namespace AdminApp
             }
         }
 
-        
-        
+        private void ModelcomboBox_Click(object sender, EventArgs e)
+        {
+            ModelcomboBox.BackColor = Color.White;
+        }
+
+        private void CountrycomboBox_Click(object sender, EventArgs e)
+        {
+            CountrycomboBox.BackColor = Color.White;
+        }
     }
 }

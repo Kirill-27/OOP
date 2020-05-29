@@ -109,6 +109,7 @@
             this.CountrycomboBox.Name = "CountrycomboBox";
             this.CountrycomboBox.Size = new System.Drawing.Size(184, 21);
             this.CountrycomboBox.TabIndex = 24;
+            this.CountrycomboBox.Click += new System.EventHandler(this.CountrycomboBox_Click);
             // 
             // ModelcomboBox
             // 
@@ -131,6 +132,7 @@
             this.ModelcomboBox.Name = "ModelcomboBox";
             this.ModelcomboBox.Size = new System.Drawing.Size(185, 21);
             this.ModelcomboBox.TabIndex = 23;
+            this.ModelcomboBox.Click += new System.EventHandler(this.ModelcomboBox_Click);
             // 
             // BackBut
             // 
@@ -149,7 +151,6 @@
             this.BackBut.TabIndex = 22;
             this.BackBut.Text = "Back";
             this.BackBut.UseVisualStyleBackColor = false;
-          
             // 
             // SaveBut
             // 

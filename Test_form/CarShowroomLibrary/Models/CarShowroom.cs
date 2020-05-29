@@ -49,7 +49,7 @@ namespace CarShowroomLibrary.Models
             {
                 Cars.Add(new Car()
                 {
-                    Features = "none",
+                    Features = "nope",
                     ID =i+1,
                     MaksSpeed = (i * 10) % 180 + 100 + 5*(i%2),
                     Price = (i * 1000) % 20000 + 6000,
@@ -63,8 +63,8 @@ namespace CarShowroomLibrary.Models
             for (int i = 1; i <= n; i++)
             {
                 int numb = 80042900 + i % 2000;
-                Buyers.Add(new Buyer
-                {
+                Buyer NewB= new Buyer()
+                { 
                     Contacts = $"+{numb}",
                     FinancialOpp = ((i * i + 1) * 1000) % 50000 + 7000,
                     MaksSpeedRequired = (i * 10) % 140 + 60,
@@ -72,7 +72,9 @@ namespace CarShowroomLibrary.Models
                     Name = $"Buyer_{i}",
                     Password = "9999",
                     PerfomanceRequired = i
-                });
+                };
+                if (i % 5 == 0) NewB.ModelRequired = "nope";
+                Buyers.Add(NewB);
             }
             // Reports
             int div = 2;//сколько в каждом отчете машин

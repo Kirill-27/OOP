@@ -33,7 +33,6 @@ namespace AdminApp
         {
             if (DialogResult != DialogResult.OK) return;
             ChekText(ContacttextBox, e);
-            ChekText(ModelcomboBox, e);
             ChekText(NametextBox, e);
             ChekText(PastextBox, e);
             if (e.Cancel == false)
@@ -46,6 +45,10 @@ namespace AdminApp
                 Buyer.Name = NametextBox.Text;
                 Buyer.Password = PastextBox.Text;
                 Buyer.PerfomanceRequired = Convert.ToInt32(Perf_numeric.Value);
+                if(string.IsNullOrWhiteSpace(ModelcomboBox.Text))
+                {
+                    Buyer.ModelRequired = "nope";
+                }
             }
         }
         private void ChekText(Control text, FormClosingEventArgs e)
@@ -55,8 +58,23 @@ namespace AdminApp
                 text.BackColor = Color.LightPink;
                 e.Cancel = true;
             }
+            else text.BackColor = Color.White;
         }
 
-        
+
+        private void NametextBox_Click(object sender, EventArgs e)
+        {
+            NametextBox.BackColor = Color.White;
+        }
+
+        private void PastextBox_Click(object sender, EventArgs e)
+        {
+            PastextBox.BackColor = Color.White;
+        }
+
+        private void ContacttextBox_Click(object sender, EventArgs e)
+        {
+            ContacttextBox.BackColor = Color.White;
+        }
     }
 }
