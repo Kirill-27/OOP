@@ -11,6 +11,7 @@ using CarShowroomLibrary.Models;
 
 namespace AdminApp
 {
+    //класс формы диалогового окна для изменения или добавления покупателя
     public partial class BuyerDialog : Form
     {
         public Buyer Buyer { get; set; }
@@ -32,9 +33,11 @@ namespace AdminApp
         private void BuyerDialog_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (DialogResult != DialogResult.OK) return;
+            ChekPass(NametextBox, e);
+            ChekPass(PastextBox, e);
+            if (e.Cancel != false)
+                MessageBox.Show("Password and login must be at least 3 characters and no more than 12", "Attention!");
             ChekText(ContacttextBox, e);
-            ChekText(NametextBox, e);
-            ChekText(PastextBox, e);
             if (e.Cancel == false)
             {
                 CarShowroom CarShowroom1 = new CarShowroom();
@@ -67,7 +70,7 @@ namespace AdminApp
         }
         private void ChekText(Control text, FormClosingEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(text.Text) || text.Text.Length >= 25)
+            if (string.IsNullOrWhiteSpace(text.Text) || text.Text.Length >= 20)
             {
                 text.BackColor = Color.LightPink;
                 e.Cancel = true;
@@ -90,6 +93,14 @@ namespace AdminApp
             ContacttextBox.BackColor = Color.White;
         }
 
-        
+        private void ChekPass(Control text, FormClosingEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(text.Text) || text.Text.Length > 12 || text.Text.Length < 3)
+            {
+                text.BackColor = Color.LightPink;
+                e.Cancel = true;
+            }
+            else text.BackColor = Color.White;
+        }
     }
 }

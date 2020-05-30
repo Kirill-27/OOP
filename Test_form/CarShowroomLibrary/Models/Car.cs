@@ -8,7 +8,7 @@ namespace CarShowroomLibrary.Models
 {
     [Serializable]
     //Автомобиль - цена марка, страна-производитель, год выпуска, техн. состояние, 
-    //техн.характеристики, особенности автомобиля.
+    //Максимальная скорость, особенности автомобиля.
     public class Car
     {
         public int Price { set; get; }

@@ -12,7 +12,7 @@ using CarShowroomLibrary.Models;
 
 namespace CarShowroomLibrary
 {
-    public partial class BuyerAllCars : Form
+    public partial class BuyerAllCars : Form // форма для просмотра всех авто в автосалоне и для покупки
     {
         CarShowroom CarShowroom1;
         public Buyer CurentBuyer { get; set; }

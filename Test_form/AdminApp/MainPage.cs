@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace AdminApp
 {
-    public partial class MainPage : Form
+    public partial class MainPage : Form // класс формы авторизации админа
     {
         public MainPage()
         {

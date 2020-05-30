@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace BuyerApp
 {
-    public partial class FindBest : Form
+    public partial class FindBest : Form //форма поиска лучшей машини для текущего покупателя
     {
         CarShowroom CarShowroom1;
         public Buyer CurentBuyer { get; set; }

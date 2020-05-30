@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CarShowroomLibrary.Models
 {
-    // Класс для реализации заявок для поставщиков
+    // Класс для реализации заявок для поставщиков содержит кол-во авто в данный позиции
+    // модель, страну-производитель, год выпвуска, техническое состояние
     public class CarInApplic
     {
         public int Amount { set; get; }

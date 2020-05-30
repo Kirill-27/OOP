@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace AdminApp
 {
-    public partial class AdminMenu : Form
+    public partial class AdminMenu : Form  //класс формы главного меню админа
     {
         public AdminMenu()
         {

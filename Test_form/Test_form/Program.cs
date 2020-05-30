@@ -7,7 +7,7 @@ using CarShowroomLibrary.Models;
 
 namespace CarShowroomLibrary
 {
-    static class Program
+    static class Program 
     {
         /// <summary>
         /// Главная точка входа для приложения.

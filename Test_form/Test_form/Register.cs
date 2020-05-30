@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace BuyerApp
 {
-    public partial class Register : Form
+    public partial class Register : Form //форме регистрации нового покупателя в приложении
     {
         public Buyer Buyer { get; set; }
         public Register()
@@ -27,7 +27,15 @@ namespace BuyerApp
             }
             else text.BackColor = Color.White;
         }
-
+        private void ChekPass(Control text, FormClosingEventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(text.Text) || text.Text.Length > 12|| text.Text.Length<3)
+            {
+                text.BackColor = Color.LightPink;
+                e.Cancel = true;
+            }
+            else text.BackColor = Color.White;
+        }
         private void NametextBox_Click(object sender, EventArgs e)
         {
             NametextBox.BackColor = Color.White;
@@ -46,9 +54,11 @@ namespace BuyerApp
         private void Register_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (DialogResult != DialogResult.OK) return;
+            ChekPass(NametextBox, e);
+            ChekPass(PastextBox, e);
+            if (e.Cancel != false)
+                MessageBox.Show("Password and login must be at least 3 characters and no more than 12", "Attention!");
             ChekText(ContacttextBox, e);
-            ChekText(NametextBox, e);
-            ChekText(PastextBox, e);
             if (e.Cancel == false)
             {
                 CarShowroom CarShowroom1 = new CarShowroom();
@@ -79,5 +89,7 @@ namespace BuyerApp
                 }
             }
         }
+
+      
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.NametextBox = new System.Windows.Forms.TextBox();
             this.PastextBox = new System.Windows.Forms.TextBox();
@@ -56,7 +56,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.NametextBox);
             this.panel1.Controls.Add(this.PastextBox);
@@ -77,19 +77,19 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(502, 295);
+            this.panel1.Size = new System.Drawing.Size(481, 297);
             this.panel1.TabIndex = 4;
             this.panel1.Text = "login";
             // 
-            // label9
+            // label10
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(352, 139);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(15, 20);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "*";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(352, 141);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(94, 16);
+            this.label10.TabIndex = 31;
+            this.label10.Text = "*not obligatory";
             // 
             // label1
             // 
@@ -99,7 +99,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(502, 58);
+            this.label1.Size = new System.Drawing.Size(481, 58);
             this.label1.TabIndex = 29;
             this.label1.Text = "Registration";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -169,7 +169,7 @@
             this.BackBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.BackBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BackBut.Font = new System.Drawing.Font("Rockwell", 14F);
-            this.BackBut.Location = new System.Drawing.Point(375, 230);
+            this.BackBut.Location = new System.Drawing.Point(354, 230);
             this.BackBut.Name = "BackBut";
             this.BackBut.Size = new System.Drawing.Size(85, 45);
             this.BackBut.TabIndex = 22;
@@ -187,7 +187,7 @@
             this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.SaveBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBut.Font = new System.Drawing.Font("Rockwell", 14F);
-            this.SaveBut.Location = new System.Drawing.Point(263, 230);
+            this.SaveBut.Location = new System.Drawing.Point(242, 230);
             this.SaveBut.Name = "SaveBut";
             this.SaveBut.Size = new System.Drawing.Size(85, 45);
             this.SaveBut.TabIndex = 21;
@@ -328,8 +328,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 295);
+            this.ClientSize = new System.Drawing.Size(481, 297);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Register";
             this.Text = "Register";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Register_FormClosing);
@@ -362,6 +363,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
     }
 }

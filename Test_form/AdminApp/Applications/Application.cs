@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace AdminApp
 {
+    //класс формы окна для составления новой заявки поставщикам
     public partial class Application : Form
     {
         CarShowroom CarShowroom1;

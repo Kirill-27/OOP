@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
             this.NametextBox = new System.Windows.Forms.TextBox();
             this.PastextBox = new System.Windows.Forms.TextBox();
             this.ContacttextBox = new System.Windows.Forms.TextBox();
@@ -47,6 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BackBut = new System.Windows.Forms.Button();
             this.SaveBut = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Speed_numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perf_numeric)).BeginInit();
@@ -56,7 +56,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.NametextBox);
             this.panel1.Controls.Add(this.PastextBox);
             this.panel1.Controls.Add(this.ContacttextBox);
@@ -80,16 +80,6 @@
             this.panel1.Size = new System.Drawing.Size(495, 309);
             this.panel1.TabIndex = 3;
             this.panel1.Text = "login";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(357, 152);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(15, 20);
-            this.label9.TabIndex = 45;
-            this.label9.Text = "*";
             // 
             // NametextBox
             // 
@@ -321,6 +311,16 @@
             this.SaveBut.Text = "Save";
             this.SaveBut.UseVisualStyleBackColor = false;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(357, 150);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(94, 16);
+            this.label10.TabIndex = 46;
+            this.label10.Text = "*not obligatory";
+            // 
             // BuyerDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -346,7 +346,6 @@
         private System.Windows.Forms.Button BackBut;
         private System.Windows.Forms.Button SaveBut;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox NametextBox;
         private System.Windows.Forms.TextBox PastextBox;
         private System.Windows.Forms.TextBox ContacttextBox;
@@ -361,5 +360,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label10;
     }
 }

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace AdminApp
 {
-    public partial class Reports : Form
+    public partial class Reports : Form // класс формы на которой отображаются отчеты
     {
         CarShowroom CarShowroom1;
         public Reports()

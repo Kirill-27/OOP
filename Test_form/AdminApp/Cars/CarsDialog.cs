@@ -11,6 +11,7 @@ using CarShowroomLibrary.Models;
 
 namespace AdminApp
 {
+    //класс формы диалогового окна для изменения или добавления автомобиля
     public partial class CarsDialog : Form
     {
         public Car Car { get; set; }

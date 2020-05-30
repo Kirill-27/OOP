@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CarShowroomLibrary.Models
 {
     [Serializable] 
-    public class Admin : User // Все что нужно админу есть в абстракном классе User
+    public class Admin : User // Все что нужно админу есть в абстракном классе User(логин и пароль)
     {
 
     }

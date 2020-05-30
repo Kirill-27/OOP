@@ -8,7 +8,7 @@ using CarShowroomLibrary.Models;
 
 namespace CarShowroomLibrary.DAL
 {
-    public class Dao
+    public class Dao // класс позволяющий сохранять данные в файлы и извлекать их от туда
     {
         private readonly CarShowroom carShowroom;
         public Dao (CarShowroom carShowroom)

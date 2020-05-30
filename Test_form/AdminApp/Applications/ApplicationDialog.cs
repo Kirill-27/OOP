@@ -11,6 +11,7 @@ using System.Windows.Forms;
 
 namespace AdminApp
 {
+    //класс формы диалогового окна для изменения или добавления новой позиции в заявку поставщикам
     public partial class ApplicationDialog : Form
     {
         public CarInApplic Appl { get; set; }

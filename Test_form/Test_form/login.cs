@@ -13,7 +13,7 @@ using CarShowroomLibrary.Models;
 namespace CarShowroomLibrary
 {
     
-    public partial class login : Form
+    public partial class login : Form // форма, которая открывается в при запуске приложения от лица покупателя
     {
         CarShowroom CarShowroom1 =  new CarShowroom();
         public login()

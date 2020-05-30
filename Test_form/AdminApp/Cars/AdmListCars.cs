@@ -11,7 +11,9 @@ using CarShowroomLibrary.Models;
 
 namespace AdminApp
 {
-    public partial class AdmListCars : Form
+    //класс формы на которой админу 
+    //предоставляется возможность взаимодействия с базой автомобилей
+    public partial class AdmListCars : Form 
     {
         CarShowroom CarShowroom1;
         public AdmListCars()

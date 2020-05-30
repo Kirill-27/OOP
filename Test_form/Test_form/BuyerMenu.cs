@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace CarShowroomLibrary
 {
-    public partial class BuyerMenu : Form
+    public partial class BuyerMenu : Form //форма основого меню покупателя
     {
         public Buyer CurentBuyer { get; set; }
         public BuyerMenu()
@@ -32,11 +32,6 @@ namespace CarShowroomLibrary
             this.Visible = true;
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void AllCarsBut_Click(object sender, EventArgs e)
         {
             var f = new BuyerAllCars(CurentBuyer);
@@ -51,6 +46,17 @@ namespace CarShowroomLibrary
             Hide();
             f.ShowDialog();
             Visible = true;
+        }
+
+        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Main user menu. use buttons to take advantage" +
+                " of your opportunities", "Help");
+        }
+
+        private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
