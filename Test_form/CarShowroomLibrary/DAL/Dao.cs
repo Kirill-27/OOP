@@ -15,12 +15,14 @@ namespace CarShowroomLibrary.DAL
         {
             this.carShowroom = carShowroom;
         }
+        const string ADMINS = "admins.txt";
         const string CARS = "cars.txt";
         const string BUYERS = "buyers.txt";
         const string REPORTS = "reports.txt";
         const string APPLICATION = "application.txt";
         public void Save()
         {
+            SaveAdmins();
             SaveCars();
             SaveBuyers();
             SaveReports();
@@ -28,6 +30,18 @@ namespace CarShowroomLibrary.DAL
         public void SaveAppl()
         {
             SaveApplic();
+        }
+        private void SaveAdmins()
+        {
+            using (var wr = new StreamWriter(ADMINS))
+            {
+                wr.WriteLine(carShowroom.Admins.Count);
+                foreach (var p in carShowroom.Admins)
+                {
+                    wr.WriteLine(p.Name);
+                    wr.WriteLine(p.Password);
+                }
+            }
         }
         private void SaveApplic()
         {
@@ -114,11 +128,27 @@ namespace CarShowroomLibrary.DAL
 
         public void Load()
         {
+            LoadAdmins();
             LoadCars();
             LoadBuyers();
             LoadReports();
         }
-
+        private void LoadAdmins()
+        {
+            using (var rd = new StreamReader(ADMINS))
+            {
+                int n = Convert.ToInt32(rd.ReadLine());
+                carShowroom.Admins.Clear();
+                for (int i = 0; i < n; i++)
+                {
+                    carShowroom.Admins.Add(new Admin
+                    {
+                        Name = rd.ReadLine(),
+                        Password = rd.ReadLine()
+                    }); 
+                }
+            }
+        }
         private void LoadCars()
         {
             using (var rd = new StreamReader(CARS))

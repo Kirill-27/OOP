@@ -20,6 +20,7 @@ namespace CarShowroomLibrary.Models
         public List<Car> Cars { private set; get; }
         public List<Car> ShoppingCart { private set; get; }
         public List<Buyer> Buyers { private set; get; }
+        public List<Admin> Admins { private set; get; }
         public List<Report> Reports { private set; get; }
         public string[] coun = new string[] { "China","USA","Japan","Germany","South Korea","India","Spain",
                 "Japan", "Germany", "Germany", "Japan", "Japan" };
@@ -27,6 +28,7 @@ namespace CarShowroomLibrary.Models
                 "SEAT", "Suzuki", "Audi", "Porsche", "Mitsubishi", "Subaru" };
         public CarShowroom()
         {
+            Admins = new List<Admin>();
             Cars = new List<Car>();
             Buyers = new List<Buyer>();
             Reports = new List<Report>();
@@ -111,8 +113,18 @@ namespace CarShowroomLibrary.Models
             if(chek== true|| NewCar.ID.Equals(null) || NewCar.ID.Equals(-1)) NewCar.ID = ma + 1;
             Cars.Add(NewCar);
         }
-            public void FillTestData(int n)
+        public void FillTestData(int n)
         {
+            //Admins
+            for (int i = 1; i <= n; i++)
+            {
+                Admin NewA = new Admin()
+                {
+                    Name = $"Admin_{i}",
+                    Password = "9999",
+                };
+                Admins.Add(NewA);
+            }
             // Cars
             Cars.Clear();
             for (int i = 0; i < n; i++)
@@ -132,7 +144,7 @@ namespace CarShowroomLibrary.Models
             // Buyers
             for (int i = 1; i <= n; i++)
             {
-                int numb = 80042900 + i % 2000;
+                int numb = 80042900 + i % 100000;
                 Buyer NewB= new Buyer()
                 { 
                     Contacts = $"+{numb}",

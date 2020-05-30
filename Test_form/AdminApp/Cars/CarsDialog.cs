@@ -44,9 +44,10 @@ namespace AdminApp
                 Car.Price = Convert.ToInt32(Prise_numericUp.Value);
                 Car.TechState = Convert.ToInt32(Tech_numeric.Value);
                 Car.YearOfIssue = Convert.ToInt32(Year_numeric.Value);
-                if (string.IsNullOrWhiteSpace(FeaturestextBox.Text))Car.Features = "none";
-                
+                if (string.IsNullOrWhiteSpace(FeaturestextBox.Text)) Car.Features = "none";
+
             }
+            else MessageBox.Show("You cannot add an empty text field or more than 25 characters","Attention!");
            
         }
         private void ChekText(Control text, FormClosingEventArgs e)

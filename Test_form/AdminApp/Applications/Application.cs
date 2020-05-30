@@ -78,6 +78,7 @@ namespace AdminApp
                 MessageBox.Show("Application is empty", "Attention!", MessageBoxButtons.OK);
                 return;
             }
+            DialogResult = DialogResult.Yes;
             CarShowroom1.Send();
             CarShowroom1.ifSaved = true;
             Close();

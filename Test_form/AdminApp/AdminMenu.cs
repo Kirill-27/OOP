@@ -22,7 +22,11 @@ namespace AdminApp
         {
             var f = new AdmListCars();
             this.Hide();
-            f.ShowDialog();
+            if (f.ShowDialog() != DialogResult.Yes)
+            {
+                Close();
+                return;
+            }
             this.Visible=true;
         }
 
@@ -30,7 +34,11 @@ namespace AdminApp
         {
             var f = new Buyers();
             this.Hide();
-            f.ShowDialog();
+            if (f.ShowDialog() != DialogResult.Yes)
+            {
+                Close();
+                return;
+            }
             this.Visible = true;
         }
 
@@ -38,7 +46,11 @@ namespace AdminApp
         {
             var f = new Application();
             this.Hide();
-            f.ShowDialog();
+            if (f.ShowDialog() != DialogResult.Yes)
+            {
+                Close();
+                return;
+            }
             this.Visible = true;
         }
 
@@ -46,7 +58,11 @@ namespace AdminApp
         {
             var f = new Reports();
             this.Hide();
-            f.ShowDialog();
+            if (f.ShowDialog() != DialogResult.Yes)
+            {
+                Close();
+                return;
+            }
             this.Visible = true;
         }
 

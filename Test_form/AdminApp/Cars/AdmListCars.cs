@@ -20,7 +20,7 @@ namespace AdminApp
         {
             InitializeComponent();
             CarShowroom1 = new CarShowroom();
-            //CarShowroom1.FillTestData(25);
+            //CarShowroom1.FillTestData(100);
             CarShowroom1.Load();
             carBindingSource.DataSource = CarShowroom1.Cars; 
         }

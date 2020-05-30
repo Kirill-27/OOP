@@ -36,7 +36,11 @@ namespace CarShowroomLibrary
         {
             var f = new BuyerAllCars(CurentBuyer);
             Hide();
-            f.ShowDialog();
+            if (f.ShowDialog() != DialogResult.Yes)
+            {
+                Close();
+                return;
+            }
             Visible = true;
         }
 
@@ -44,7 +48,11 @@ namespace CarShowroomLibrary
         {
             var f = new FindBest(CurentBuyer);
             Hide();
-            f.ShowDialog();
+            if (f.ShowDialog() != DialogResult.Yes)
+            {
+                Close();
+                return;
+            }
             Visible = true;
         }
 
