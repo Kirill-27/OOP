@@ -76,5 +76,15 @@ namespace CarShowroomLibrary
                 CarShowroom1.Save();
             }
         }
+
+        private void LogTextbox_Click(object sender, EventArgs e)
+        {
+            LogTextbox.BackColor = Color.White;
+        }
+
+        private void PassTextBox_Click(object sender, EventArgs e)
+        {
+            PassTextBox.BackColor = Color.White;
+        }
     }
 }

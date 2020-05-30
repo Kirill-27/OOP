@@ -55,7 +55,44 @@ namespace CarShowroomLibrary
 
         private void Buy_but_Click(object sender, EventArgs e)
         {
-
+            if (CarShowroom1.ShoppingCart.Count == 0) return;
+            var res = MessageBox.Show("Buy all cars from the shopping cart?", "Сonfirmation", MessageBoxButtons.YesNo);
+            if (res==DialogResult.No) return;
+            List<Car>ForBuy = new List<Car>();
+            foreach (var shop in CarShowroom1.ShoppingCart)
+            {
+                ForBuy.Add(new Car
+                {
+                    ID = shop.ID,
+                    Features=shop.Features,
+                    MaksSpeed=shop.MaksSpeed,
+                    Model=shop.Model,
+                    Price=shop.Price,
+                    ProdCountry=shop.ProdCountry,
+                    TechState=shop.TechState,
+                    YearOfIssue=shop.YearOfIssue
+                }) ;
+            }
+            Report buy = new Report(ForBuy, CurentBuyer.Name, DateTime.Now);
+            CarShowroom1.Reports.Add(buy);
+            while(CarShowroom1.ShoppingCart.Count>0)
+            {
+                foreach (var shop in CarShowroom1.ShoppingCart)
+                {
+                    foreach (var car in CarShowroom1.Cars)
+                    {
+                        if (shop.ID == car.ID)
+                        {
+                            CarShowroom1.Cars.Remove(car);
+                            break;
+                        }
+                    }
+                    CarShowroom1.ShoppingCart.Remove(shop);
+                    break;
+                }
+            }
+            CarShowroom1.Save();
+            carBindingSource.ResetBindings(false);
         }
 
         private void ShowBut_Click(object sender, EventArgs e)
@@ -84,7 +121,7 @@ namespace CarShowroomLibrary
                     }
                 }
                 if(chekincart == true) return;
-                var res = MessageBox.Show($"Add {toAdd.Model} to Shopping Cart?", "Сonfirmation", MessageBoxButtons.YesNo);
+                var res = MessageBox.Show($"Add {toAdd.Model} to shopping cart?", "Сonfirmation", MessageBoxButtons.YesNo);
                 switch (res)
                 {
                     case DialogResult.Yes:
@@ -109,7 +146,7 @@ namespace CarShowroomLibrary
             if (CarShowroom1.ShoppingCart.Count != 0 && carBindingSource.DataSource == CarShowroom1.ShoppingCart)
             {
                 var toDel = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
-                var res = MessageBox.Show($"Remove{toDel.Model} from the Shopping Cart?", "Сonfirmation", MessageBoxButtons.YesNo);
+                var res = MessageBox.Show($"Remove{toDel.Model} from the shopping cart?", "Сonfirmation", MessageBoxButtons.YesNo);
                 switch (res)
                 {
                     case DialogResult.Yes:
@@ -120,6 +157,23 @@ namespace CarShowroomLibrary
                         break;
                 }
             }
+        }
+
+        private void BuyerAllCars_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(CarShowroom1.ShoppingCart.Count!=0)
+            {
+                var res = MessageBox.Show($"Exit and empty the shopping cart?", "Сonfirmation", MessageBoxButtons.YesNo);
+                switch (res)
+                {
+                    case DialogResult.Yes:
+                        break;
+                    case DialogResult.No:
+                        e.Cancel=true;
+                        break;
+                }
+            }
+             
         }
     }
 }
