@@ -39,7 +39,7 @@ namespace BuyerApp
 
         private void BackBut_Click(object sender, EventArgs e)
         {
-            Close();
+            Close(); 
         }
     }
 }
