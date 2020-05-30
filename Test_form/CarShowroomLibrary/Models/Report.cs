@@ -19,7 +19,6 @@ namespace CarShowroomLibrary.Models
             else
                 DateTime = (DateTime)t;
         }
-
         public List<Car> Cars_R { private set; get; }
         public string Buyer { private set; get; }
         public DateTime DateTime { private set; get; }

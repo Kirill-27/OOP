@@ -32,3 +32,4 @@ C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.Buyers.resources
 C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.BuyerDialog.resources
 C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.Application.resources
 C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.ApplicationDialog.resources
+C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.Reports.resources

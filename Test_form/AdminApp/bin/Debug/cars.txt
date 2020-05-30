@@ -31,12 +31,12 @@ BMW
 Germany
 29
 2003
-nope
+none
 5
 140
-Kia
+BMW
 10000
-South Korea
+China
 32
 2004
 nope

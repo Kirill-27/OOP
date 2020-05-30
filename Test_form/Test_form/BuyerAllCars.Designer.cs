@@ -135,6 +135,8 @@
             // 
             this.CarsdataGridView.AllowUserToAddRows = false;
             this.CarsdataGridView.AllowUserToDeleteRows = false;
+            this.CarsdataGridView.AllowUserToResizeColumns = false;
+            this.CarsdataGridView.AllowUserToResizeRows = false;
             this.CarsdataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.CarsdataGridView.AutoGenerateColumns = false;

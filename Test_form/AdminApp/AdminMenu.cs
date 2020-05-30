@@ -41,5 +41,13 @@ namespace AdminApp
             f.ShowDialog();
             this.Visible = true;
         }
+
+        private void Reportsbut_Click(object sender, EventArgs e)
+        {
+            var f = new Reports();
+            this.Hide();
+            f.ShowDialog();
+            this.Visible = true;
+        }
     }
 }

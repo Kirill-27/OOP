@@ -111,6 +111,7 @@
             this.Reportsbut.TabIndex = 7;
             this.Reportsbut.Text = "Reports";
             this.Reportsbut.UseVisualStyleBackColor = false;
+            this.Reportsbut.Click += new System.EventHandler(this.Reportsbut_Click);
             // 
             // AllCarsBut
             // 

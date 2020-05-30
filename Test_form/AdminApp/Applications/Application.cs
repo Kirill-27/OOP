@@ -29,8 +29,7 @@ namespace AdminApp
 
         private void Application_FormClosing(object sender, FormClosingEventArgs e)
         {
-           
-                if (CarShowroom1.Application.Count != 0 && CarShowroom1.ifSaved == true)
+            if (CarShowroom1.ifSaved != true&& CarShowroom1.Application.Count != 0)
                 {
                     var res = MessageBox.Show("Send the application before exit?", "Verification", MessageBoxButtons.YesNoCancel);
                     switch (res)
@@ -51,7 +50,12 @@ namespace AdminApp
 
         private void SaveBut_Click(object sender, EventArgs e)
         {
-            if(CarShowroom1.Application.Count!=0) CarShowroom1.Send();
+            if (CarShowroom1.Application.Count == 0)
+            {
+                MessageBox.Show("Application is empty", "Attention!", MessageBoxButtons.OK);
+                return;
+            }
+            CarShowroom1.Send();
             CarShowroom1.ifSaved = true;
             Close();
         }
@@ -68,7 +72,12 @@ namespace AdminApp
 
         private void SendToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (CarShowroom1.Application.Count != 0) CarShowroom1.Send();
+            if (CarShowroom1.Application.Count == 0)
+            {
+                MessageBox.Show("Application is empty", "Attention!", MessageBoxButtons.OK);
+                return;
+            }
+            CarShowroom1.Send();
             CarShowroom1.ifSaved = true;
             Close();
         }
