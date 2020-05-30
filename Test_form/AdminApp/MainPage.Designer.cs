@@ -31,11 +31,11 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.log = new System.Windows.Forms.TextBox();
             this.Login_but = new System.Windows.Forms.Button();
-            this.Pass = new System.Windows.Forms.TextBox();
             this.PassIMG = new System.Windows.Forms.PictureBox();
             this.UserIMG = new System.Windows.Forms.PictureBox();
+            this.LogTextbox = new System.Windows.Forms.TextBox();
+            this.PassTextBox = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PassIMG)).BeginInit();
@@ -45,10 +45,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel1.Controls.Add(this.PassTextBox);
+            this.panel1.Controls.Add(this.LogTextbox);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Controls.Add(this.log);
             this.panel1.Controls.Add(this.Login_but);
-            this.panel1.Controls.Add(this.Pass);
             this.panel1.Controls.Add(this.PassIMG);
             this.panel1.Controls.Add(this.UserIMG);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -79,15 +79,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Authorization";
             // 
-            // log
-            // 
-            this.log.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.log.Location = new System.Drawing.Point(116, 101);
-            this.log.Multiline = true;
-            this.log.Name = "log";
-            this.log.Size = new System.Drawing.Size(243, 50);
-            this.log.TabIndex = 7;
-            // 
             // Login_but
             // 
             this.Login_but.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -103,15 +94,7 @@
             this.Login_but.TabIndex = 5;
             this.Login_but.Text = "Log in";
             this.Login_but.UseVisualStyleBackColor = false;
-            // 
-            // Pass
-            // 
-            this.Pass.Font = new System.Drawing.Font("Calibri", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Pass.Location = new System.Drawing.Point(116, 186);
-            this.Pass.Name = "Pass";
-            this.Pass.Size = new System.Drawing.Size(243, 50);
-            this.Pass.TabIndex = 4;
-            this.Pass.UseSystemPasswordChar = true;
+            this.Login_but.Click += new System.EventHandler(this.Login_but_Click);
             // 
             // PassIMG
             // 
@@ -135,6 +118,27 @@
             this.UserIMG.TabIndex = 1;
             this.UserIMG.TabStop = false;
             // 
+            // LogTextbox
+            // 
+            this.LogTextbox.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LogTextbox.Location = new System.Drawing.Point(116, 101);
+            this.LogTextbox.Multiline = true;
+            this.LogTextbox.Name = "LogTextbox";
+            this.LogTextbox.Size = new System.Drawing.Size(243, 50);
+            this.LogTextbox.TabIndex = 9;
+            this.LogTextbox.Click += new System.EventHandler(this.LogTextbox_Click);
+           
+            // 
+            // PassTextBox
+            // 
+            this.PassTextBox.Font = new System.Drawing.Font("Calibri", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.PassTextBox.Location = new System.Drawing.Point(116, 186);
+            this.PassTextBox.Name = "PassTextBox";
+            this.PassTextBox.Size = new System.Drawing.Size(243, 50);
+            this.PassTextBox.TabIndex = 10;
+            this.PassTextBox.UseSystemPasswordChar = true;
+            this.PassTextBox.Click += new System.EventHandler(this.PassTextBox_Click);
+            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -156,13 +160,13 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox log;
         private System.Windows.Forms.Button Login_but;
-        private System.Windows.Forms.TextBox Pass;
         private System.Windows.Forms.PictureBox PassIMG;
         public System.Windows.Forms.PictureBox UserIMG;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox LogTextbox;
+        private System.Windows.Forms.TextBox PassTextBox;
     }
 }
 

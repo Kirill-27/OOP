@@ -216,14 +216,6 @@ Japan
 98
 2006
 nope
-28
-195
-BMW
-13000
-Germany
-1
-2007
-nope
 29
 200
 Kia
@@ -799,3 +791,11 @@ BMW
 Germany
 17
 2019
+none
+101
+120
+Tesla
+10000
+Japan
+50
+2000

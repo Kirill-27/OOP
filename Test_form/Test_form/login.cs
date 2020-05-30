@@ -15,10 +15,11 @@ namespace CarShowroomLibrary
     
     public partial class login : Form // форма, которая открывается в при запуске приложения от лица покупателя
     {
-        CarShowroom CarShowroom1 =  new CarShowroom();
+        CarShowroom CarShowroom1;
         public login()
         {
             InitializeComponent();
+            CarShowroom1 = new CarShowroom();
         }
 
 

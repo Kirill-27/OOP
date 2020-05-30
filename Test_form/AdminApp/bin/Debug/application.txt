@@ -1,9 +1,15 @@
-Date: 30.05.2020 19:31:10
-Number of positions: 1
+Date: 30.05.2020 21:59:27
+Number of positions: 2
+  
+Amount: 9
+Model: Toyota
+ProdCountry: USA
+TechState: 50
+YearOfIssue: 2000
   
 Amount: 5
-Model: Tesla
-ProdCountry: Germany
+Model: Toyota
+ProdCountry: Japan
 TechState: 50
 YearOfIssue: 2000
   
