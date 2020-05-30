@@ -67,5 +67,35 @@ namespace BuyerApp
             ModelBut.BackColor = Color.PaleGreen;
             PriceBut.BackColor = Color.LimeGreen;
         }
+
+        private void BuyBut_Click(object sender, EventArgs e)
+        {
+            if (CarShowroom1.ShoppingCart.Count == 0) return;
+            var ToBuy = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
+            var res = MessageBox.Show($"Buy {ToBuy}?", "Сonfirmation", MessageBoxButtons.YesNo);
+            if (res == DialogResult.No) return;
+            List<Car> ForBuy = new List<Car>();
+            ForBuy.Add(ToBuy);
+            Report buy = new Report(ForBuy, CurentBuyer.Name, DateTime.Now);
+            CarShowroom1.Reports.Add(buy);
+            foreach(var c in CarShowroom1.Cars)
+            {
+                if(c.ID.Equals(ToBuy.ID))
+                {
+                    CarShowroom1.Cars.Remove(c);
+                    break;
+                }
+            }
+            foreach (var c in CarShowroom1.ShoppingCart)
+            {
+                if (c.ID.Equals(ToBuy.ID))
+                {
+                    CarShowroom1.ShoppingCart.Remove(c);
+                    break;
+                }
+            }
+            CarShowroom1.Save();
+            carBindingSource.ResetBindings(false);
+        }
     }
 }
