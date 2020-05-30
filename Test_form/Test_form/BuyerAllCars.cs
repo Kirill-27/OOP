@@ -55,7 +55,11 @@ namespace CarShowroomLibrary
 
         private void Buy_but_Click(object sender, EventArgs e)
         {
-            if (CarShowroom1.ShoppingCart.Count == 0) return;
+            if (CarShowroom1.ShoppingCart.Count == 0)
+            {
+                MessageBox.Show("Shopping cart is empty", "Attention!");
+                return;
+            }
             var res = MessageBox.Show("Buy all cars from the shopping cart?", "Сonfirmation", MessageBoxButtons.YesNo);
             if (res==DialogResult.No) return;
             List<Car>ForBuy = new List<Car>();

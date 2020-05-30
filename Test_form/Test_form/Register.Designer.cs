@@ -30,7 +30,6 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.NametextBox = new System.Windows.Forms.TextBox();
             this.PastextBox = new System.Windows.Forms.TextBox();
             this.ContacttextBox = new System.Windows.Forms.TextBox();
@@ -57,7 +56,6 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.NametextBox);
             this.panel1.Controls.Add(this.PastextBox);
             this.panel1.Controls.Add(this.ContacttextBox);
@@ -77,7 +75,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(481, 297);
+            this.panel1.Size = new System.Drawing.Size(469, 242);
             this.panel1.TabIndex = 4;
             this.panel1.Text = "login";
             // 
@@ -85,28 +83,15 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(352, 141);
+            this.label10.Location = new System.Drawing.Point(343, 88);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(94, 16);
             this.label10.TabIndex = 31;
             this.label10.Text = "*not obligatory";
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(481, 58);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "Registration";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // NametextBox
             // 
-            this.NametextBox.Location = new System.Drawing.Point(82, 72);
+            this.NametextBox.Location = new System.Drawing.Point(73, 19);
             this.NametextBox.Name = "NametextBox";
             this.NametextBox.Size = new System.Drawing.Size(142, 20);
             this.NametextBox.TabIndex = 28;
@@ -114,7 +99,7 @@
             // 
             // PastextBox
             // 
-            this.PastextBox.Location = new System.Drawing.Point(318, 72);
+            this.PastextBox.Location = new System.Drawing.Point(309, 19);
             this.PastextBox.Name = "PastextBox";
             this.PastextBox.Size = new System.Drawing.Size(142, 20);
             this.PastextBox.TabIndex = 27;
@@ -122,7 +107,7 @@
             // 
             // ContacttextBox
             // 
-            this.ContacttextBox.Location = new System.Drawing.Point(82, 103);
+            this.ContacttextBox.Location = new System.Drawing.Point(73, 50);
             this.ContacttextBox.Name = "ContacttextBox";
             this.ContacttextBox.Size = new System.Drawing.Size(142, 20);
             this.ContacttextBox.TabIndex = 26;
@@ -131,7 +116,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(68, 146);
+            this.label7.Location = new System.Drawing.Point(59, 93);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 13);
             this.label7.TabIndex = 25;
@@ -153,7 +138,7 @@
             "Porsche",
             "Mitsubishi",
             "Subaru"});
-            this.ModelcomboBox.Location = new System.Drawing.Point(204, 136);
+            this.ModelcomboBox.Location = new System.Drawing.Point(195, 83);
             this.ModelcomboBox.Name = "ModelcomboBox";
             this.ModelcomboBox.Size = new System.Drawing.Size(142, 21);
             this.ModelcomboBox.TabIndex = 23;
@@ -169,7 +154,7 @@
             this.BackBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.BackBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BackBut.Font = new System.Drawing.Font("Rockwell", 14F);
-            this.BackBut.Location = new System.Drawing.Point(354, 230);
+            this.BackBut.Location = new System.Drawing.Point(366, 177);
             this.BackBut.Name = "BackBut";
             this.BackBut.Size = new System.Drawing.Size(85, 45);
             this.BackBut.TabIndex = 22;
@@ -187,7 +172,7 @@
             this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.SaveBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBut.Font = new System.Drawing.Font("Rockwell", 14F);
-            this.SaveBut.Location = new System.Drawing.Point(242, 230);
+            this.SaveBut.Location = new System.Drawing.Point(252, 177);
             this.SaveBut.Name = "SaveBut";
             this.SaveBut.Size = new System.Drawing.Size(85, 45);
             this.SaveBut.TabIndex = 21;
@@ -201,7 +186,7 @@
             0,
             0,
             0});
-            this.Speed_numeric.Location = new System.Drawing.Point(204, 163);
+            this.Speed_numeric.Location = new System.Drawing.Point(195, 110);
             this.Speed_numeric.Maximum = new decimal(new int[] {
             400,
             0,
@@ -228,7 +213,7 @@
             0,
             0,
             0});
-            this.Perf_numeric.Location = new System.Drawing.Point(204, 191);
+            this.Perf_numeric.Location = new System.Drawing.Point(195, 138);
             this.Perf_numeric.Minimum = new decimal(new int[] {
             1,
             0,
@@ -250,7 +235,7 @@
             0,
             0,
             0});
-            this.Prise_numericUp.Location = new System.Drawing.Point(318, 104);
+            this.Prise_numericUp.Location = new System.Drawing.Point(309, 51);
             this.Prise_numericUp.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -273,7 +258,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(68, 198);
+            this.label8.Location = new System.Drawing.Point(59, 145);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(107, 13);
             this.label8.TabIndex = 17;
@@ -282,7 +267,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(243, 106);
+            this.label6.Location = new System.Drawing.Point(234, 53);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 13);
             this.label6.TabIndex = 15;
@@ -291,7 +276,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(68, 170);
+            this.label5.Location = new System.Drawing.Point(59, 117);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(107, 13);
             this.label5.TabIndex = 14;
@@ -300,7 +285,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(243, 79);
+            this.label4.Location = new System.Drawing.Point(234, 26);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 13;
@@ -309,7 +294,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(25, 106);
+            this.label3.Location = new System.Drawing.Point(16, 53);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 13);
             this.label3.TabIndex = 11;
@@ -318,7 +303,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 79);
+            this.label2.Location = new System.Drawing.Point(16, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 10;
@@ -328,7 +313,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 297);
+            this.ClientSize = new System.Drawing.Size(469, 242);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Register";
@@ -346,7 +331,6 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox NametextBox;
         private System.Windows.Forms.TextBox PastextBox;
         private System.Windows.Forms.TextBox ContacttextBox;

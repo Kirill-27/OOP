@@ -14,9 +14,25 @@ namespace BuyerApp
     public partial class Register : Form //форме регистрации нового покупателя в приложении
     {
         public Buyer Buyer { get; set; }
+        public string BuyerN { get; set; }
         public Register()
         {
             InitializeComponent();
+            BuyerN = ".";
+        }
+        public Register(Buyer edited) : this()
+        {
+            
+            Buyer = edited;
+            BuyerN = edited.Name;
+            ContacttextBox.Text = edited.Contacts;
+            Prise_numericUp.Value = edited.FinancialOpp;
+            Speed_numeric.Value = edited.MaksSpeedRequired;
+            ModelcomboBox.Text = edited.ModelRequired;
+            NametextBox.Text = edited.Name;
+            PastextBox.Text = edited.Password;
+            Perf_numeric.Value = edited.PerfomanceRequired;
+
         }
         private void ChekText(Control text, FormClosingEventArgs e)
         {
@@ -63,18 +79,21 @@ namespace BuyerApp
             {
                 CarShowroom CarShowroom1 = new CarShowroom();
                 CarShowroom1.Load();
-                foreach (var b in CarShowroom1.Buyers)
+                if (BuyerN != NametextBox.Text)
                 {
-                    if (b.Name.Equals(NametextBox.Text))
+                    foreach (var b in CarShowroom1.Buyers)
                     {
-                        e.Cancel = true;
-                        NametextBox.BackColor = Color.LightPink;
-                        MessageBox.Show("User with the same name already exists", "Attantion!", MessageBoxButtons.OK);
+                        if (b.Name.Equals(NametextBox.Text))
+                        {
+                            e.Cancel = true;
+                            NametextBox.BackColor = Color.LightPink;
+                            MessageBox.Show("User with the same name already exists", "Attantion!", MessageBoxButtons.OK);
+                        }
                     }
                 }
                 if (e.Cancel == false)
                 {
-                    Buyer = new Buyer();
+                    if(Buyer==null) Buyer = new Buyer();
                     Buyer.Contacts = ContacttextBox.Text;
                     Buyer.FinancialOpp = Convert.ToInt32(Prise_numericUp.Value);
                     Buyer.MaksSpeedRequired = Convert.ToInt32(Speed_numeric.Value);
@@ -87,6 +106,7 @@ namespace BuyerApp
                         Buyer.ModelRequired = "nope";
                     }
                 }
+                CarShowroom1.Save();
             }
         }
 

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.NametextBox = new System.Windows.Forms.TextBox();
             this.PastextBox = new System.Windows.Forms.TextBox();
             this.ContacttextBox = new System.Windows.Forms.TextBox();
@@ -46,7 +47,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BackBut = new System.Windows.Forms.Button();
             this.SaveBut = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Speed_numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perf_numeric)).BeginInit();
@@ -81,12 +81,23 @@
             this.panel1.TabIndex = 3;
             this.panel1.Text = "login";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(357, 150);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(94, 16);
+            this.label10.TabIndex = 46;
+            this.label10.Text = "*not obligatory";
+            // 
             // NametextBox
             // 
             this.NametextBox.Location = new System.Drawing.Point(87, 85);
             this.NametextBox.Name = "NametextBox";
             this.NametextBox.Size = new System.Drawing.Size(142, 20);
             this.NametextBox.TabIndex = 44;
+            this.NametextBox.Click += new System.EventHandler(this.NametextBox_Click_1);
             // 
             // PastextBox
             // 
@@ -94,6 +105,7 @@
             this.PastextBox.Name = "PastextBox";
             this.PastextBox.Size = new System.Drawing.Size(142, 20);
             this.PastextBox.TabIndex = 43;
+            this.PastextBox.Click += new System.EventHandler(this.PastextBox_Click_1);
             // 
             // ContacttextBox
             // 
@@ -101,6 +113,7 @@
             this.ContacttextBox.Name = "ContacttextBox";
             this.ContacttextBox.Size = new System.Drawing.Size(142, 20);
             this.ContacttextBox.TabIndex = 42;
+            this.ContacttextBox.Click += new System.EventHandler(this.ContacttextBox_Click);
             // 
             // label7
             // 
@@ -272,7 +285,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(495, 58);
             this.label1.TabIndex = 29;
-            this.label1.Text = "Add\\Edit Buyer";
+            this.label1.Text = "Add Buyer";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // BackBut
@@ -310,16 +323,6 @@
             this.SaveBut.TabIndex = 21;
             this.SaveBut.Text = "Save";
             this.SaveBut.UseVisualStyleBackColor = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(357, 150);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(94, 16);
-            this.label10.TabIndex = 46;
-            this.label10.Text = "*not obligatory";
             // 
             // BuyerDialog
             // 

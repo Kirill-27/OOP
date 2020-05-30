@@ -15,6 +15,7 @@ namespace CarShowroomLibrary
     public partial class BuyerMenu : Form //форма основого меню покупателя
     {
         public Buyer CurentBuyer { get; set; }
+        
         public BuyerMenu()
         {
             InitializeComponent();
@@ -65,6 +66,12 @@ namespace CarShowroomLibrary
         private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void AccountBut_Click(object sender, EventArgs e)
+        {
+            var f = new Register(CurentBuyer);
+            f.ShowDialog();
         }
     }
 }

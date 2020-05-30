@@ -37,6 +37,7 @@
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.AccountBut = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -45,6 +46,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panel1.Controls.Add(this.AccountBut);
             this.panel1.Controls.Add(this.FindCarBut);
             this.panel1.Controls.Add(this.AllCarsBut);
             this.panel1.Controls.Add(this.panel2);
@@ -66,7 +68,7 @@
             this.FindCarBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.FindCarBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FindCarBut.Font = new System.Drawing.Font("Rockwell", 20.25F);
-            this.FindCarBut.Location = new System.Drawing.Point(76, 115);
+            this.FindCarBut.Location = new System.Drawing.Point(76, 100);
             this.FindCarBut.Name = "FindCarBut";
             this.FindCarBut.Size = new System.Drawing.Size(423, 42);
             this.FindCarBut.TabIndex = 6;
@@ -85,7 +87,7 @@
             this.AllCarsBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.AllCarsBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AllCarsBut.Font = new System.Drawing.Font("Rockwell", 20.25F);
-            this.AllCarsBut.Location = new System.Drawing.Point(76, 199);
+            this.AllCarsBut.Location = new System.Drawing.Point(76, 161);
             this.AllCarsBut.Name = "AllCarsBut";
             this.AllCarsBut.Size = new System.Drawing.Size(423, 42);
             this.AllCarsBut.TabIndex = 5;
@@ -150,6 +152,25 @@
             this.HelpToolStripMenuItem.Text = "Help";
             this.HelpToolStripMenuItem.Click += new System.EventHandler(this.HelpToolStripMenuItem_Click);
             // 
+            // AccountBut
+            // 
+            this.AccountBut.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AccountBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.AccountBut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AccountBut.FlatAppearance.BorderSize = 0;
+            this.AccountBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.AccountBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.AccountBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AccountBut.Font = new System.Drawing.Font("Rockwell", 20.25F);
+            this.AccountBut.Location = new System.Drawing.Point(76, 220);
+            this.AccountBut.Name = "AccountBut";
+            this.AccountBut.Size = new System.Drawing.Size(423, 42);
+            this.AccountBut.TabIndex = 7;
+            this.AccountBut.Text = "Account settings";
+            this.AccountBut.UseVisualStyleBackColor = false;
+            this.AccountBut.Click += new System.EventHandler(this.AccountBut_Click);
+            // 
             // BuyerMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -178,5 +199,6 @@
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem HelpToolStripMenuItem;
+        private System.Windows.Forms.Button AccountBut;
     }
 }

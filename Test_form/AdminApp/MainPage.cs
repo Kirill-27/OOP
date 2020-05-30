@@ -18,6 +18,8 @@ namespace AdminApp
         {
             InitializeComponent();
             CarShowroom1 = new CarShowroom();
+            CarShowroom1.FillTestData(20);
+            CarShowroom1.Save();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

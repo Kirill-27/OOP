@@ -78,21 +78,6 @@ namespace AdminApp
         }
 
 
-        private void NametextBox_Click(object sender, EventArgs e)
-        {
-            NametextBox.BackColor = Color.White;
-        }
-
-        private void PastextBox_Click(object sender, EventArgs e)
-        {
-            PastextBox.BackColor = Color.White;
-        }
-
-        private void ContacttextBox_Click(object sender, EventArgs e)
-        {
-            ContacttextBox.BackColor = Color.White;
-        }
-
         private void ChekPass(Control text, FormClosingEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(text.Text) || text.Text.Length > 12 || text.Text.Length < 3)
@@ -101,6 +86,21 @@ namespace AdminApp
                 e.Cancel = true;
             }
             else text.BackColor = Color.White;
+        }
+
+        private void NametextBox_Click_1(object sender, EventArgs e)
+        {
+            NametextBox.BackColor = Color.White;
+        }
+
+        private void PastextBox_Click_1(object sender, EventArgs e)
+        {
+            PastextBox.BackColor = Color.White;
+        }
+
+        private void ContacttextBox_Click(object sender, EventArgs e)
+        {
+            ContacttextBox.BackColor = Color.White;
         }
     }
 }
