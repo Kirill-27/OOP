@@ -64,7 +64,7 @@
             this.FindCarBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FindCarBut.FlatAppearance.BorderSize = 0;
             this.FindCarBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.FindCarBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.FindCarBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.FindCarBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.FindCarBut.Font = new System.Drawing.Font("Rockwell", 20.25F);
             this.FindCarBut.Location = new System.Drawing.Point(121, 121);
@@ -83,7 +83,7 @@
             this.AllCarsBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AllCarsBut.FlatAppearance.BorderSize = 0;
             this.AllCarsBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.AllCarsBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.AllCarsBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.AllCarsBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AllCarsBut.Font = new System.Drawing.Font("Rockwell", 20.25F);
             this.AllCarsBut.Location = new System.Drawing.Point(121, 199);

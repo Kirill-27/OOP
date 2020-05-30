@@ -1,4 +1,4 @@
-142
+140
 nope
 3
 120
@@ -40,14 +40,6 @@ Germany
 47
 2009
 nope
-13
-220
-Lifan
-18000
-China
-56
-2012
-nope
 14
 235
 Tesla
@@ -79,14 +71,6 @@ TATA Motors
 India
 71
 2017
-nope
-19
-100
-SEAT
-24000
-Spain
-74
-2018
 nope
 20
 115

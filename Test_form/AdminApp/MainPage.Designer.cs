@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.log = new System.Windows.Forms.TextBox();
             this.Login_but = new System.Windows.Forms.Button();
             this.Pass = new System.Windows.Forms.TextBox();
             this.PassIMG = new System.Windows.Forms.PictureBox();
             this.UserIMG = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PassIMG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserIMG)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -58,6 +58,27 @@
             this.panel1.TabIndex = 1;
             this.panel1.Text = "login";
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(390, 69);
+            this.panel2.TabIndex = 8;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(88, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(227, 45);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Authorization";
+            // 
             // log
             // 
             this.log.Font = new System.Drawing.Font("Calibri", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -73,7 +94,7 @@
             this.Login_but.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Login_but.FlatAppearance.BorderSize = 0;
             this.Login_but.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(208)))), ((int)(((byte)(186)))));
-            this.Login_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(110)))), ((int)(((byte)(91)))));
+            this.Login_but.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.Login_but.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Login_but.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Login_but.Location = new System.Drawing.Point(227, 255);
@@ -114,27 +135,6 @@
             this.UserIMG.TabIndex = 1;
             this.UserIMG.TabStop = false;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(390, 69);
-            this.panel2.TabIndex = 8;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(88, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 45);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Authorization";
-            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -145,10 +145,10 @@
             this.Text = "Authorization";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PassIMG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.UserIMG)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PassIMG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserIMG)).EndInit();
             this.ResumeLayout(false);
 
         }

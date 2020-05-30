@@ -86,7 +86,7 @@
             this.EditBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EditBut.FlatAppearance.BorderSize = 0;
             this.EditBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.EditBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.EditBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.EditBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditBut.Font = new System.Drawing.Font("Rockwell", 16F);
             this.EditBut.Location = new System.Drawing.Point(655, 155);
@@ -203,7 +203,7 @@
             this.DeleteBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DeleteBut.FlatAppearance.BorderSize = 0;
             this.DeleteBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.DeleteBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.DeleteBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.DeleteBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DeleteBut.Font = new System.Drawing.Font("Rockwell", 16F);
             this.DeleteBut.Location = new System.Drawing.Point(655, 219);
@@ -221,7 +221,7 @@
             this.AddBuyerBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddBuyerBut.FlatAppearance.BorderSize = 0;
             this.AddBuyerBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.AddBuyerBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.AddBuyerBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.AddBuyerBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddBuyerBut.Font = new System.Drawing.Font("Rockwell", 16F);
             this.AddBuyerBut.Location = new System.Drawing.Point(655, 91);

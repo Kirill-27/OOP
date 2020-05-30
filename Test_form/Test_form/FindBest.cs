@@ -72,7 +72,7 @@ namespace BuyerApp
         {
             if (CarShowroom1.ShoppingCart.Count == 0) return;
             var ToBuy = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
-            var res = MessageBox.Show($"Buy {ToBuy}?", "Сonfirmation", MessageBoxButtons.YesNo);
+            var res = MessageBox.Show($"Buy {ToBuy.Model}?", "Сonfirmation", MessageBoxButtons.YesNo);
             if (res == DialogResult.No) return;
             List<Car> ForBuy = new List<Car>();
             ForBuy.Add(ToBuy);
@@ -96,6 +96,42 @@ namespace BuyerApp
             }
             CarShowroom1.Save();
             carBindingSource.ResetBindings(false);
+        }
+
+        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This window allows you to find the car that suits you best and buy it if you wish.\n" +
+                "You can view the list of cars that suit you personally at the" +
+                " price of either a model, as well as a list of cars " +
+                "that fully meet your requirements, to do this, use the buttons at the bottom of the screen.\n" +
+                "To buy a car, select it from the list and click the buy button.", "Help");
+        }
+
+        private void byAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CarShowroom1.FindAllthebest(CurentBuyer);
+            carBindingSource.ResetBindings(false);
+            AllBut.BackColor = Color.LimeGreen;
+            ModelBut.BackColor = Color.PaleGreen;
+            PriceBut.BackColor = Color.PaleGreen;
+        }
+
+        private void byModelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CarShowroom1.FindBestModel(CurentBuyer);
+            carBindingSource.ResetBindings(false);
+            AllBut.BackColor = Color.PaleGreen;
+            ModelBut.BackColor = Color.LimeGreen;
+            PriceBut.BackColor = Color.PaleGreen;
+        }
+
+        private void byPriceToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CarShowroom1.FindBestPrice(CurentBuyer);
+            carBindingSource.ResetBindings(false);
+            AllBut.BackColor = Color.PaleGreen;
+            ModelBut.BackColor = Color.PaleGreen;
+            PriceBut.BackColor = Color.LimeGreen;
         }
     }
 }

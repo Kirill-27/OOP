@@ -180,5 +180,31 @@ namespace CarShowroomLibrary
             }
              
         }
+
+        private void shopingCartToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            carBindingSource.DataSource = CarShowroom1.ShoppingCart;
+            AllCars.BackColor = Color.PaleGreen;
+            ShowBut.BackColor = Color.LimeGreen;
+        }
+
+        private void allCarsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            carBindingSource.DataSource = CarShowroom1.Cars;
+            ShowBut.BackColor = Color.PaleGreen;
+            AllCars.BackColor = Color.LimeGreen;
+        }
+
+        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This window provides a list of all cars.\n" +
+                "You can buy a car, to do this, select the appropriate one from the list and click the " +
+                "\"Add to cart  Remove from cart \" button. The car will be added to the cart." +
+                " You cannot add more than one car to the basket.\n" +
+                "To view the basket, click the \"My shopping cart \" button here you can " +
+                "remove the selected item from the basket using the \"Add to cart Remove from cart \" button.\n" +
+            "To buy all cars from the basket click \"Buy \" \n" +
+            "If you exit this window, then the basket will be dumped.", "Help");
+        }
     }
 }

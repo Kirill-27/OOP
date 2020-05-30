@@ -107,8 +107,7 @@ namespace AdminApp
 
         private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var help = new Help();
-            help.ShowDialog();
+            MessageBox.Show("This is a window for interacting with a buyer's base.", "Help");
         }
 
         private void EditBut_Click(object sender, EventArgs e)

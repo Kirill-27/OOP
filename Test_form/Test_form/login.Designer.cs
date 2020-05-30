@@ -37,9 +37,9 @@
             this.RegistrationBut = new System.Windows.Forms.Button();
             this.Loginbut = new System.Windows.Forms.Button();
             this.PassTextBox = new System.Windows.Forms.TextBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -98,7 +98,7 @@
             this.RegistrationBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.RegistrationBut.FlatAppearance.BorderSize = 0;
             this.RegistrationBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.RegistrationBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.RegistrationBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.RegistrationBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RegistrationBut.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RegistrationBut.Location = new System.Drawing.Point(59, 247);
@@ -115,7 +115,7 @@
             this.Loginbut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Loginbut.FlatAppearance.BorderSize = 0;
             this.Loginbut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.Loginbut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Loginbut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.Loginbut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Loginbut.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Loginbut.Location = new System.Drawing.Point(256, 247);
@@ -135,11 +135,6 @@
             this.PassTextBox.TabIndex = 4;
             this.PassTextBox.UseSystemPasswordChar = true;
             this.PassTextBox.Click += new System.EventHandler(this.PassTextBox_Click);
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // panel2
             // 
@@ -161,6 +156,11 @@
             this.label1.Size = new System.Drawing.Size(227, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "Authorization";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // login
             // 

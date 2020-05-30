@@ -87,7 +87,7 @@
             this.EditBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EditBut.FlatAppearance.BorderSize = 0;
             this.EditBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.EditBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.EditBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.EditBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditBut.Font = new System.Drawing.Font("Rockwell", 16F);
             this.EditBut.Location = new System.Drawing.Point(669, 155);
@@ -152,7 +152,7 @@
             this.Delete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Delete.FlatAppearance.BorderSize = 0;
             this.Delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.Delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Delete.Font = new System.Drawing.Font("Rockwell", 16F);
             this.Delete.Location = new System.Drawing.Point(669, 219);
@@ -170,7 +170,7 @@
             this.AddCar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddCar.FlatAppearance.BorderSize = 0;
             this.AddCar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.AddCar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.AddCar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.AddCar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddCar.Font = new System.Drawing.Font("Rockwell", 16F);
             this.AddCar.Location = new System.Drawing.Point(669, 91);

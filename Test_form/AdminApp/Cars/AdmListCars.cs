@@ -142,8 +142,7 @@ namespace AdminApp
 
         private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var f = new Help();
-            f.ShowDialog();
+            MessageBox.Show("This is a window for interacting with the car base.", "Help");
         }
 
         private void back_Click(object sender, EventArgs e)

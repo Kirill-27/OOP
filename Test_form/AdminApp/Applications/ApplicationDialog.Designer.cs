@@ -180,7 +180,7 @@
             this.SaveBut.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.SaveBut.FlatAppearance.BorderSize = 0;
             this.SaveBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.SaveBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBut.Font = new System.Drawing.Font("Rockwell", 14F);
             this.SaveBut.Location = new System.Drawing.Point(335, 92);

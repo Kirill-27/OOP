@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.CountrycomboBox = new System.Windows.Forms.ComboBox();
             this.ModelcomboBox = new System.Windows.Forms.ComboBox();
@@ -46,7 +47,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.FeaturestextBox = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Speed_numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Tech_numeric)).BeginInit();
@@ -81,6 +81,16 @@
             this.panel1.Size = new System.Drawing.Size(493, 282);
             this.panel1.TabIndex = 2;
             this.panel1.Text = "login";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(311, 231);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(15, 20);
+            this.label9.TabIndex = 32;
+            this.label9.Text = "*";
             // 
             // label1
             // 
@@ -162,7 +172,7 @@
             this.SaveBut.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.SaveBut.FlatAppearance.BorderSize = 0;
             this.SaveBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.SaveBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBut.Font = new System.Drawing.Font("Rockwell", 14F);
             this.SaveBut.Location = new System.Drawing.Point(347, 74);
@@ -351,16 +361,6 @@
             this.FeaturestextBox.Name = "FeaturestextBox";
             this.FeaturestextBox.Size = new System.Drawing.Size(185, 20);
             this.FeaturestextBox.TabIndex = 8;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(311, 231);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(15, 20);
-            this.label9.TabIndex = 32;
-            this.label9.Text = "*";
             // 
             // CarsDialog
             // 

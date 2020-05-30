@@ -27,7 +27,6 @@ C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.csproj.CopyCompl
 C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.exe
 C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.pdb
 C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.CarsDialog.resources
-C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.Help.resources
 C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.Buyers.resources
 C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.BuyerDialog.resources
 C:\КурсачГит\OOP\Test_form\AdminApp\obj\Debug\AdminApp.Application.resources

@@ -37,5 +37,13 @@ namespace AdminApp
         {
             Close();
         }
+
+        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This is a report window, in the " +
+                "left table there is information about the name of the buyer and the date, " +
+                "in order to see the list of cars that were sold, " +
+                "click on the corresponding line","Help");
+        }
     }
 }

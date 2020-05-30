@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.NametextBox = new System.Windows.Forms.TextBox();
             this.PastextBox = new System.Windows.Forms.TextBox();
@@ -46,7 +47,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Speed_numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perf_numeric)).BeginInit();
@@ -80,6 +80,16 @@
             this.panel1.Size = new System.Drawing.Size(502, 295);
             this.panel1.TabIndex = 4;
             this.panel1.Text = "login";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(352, 139);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(15, 20);
+            this.label9.TabIndex = 30;
+            this.label9.Text = "*";
             // 
             // label1
             // 
@@ -174,7 +184,7 @@
             this.SaveBut.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.SaveBut.FlatAppearance.BorderSize = 0;
             this.SaveBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.SaveBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBut.Font = new System.Drawing.Font("Rockwell", 14F);
             this.SaveBut.Location = new System.Drawing.Point(263, 230);
@@ -313,16 +323,6 @@
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 10;
             this.label2.Text = "Name";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(352, 139);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(15, 20);
-            this.label9.TabIndex = 30;
-            this.label9.Text = "*";
             // 
             // Register
             // 

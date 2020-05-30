@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.BackBut = new System.Windows.Forms.Button();
-            this.SaveBut = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.NametextBox = new System.Windows.Forms.TextBox();
             this.PastextBox = new System.Windows.Forms.TextBox();
@@ -47,6 +44,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.BackBut = new System.Windows.Forms.Button();
+            this.SaveBut = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Speed_numeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Perf_numeric)).BeginInit();
@@ -80,55 +80,6 @@
             this.panel1.Size = new System.Drawing.Size(495, 309);
             this.panel1.TabIndex = 3;
             this.panel1.Text = "login";
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(495, 58);
-            this.label1.TabIndex = 29;
-            this.label1.Text = "Add\\Edit Buyer";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // BackBut
-            // 
-            this.BackBut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BackBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.BackBut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BackBut.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.BackBut.FlatAppearance.BorderSize = 0;
-            this.BackBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.BackBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
-            this.BackBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BackBut.Font = new System.Drawing.Font("Rockwell", 14F);
-            this.BackBut.Location = new System.Drawing.Point(381, 252);
-            this.BackBut.Name = "BackBut";
-            this.BackBut.Size = new System.Drawing.Size(85, 45);
-            this.BackBut.TabIndex = 22;
-            this.BackBut.Text = "Back";
-            this.BackBut.UseVisualStyleBackColor = false;
-            // 
-            // SaveBut
-            // 
-            this.SaveBut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.SaveBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.SaveBut.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.SaveBut.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.SaveBut.FlatAppearance.BorderSize = 0;
-            this.SaveBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.SaveBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SaveBut.Font = new System.Drawing.Font("Rockwell", 14F);
-            this.SaveBut.Location = new System.Drawing.Point(232, 252);
-            this.SaveBut.Name = "SaveBut";
-            this.SaveBut.Size = new System.Drawing.Size(134, 45);
-            this.SaveBut.TabIndex = 21;
-            this.SaveBut.Text = "Save";
-            this.SaveBut.UseVisualStyleBackColor = false;
             // 
             // label9
             // 
@@ -320,6 +271,55 @@
             this.label2.Size = new System.Drawing.Size(35, 13);
             this.label2.TabIndex = 31;
             this.label2.Text = "Name";
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(495, 58);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "Add\\Edit Buyer";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // BackBut
+            // 
+            this.BackBut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BackBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.BackBut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BackBut.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.BackBut.FlatAppearance.BorderSize = 0;
+            this.BackBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BackBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.BackBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackBut.Font = new System.Drawing.Font("Rockwell", 14F);
+            this.BackBut.Location = new System.Drawing.Point(381, 252);
+            this.BackBut.Name = "BackBut";
+            this.BackBut.Size = new System.Drawing.Size(85, 45);
+            this.BackBut.TabIndex = 22;
+            this.BackBut.Text = "Back";
+            this.BackBut.UseVisualStyleBackColor = false;
+            // 
+            // SaveBut
+            // 
+            this.SaveBut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SaveBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.SaveBut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.SaveBut.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.SaveBut.FlatAppearance.BorderSize = 0;
+            this.SaveBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.SaveBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SaveBut.Font = new System.Drawing.Font("Rockwell", 14F);
+            this.SaveBut.Location = new System.Drawing.Point(232, 252);
+            this.SaveBut.Name = "SaveBut";
+            this.SaveBut.Size = new System.Drawing.Size(134, 45);
+            this.SaveBut.TabIndex = 21;
+            this.SaveBut.Text = "Save";
+            this.SaveBut.UseVisualStyleBackColor = false;
             // 
             // BuyerDialog
             // 

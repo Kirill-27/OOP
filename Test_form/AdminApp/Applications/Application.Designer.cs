@@ -33,12 +33,6 @@
             this.SaveBut = new System.Windows.Forms.Button();
             this.EditBut = new System.Windows.Forms.Button();
             this.AppldataGridView = new System.Windows.Forms.DataGridView();
-            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.modelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prodCountryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.yearOfIssueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.techStateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.carInApplicBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.back = new System.Windows.Forms.Button();
             this.Delete = new System.Windows.Forms.Button();
             this.AddCar = new System.Windows.Forms.Button();
@@ -54,11 +48,17 @@
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.amountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.modelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prodCountryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yearOfIssueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.techStateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.carInApplicBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.AdminList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AppldataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carInApplicBindingSource)).BeginInit();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.carInApplicBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // AdminList
@@ -85,7 +85,7 @@
             this.SaveBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SaveBut.FlatAppearance.BorderSize = 0;
             this.SaveBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.SaveBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.SaveBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SaveBut.Font = new System.Drawing.Font("Rockwell", 16F);
             this.SaveBut.Location = new System.Drawing.Point(439, 279);
@@ -103,7 +103,7 @@
             this.EditBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EditBut.FlatAppearance.BorderSize = 0;
             this.EditBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.EditBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.EditBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.EditBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditBut.Font = new System.Drawing.Font("Rockwell", 14F);
             this.EditBut.Location = new System.Drawing.Point(578, 155);
@@ -141,45 +141,6 @@
             this.AppldataGridView.Size = new System.Drawing.Size(513, 173);
             this.AppldataGridView.TabIndex = 13;
             // 
-            // amountDataGridViewTextBoxColumn
-            // 
-            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
-            this.amountDataGridViewTextBoxColumn.HeaderText = "Amount";
-            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
-            this.amountDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // modelDataGridViewTextBoxColumn
-            // 
-            this.modelDataGridViewTextBoxColumn.DataPropertyName = "Model";
-            this.modelDataGridViewTextBoxColumn.HeaderText = "Model";
-            this.modelDataGridViewTextBoxColumn.Name = "modelDataGridViewTextBoxColumn";
-            this.modelDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // prodCountryDataGridViewTextBoxColumn
-            // 
-            this.prodCountryDataGridViewTextBoxColumn.DataPropertyName = "ProdCountry";
-            this.prodCountryDataGridViewTextBoxColumn.HeaderText = "ProdCountry";
-            this.prodCountryDataGridViewTextBoxColumn.Name = "prodCountryDataGridViewTextBoxColumn";
-            this.prodCountryDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // yearOfIssueDataGridViewTextBoxColumn
-            // 
-            this.yearOfIssueDataGridViewTextBoxColumn.DataPropertyName = "YearOfIssue";
-            this.yearOfIssueDataGridViewTextBoxColumn.HeaderText = "YearOfIssue";
-            this.yearOfIssueDataGridViewTextBoxColumn.Name = "yearOfIssueDataGridViewTextBoxColumn";
-            this.yearOfIssueDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // techStateDataGridViewTextBoxColumn
-            // 
-            this.techStateDataGridViewTextBoxColumn.DataPropertyName = "TechState";
-            this.techStateDataGridViewTextBoxColumn.HeaderText = "TechState";
-            this.techStateDataGridViewTextBoxColumn.Name = "techStateDataGridViewTextBoxColumn";
-            this.techStateDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // carInApplicBindingSource
-            // 
-            this.carInApplicBindingSource.DataSource = typeof(CarShowroomLibrary.Models.CarInApplic);
-            // 
             // back
             // 
             this.back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -205,7 +166,7 @@
             this.Delete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Delete.FlatAppearance.BorderSize = 0;
             this.Delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.Delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.Delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Delete.Font = new System.Drawing.Font("Rockwell", 14F);
             this.Delete.Location = new System.Drawing.Point(578, 219);
@@ -223,7 +184,7 @@
             this.AddCar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddCar.FlatAppearance.BorderSize = 0;
             this.AddCar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.AddCar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.AddCar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.AddCar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddCar.Font = new System.Drawing.Font("Rockwell", 14F);
             this.AddCar.Location = new System.Drawing.Point(578, 91);
@@ -295,7 +256,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -319,14 +280,14 @@
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.editToolStripMenuItem.Text = "Edit";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // removeToolStripMenuItem
             // 
             this.removeToolStripMenuItem.Name = "removeToolStripMenuItem";
-            this.removeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.removeToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.removeToolStripMenuItem.Text = "Remove";
             this.removeToolStripMenuItem.Click += new System.EventHandler(this.removeToolStripMenuItem_Click);
             // 
@@ -336,6 +297,45 @@
             this.HelpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.HelpToolStripMenuItem.Text = "Help";
             this.HelpToolStripMenuItem.Click += new System.EventHandler(this.HelpToolStripMenuItem_Click);
+            // 
+            // amountDataGridViewTextBoxColumn
+            // 
+            this.amountDataGridViewTextBoxColumn.DataPropertyName = "Amount";
+            this.amountDataGridViewTextBoxColumn.HeaderText = "Amount";
+            this.amountDataGridViewTextBoxColumn.Name = "amountDataGridViewTextBoxColumn";
+            this.amountDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // modelDataGridViewTextBoxColumn
+            // 
+            this.modelDataGridViewTextBoxColumn.DataPropertyName = "Model";
+            this.modelDataGridViewTextBoxColumn.HeaderText = "Model";
+            this.modelDataGridViewTextBoxColumn.Name = "modelDataGridViewTextBoxColumn";
+            this.modelDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // prodCountryDataGridViewTextBoxColumn
+            // 
+            this.prodCountryDataGridViewTextBoxColumn.DataPropertyName = "ProdCountry";
+            this.prodCountryDataGridViewTextBoxColumn.HeaderText = "ProdCountry";
+            this.prodCountryDataGridViewTextBoxColumn.Name = "prodCountryDataGridViewTextBoxColumn";
+            this.prodCountryDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // yearOfIssueDataGridViewTextBoxColumn
+            // 
+            this.yearOfIssueDataGridViewTextBoxColumn.DataPropertyName = "YearOfIssue";
+            this.yearOfIssueDataGridViewTextBoxColumn.HeaderText = "YearOfIssue";
+            this.yearOfIssueDataGridViewTextBoxColumn.Name = "yearOfIssueDataGridViewTextBoxColumn";
+            this.yearOfIssueDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // techStateDataGridViewTextBoxColumn
+            // 
+            this.techStateDataGridViewTextBoxColumn.DataPropertyName = "TechState";
+            this.techStateDataGridViewTextBoxColumn.HeaderText = "TechState";
+            this.techStateDataGridViewTextBoxColumn.Name = "techStateDataGridViewTextBoxColumn";
+            this.techStateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // carInApplicBindingSource
+            // 
+            this.carInApplicBindingSource.DataSource = typeof(CarShowroomLibrary.Models.CarInApplic);
             // 
             // Application
             // 
@@ -348,11 +348,11 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Application_FormClosing);
             this.AdminList.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AppldataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.carInApplicBindingSource)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.carInApplicBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

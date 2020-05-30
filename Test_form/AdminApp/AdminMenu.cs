@@ -49,5 +49,15 @@ namespace AdminApp
             f.ShowDialog();
             this.Visible = true;
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This is the main menu where you can go to any section", "Help");
+        }
     }
 }

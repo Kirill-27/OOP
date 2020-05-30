@@ -94,8 +94,10 @@ namespace AdminApp
 
         private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            var he = new Help();
-            he.ShowDialog();
+            MessageBox.Show("This window for generating a new application for suppliers," +
+                " use the buttons to change the application." +
+                " The application will be sent after clicking on the \"Send\" " +
+                "button and you will leave this window", "Help");
         }
 
         private void Delete_Click(object sender, EventArgs e)
