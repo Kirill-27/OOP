@@ -1,4 +1,5 @@
-﻿using CarShowroomLibrary.Models;
+﻿using BuyerApp;
+using CarShowroomLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,6 +40,14 @@ namespace CarShowroomLibrary
         private void AllCarsBut_Click(object sender, EventArgs e)
         {
             var f = new BuyerAllCars(CurentBuyer);
+            Hide();
+            f.ShowDialog();
+            Visible = true;
+        }
+
+        private void FindCarBut_Click(object sender, EventArgs e)
+        {
+            var f = new FindBest(CurentBuyer);
             Hide();
             f.ShowDialog();
             Visible = true;

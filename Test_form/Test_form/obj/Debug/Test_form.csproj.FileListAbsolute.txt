@@ -28,3 +28,4 @@ C:\КурсачГит\OOP\Test_form\Test_form\bin\Debug\BuyerApp.pdb
 C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\BuyerApp.Help.resources
 C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\BuyerApp.exe
 C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\BuyerApp.pdb
+C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\BuyerApp.FindBest.resources

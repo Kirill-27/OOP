@@ -33,6 +33,43 @@ namespace CarShowroomLibrary.Models
             Application = new List<CarInApplic>();
             ShoppingCart = new List<Car>();
         }
+        public void FindBestModel(Buyer buyer)
+        {
+            ShoppingCart.Clear();
+            foreach (var c in Cars)
+            {
+                if(c.Model==buyer.ModelRequired|| buyer.ModelRequired.Equals("nope"))
+                {
+                    ShoppingCart.Add(c);
+                }
+            }
+        }
+        public void FindBestPrice(Buyer buyer)
+        {
+            ShoppingCart.Clear();
+            foreach (var c in Cars)
+            {
+                if (Convert.ToInt32(c.Price) <= Convert.ToInt32(buyer.FinancialOpp) )
+                {
+                    ShoppingCart.Add(c);
+                }
+            }
+        }
+        public void FindAllthebest(Buyer buyer)
+        {
+            ShoppingCart.Clear();
+            foreach (var c in Cars)
+            {
+                if (Convert.ToInt32(c.TechState) <= Convert.ToInt32(buyer.PerfomanceRequired)
+                    && Convert.ToInt32(c.Price) <= Convert.ToInt32(buyer.FinancialOpp)
+                    && (c.Model == buyer.ModelRequired || buyer.ModelRequired.Equals("nope"))
+                    && Convert.ToInt32(c.MaksSpeed) <= Convert.ToInt32(buyer.MaksSpeedRequired))
+                {
+                    ShoppingCart.Add(c);
+                }
+            }
+        }
+
         public void AddCar(Car NewCar)
         {
             int ma = 0;

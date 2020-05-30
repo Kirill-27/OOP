@@ -35,8 +35,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.SaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.LoadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HelpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,6 +73,7 @@
             this.FindCarBut.TabIndex = 6;
             this.FindCarBut.Text = "Find best car for me";
             this.FindCarBut.UseVisualStyleBackColor = false;
+            this.FindCarBut.Click += new System.EventHandler(this.FindCarBut_Click);
             // 
             // AllCarsBut
             // 
@@ -133,25 +132,11 @@
             // файлToolStripMenuItem
             // 
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.SaceToolStripMenuItem,
-            this.LoadToolStripMenuItem,
             this.toolStripMenuItem1,
             this.exitToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.файлToolStripMenuItem.Text = "File";
-            // 
-            // SaceToolStripMenuItem
-            // 
-            this.SaceToolStripMenuItem.Name = "SaceToolStripMenuItem";
-            this.SaceToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.SaceToolStripMenuItem.Text = "Save";
-            // 
-            // LoadToolStripMenuItem
-            // 
-            this.LoadToolStripMenuItem.Name = "LoadToolStripMenuItem";
-            this.LoadToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.LoadToolStripMenuItem.Text = "Load";
             // 
             // toolStripMenuItem1
             // 
@@ -196,8 +181,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem файлToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem SaceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem LoadToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem HelpToolStripMenuItem;
