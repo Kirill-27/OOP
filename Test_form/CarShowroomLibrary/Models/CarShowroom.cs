@@ -40,7 +40,17 @@ namespace CarShowroomLibrary.Models
             {
                 if(c.Model==buyer.ModelRequired|| buyer.ModelRequired.Equals("nope"))
                 {
-                    ShoppingCart.Add(c);
+                    ShoppingCart.Add(new Car
+                    {
+                        ID = c.ID,
+                        Features = c.Features,
+                        MaksSpeed = c.MaksSpeed,
+                        Model = c.Model,
+                        Price = c.Price,
+                        ProdCountry = c.ProdCountry,
+                        TechState = c.TechState,
+                        YearOfIssue = c.YearOfIssue
+                    });
                 }
             }
         }
@@ -51,7 +61,17 @@ namespace CarShowroomLibrary.Models
             {
                 if (Convert.ToInt32(c.Price) <= Convert.ToInt32(buyer.FinancialOpp) )
                 {
-                    ShoppingCart.Add(c);
+                    ShoppingCart.Add(new Car
+                    {
+                        ID = c.ID,
+                        Features = c.Features,
+                        MaksSpeed = c.MaksSpeed,
+                        Model = c.Model,
+                        Price = c.Price,
+                        ProdCountry = c.ProdCountry,
+                        TechState = c.TechState,
+                        YearOfIssue = c.YearOfIssue
+                    });
                 }
             }
         }
@@ -60,12 +80,21 @@ namespace CarShowroomLibrary.Models
             ShoppingCart.Clear();
             foreach (var c in Cars)
             {
-                if (Convert.ToInt32(c.TechState) <= Convert.ToInt32(buyer.PerfomanceRequired)
+                if (Convert.ToInt32(c.TechState) >= Convert.ToInt32(buyer.PerfomanceRequired)
                     && Convert.ToInt32(c.Price) <= Convert.ToInt32(buyer.FinancialOpp)
                     && (c.Model == buyer.ModelRequired || buyer.ModelRequired.Equals("nope"))
-                    && Convert.ToInt32(c.MaksSpeed) <= Convert.ToInt32(buyer.MaksSpeedRequired))
+                    && Convert.ToInt32(c.MaksSpeed) >= Convert.ToInt32(buyer.MaksSpeedRequired))
                 {
-                    ShoppingCart.Add(c);
+                    ShoppingCart.Add(new Car { 
+                        ID=c.ID,
+                        Features=c.Features,
+                        MaksSpeed=c.MaksSpeed,
+                        Model=c.Model,
+                        Price=c.Price,
+                        ProdCountry=c.ProdCountry,
+                        TechState=c.TechState,
+                        YearOfIssue=c.YearOfIssue
+                    });
                 }
             }
         }

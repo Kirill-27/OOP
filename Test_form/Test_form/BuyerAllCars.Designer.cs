@@ -78,11 +78,11 @@
             // AddCarBut
             // 
             this.AddCarBut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.AddCarBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.AddCarBut.BackColor = System.Drawing.Color.PaleGreen;
             this.AddCarBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AddCarBut.FlatAppearance.BorderSize = 0;
             this.AddCarBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.AddCarBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.AddCarBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.AddCarBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddCarBut.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddCarBut.Location = new System.Drawing.Point(365, 345);
@@ -96,11 +96,11 @@
             // AllCars
             // 
             this.AllCars.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.AllCars.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.AllCars.BackColor = System.Drawing.Color.PaleGreen;
             this.AllCars.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AllCars.FlatAppearance.BorderSize = 0;
             this.AllCars.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.AllCars.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.AllCars.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.AllCars.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AllCars.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AllCars.Location = new System.Drawing.Point(211, 345);
@@ -114,11 +114,11 @@
             // ShowBut
             // 
             this.ShowBut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.ShowBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ShowBut.BackColor = System.Drawing.Color.PaleGreen;
             this.ShowBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ShowBut.FlatAppearance.BorderSize = 0;
             this.ShowBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ShowBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.ShowBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.ShowBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ShowBut.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ShowBut.Location = new System.Drawing.Point(21, 345);
@@ -171,11 +171,11 @@
             // BuyBut
             // 
             this.BuyBut.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.BuyBut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.BuyBut.BackColor = System.Drawing.Color.PaleGreen;
             this.BuyBut.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BuyBut.FlatAppearance.BorderSize = 0;
             this.BuyBut.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.BuyBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
+            this.BuyBut.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.BuyBut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BuyBut.Font = new System.Drawing.Font("Rockwell", 20.25F);
             this.BuyBut.Location = new System.Drawing.Point(612, 283);
@@ -251,12 +251,12 @@
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(89, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 

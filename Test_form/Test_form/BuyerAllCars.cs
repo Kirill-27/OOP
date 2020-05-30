@@ -98,11 +98,16 @@ namespace CarShowroomLibrary
         private void ShowBut_Click(object sender, EventArgs e)
         {
             carBindingSource.DataSource = CarShowroom1.ShoppingCart;
+            AllCars.BackColor = Color.PaleGreen;
+            ShowBut.BackColor = Color.LimeGreen;
+            
         }
 
         private void AllCars_Click(object sender, EventArgs e)
         {
             carBindingSource.DataSource = CarShowroom1.Cars;
+            ShowBut.BackColor = Color.PaleGreen;
+            AllCars.BackColor = Color.LimeGreen;
         }
 
         private void AddCarBut_Click(object sender, EventArgs e)
