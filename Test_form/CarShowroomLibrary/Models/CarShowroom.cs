@@ -15,7 +15,7 @@ namespace CarShowroomLibrary.Models
     //добавления нового элемента в колекцию, флаг проверки синхронизации данных
     public class CarShowroom
     {
-        public bool ifSaved = true;
+        public bool IfSaved = true;
         public List<CarInApplic> Application { private set; get; }
         public List<Car> Cars { private set; get; }
         public List<Car> ShoppingCart { private set; get; }
@@ -101,29 +101,29 @@ namespace CarShowroomLibrary.Models
             }
         }
 
-        public void AddCar(Car NewCar)
+        public void AddCar(Car newCar)
         {
             int ma = 0;
             bool chek = true;
             foreach (var t in Cars)
             {
                 if (t.ID > ma) ma = t.ID;
-                if (t.ID.Equals(NewCar.ID)) chek = false;
+                if (t.ID.Equals(newCar.ID)) chek = false;
             }
-            if(chek== true|| NewCar.ID.Equals(null) || NewCar.ID.Equals(-1)) NewCar.ID = ma + 1;
-            Cars.Add(NewCar);
+            if(chek== true|| newCar.ID.Equals(null) || newCar.ID.Equals(-1)) newCar.ID = ma + 1;
+            Cars.Add(newCar);
         }
         public void FillTestData(int n)
         {
             //Admins
             for (int i = 1; i <= n; i++)
             {
-                Admin NewA = new Admin()
+                Admin newA = new Admin()
                 {
                     Name = $"Admin_{i}",
                     Password = "9999",
                 };
-                Admins.Add(NewA);
+                Admins.Add(newA);
             }
             // Cars
             Cars.Clear();
@@ -145,7 +145,7 @@ namespace CarShowroomLibrary.Models
             for (int i = 1; i <= n; i++)
             {
                 int numb = 80042900 + i % 100000;
-                Buyer NewB= new Buyer()
+                Buyer newB= new Buyer()
                 { 
                     Contacts = $"+{numb}",
                     FinancialOpp = ((i * i + 1) * 1000) % 50000 + 7000,
@@ -155,8 +155,8 @@ namespace CarShowroomLibrary.Models
                     Password = "9999",
                     PerfomanceRequired = i
                 };
-                if (i % 5 == 0) NewB.ModelRequired = "nope";
-                Buyers.Add(NewB);
+                if (i % 5 == 0) newB.ModelRequired = "nope";
+                Buyers.Add(newB);
             }
             // Reports
             int div = 2;//сколько в каждом отчете машин

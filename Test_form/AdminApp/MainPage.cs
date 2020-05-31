@@ -20,7 +20,7 @@ namespace AdminApp
             carShowroom1 = new CarShowroom();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
         }

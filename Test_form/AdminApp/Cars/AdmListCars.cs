@@ -25,12 +25,12 @@ namespace AdminApp
             carBindingSource.DataSource = carShowroom1.Cars; 
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
               Close();
         }
 
-        private void removeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void RemoveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (carShowroom1.Cars.Count != 0)
             {
@@ -40,7 +40,7 @@ namespace AdminApp
                 {
                     case DialogResult.Yes:
                         carShowroom1.Cars.Remove(toDel);
-                        carShowroom1.ifSaved = false;
+                        carShowroom1.IfSaved = false;
                         carBindingSource.ResetBindings(false);
                         break;
                     case DialogResult.No:
@@ -51,7 +51,7 @@ namespace AdminApp
 
         private void AdmListCars_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (!carShowroom1.ifSaved)
+            if (!carShowroom1.IfSaved)
             {
                 var res = MessageBox.Show("Save the data before exit?", "Verification", MessageBoxButtons.YesNoCancel);
                 switch (res)
@@ -71,7 +71,7 @@ namespace AdminApp
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             carShowroom1.Save();
-            carShowroom1.ifSaved = true;
+            carShowroom1.IfSaved = true;
         }
 
         private void Delete_Click(object sender, EventArgs e)
@@ -85,7 +85,7 @@ namespace AdminApp
                 {
                     case DialogResult.Yes:
                         carShowroom1.Cars.Remove(toDel);
-                        carShowroom1.ifSaved = false;
+                        carShowroom1.IfSaved = false;
                         carBindingSource.ResetBindings(false);
                         break;
                     case DialogResult.No:
@@ -99,7 +99,7 @@ namespace AdminApp
         {
             carShowroom1.Load();
             carBindingSource.ResetBindings(false);
-            carShowroom1.ifSaved = true;
+            carShowroom1.IfSaved = true;
         }
 
         private void AddCar_Click(object sender, EventArgs e)
@@ -107,21 +107,21 @@ namespace AdminApp
             var fo = new CarsDialog();
             if(fo.ShowDialog()==DialogResult.OK)
             {
-                carShowroom1.ifSaved = false;
+                carShowroom1.IfSaved = false;
                 carShowroom1.AddCar(fo.Car);
                 carBindingSource.ResetBindings(false);
             }
         }
 
-        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        private void EditToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (carShowroom1.Cars.Count != 0)
             {
-                var ToEdit = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
-                var fo = new CarsDialog(ToEdit);
+                var toEdit = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
+                var fo = new CarsDialog(toEdit);
                 if (fo.ShowDialog() == DialogResult.OK)
                 {
-                    carShowroom1.ifSaved = false;
+                    carShowroom1.IfSaved = false;
                     carBindingSource.ResetBindings(false);
                 }
             }
@@ -132,11 +132,11 @@ namespace AdminApp
 
             if (carShowroom1.Cars.Count != 0)
             {
-                var ToEdit = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
-                var fo = new CarsDialog(ToEdit);
+                var toEdit = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
+                var fo = new CarsDialog(toEdit);
                 if (fo.ShowDialog() == DialogResult.OK)
                 {
-                    carShowroom1.ifSaved = false;
+                    carShowroom1.IfSaved = false;
                     carBindingSource.ResetBindings(false);
                 }
             }
@@ -147,17 +147,17 @@ namespace AdminApp
             MessageBox.Show("This is a window for interacting with the car base.", "Help");
         }
 
-        private void back_Click(object sender, EventArgs e)
+        private void Back_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AddToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var fo = new CarsDialog();
             if (fo.ShowDialog() == DialogResult.OK) 
             {
-                carShowroom1.ifSaved = false;
+                carShowroom1.IfSaved = false;
                 carShowroom1.AddCar(fo.Car);
                 carBindingSource.ResetBindings(false);
             }

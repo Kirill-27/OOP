@@ -28,24 +28,24 @@ namespace AdminApp
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             carShowroom1.Save();
-            carShowroom1.ifSaved = true;
+            carShowroom1.IfSaved = true;
         }
 
         private void LoadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             carShowroom1.Load();
-            carShowroom1.ifSaved = true;
+            carShowroom1.IfSaved = true;
             buyerBindingSource.ResetBindings(false);
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
                 Close();
         }
 
         private void Buyers_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (!carShowroom1.ifSaved)
+            if (!carShowroom1.IfSaved)
             {
                 var res = MessageBox.Show("Save the data before exit?", "Verification", MessageBoxButtons.YesNoCancel);
                 switch (res)
@@ -62,7 +62,7 @@ namespace AdminApp
             }
         }
 
-        private void back_Click(object sender, EventArgs e)
+        private void Back_Click(object sender, EventArgs e)
         {
             Close();
         }
@@ -77,7 +77,7 @@ namespace AdminApp
                 {
                     case DialogResult.Yes:
                         carShowroom1.Buyers.Remove(toDel);
-                        carShowroom1.ifSaved = false;
+                        carShowroom1.IfSaved = false;
                         buyerBindingSource.ResetBindings(false);
                         break;
                     case DialogResult.No:
@@ -91,18 +91,18 @@ namespace AdminApp
             var fo = new BuyerDialog();
             if (fo.ShowDialog() == DialogResult.OK) 
             {
-                carShowroom1.ifSaved = false;
+                carShowroom1.IfSaved = false;
                 carShowroom1.Buyers.Add(fo.Buyer);
                 buyerBindingSource.ResetBindings(false);
             }
         }
 
-        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AddToolStripMenuItem_Click(object sender, EventArgs e)
         {
                 var fo = new BuyerDialog();
                 if (fo.ShowDialog() == DialogResult.OK)
                 {
-                    carShowroom1.ifSaved = false;
+                    carShowroom1.IfSaved = false;
                     carShowroom1.Buyers.Add(fo.Buyer);
                     buyerBindingSource.ResetBindings(false);
                 }
@@ -113,7 +113,7 @@ namespace AdminApp
             MessageBox.Show("This is a window for interacting with a buyer's base.", "Help");
         }
 
-        private void removeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void RemoveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (carShowroom1.Buyers.Count != 0)
             {
@@ -123,7 +123,7 @@ namespace AdminApp
                 {
                     case DialogResult.Yes:
                         carShowroom1.Buyers.Remove(toDel);
-                        carShowroom1.ifSaved = false;
+                        carShowroom1.IfSaved = false;
                         buyerBindingSource.ResetBindings(false);
                         break;
                     case DialogResult.No:

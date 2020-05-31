@@ -19,18 +19,18 @@ namespace AdminApp
         {
             InitializeComponent();
             carShowroom1 = new CarShowroom();
-            carShowroom1.ifSaved = false;
+            carShowroom1.IfSaved = false;
             carInApplicBindingSource.DataSource = carShowroom1.Application;
         }
 
-        private void back_Click(object sender, EventArgs e)
+        private void Back_Click(object sender, EventArgs e)
         {
             Close();
         }
 
         private void Application_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (carShowroom1.ifSaved != true&& carShowroom1.Application.Count != 0)
+            if (carShowroom1.IfSaved != true&& carShowroom1.Application.Count != 0)
                 {
                     var res = MessageBox.Show("Send the application before exit?", "Verification", MessageBoxButtons.YesNoCancel);
                     switch (res)
@@ -57,7 +57,7 @@ namespace AdminApp
                 return;
             }
             carShowroom1.Send();
-            carShowroom1.ifSaved = true;
+            carShowroom1.IfSaved = true;
             Close();
         }
 
@@ -80,7 +80,7 @@ namespace AdminApp
             }
             DialogResult = DialogResult.Yes;
             carShowroom1.Send();
-            carShowroom1.ifSaved = true;
+            carShowroom1.IfSaved = true;
             Close();
         }
 
@@ -120,7 +120,7 @@ namespace AdminApp
             }
         }
 
-        private void removeToolStripMenuItem_Click(object sender, EventArgs e)
+        private void RemoveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (carShowroom1.Application.Count != 0)
             {
@@ -142,24 +142,24 @@ namespace AdminApp
         {
             if(carShowroom1.Application.Count!=0)
             {
-                var ToEdit = AppldataGridView.SelectedRows[0].DataBoundItem as CarInApplic;
-                var fo = new ApplicationDialog(ToEdit);
+                var toEdit = AppldataGridView.SelectedRows[0].DataBoundItem as CarInApplic;
+                var fo = new ApplicationDialog(toEdit);
                 if (fo.ShowDialog() == DialogResult.OK) carInApplicBindingSource.ResetBindings(false);
                 
             }
         }
 
-        private void editToolStripMenuItem_Click(object sender, EventArgs e)
+        private void EditToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (carShowroom1.Application.Count != 0)
             {
-                var ToEdit = AppldataGridView.SelectedRows[0].DataBoundItem as CarInApplic;
-                var fo = new ApplicationDialog(ToEdit);
+                var toEdit = AppldataGridView.SelectedRows[0].DataBoundItem as CarInApplic;
+                var fo = new ApplicationDialog(toEdit);
                 if (fo.ShowDialog() == DialogResult.OK)carInApplicBindingSource.ResetBindings(false);
             }
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ExitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
         }
