@@ -119,6 +119,8 @@
             // 
             this.AppldataGridView.AllowUserToAddRows = false;
             this.AppldataGridView.AllowUserToDeleteRows = false;
+            this.AppldataGridView.AllowUserToResizeColumns = false;
+            this.AppldataGridView.AllowUserToResizeRows = false;
             this.AppldataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.AppldataGridView.AutoGenerateColumns = false;

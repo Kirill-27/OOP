@@ -79,6 +79,8 @@
             // 
             this.CarsGridView.AllowUserToAddRows = false;
             this.CarsGridView.AllowUserToDeleteRows = false;
+            this.CarsGridView.AllowUserToResizeColumns = false;
+            this.CarsGridView.AllowUserToResizeRows = false;
             this.CarsGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));

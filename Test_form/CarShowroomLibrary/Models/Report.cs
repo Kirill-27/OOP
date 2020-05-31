@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CarShowroomLibrary.Models
 {
     [Serializable]
-    // класс отчет содерждит колекцию автомобилей, имя покупателя, дату покупки
+    // класс отчет содерждит колекцию автомобилей, имя покупателя, дату покупки.
     public class Report
     {
         public Report(List<Car> cars, string buyer, DateTime? t = null)

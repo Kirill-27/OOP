@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace CarShowroomLibrary.Models
 {
     [Serializable]
-    //клас пользователь, объеденяющий свойства админа и покупателя
+    //клас пользователь, объеденяющий свойства админа и покупателя.
     public abstract class User
     {
         public string Name { set; get; }
