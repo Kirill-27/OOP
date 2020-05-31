@@ -20,6 +20,7 @@ namespace CarShowroomLibrary
         {
             InitializeComponent();
             carShowroom1 = new CarShowroom();
+            
         }
 
         private void Login_but_Click(object sender, EventArgs e)

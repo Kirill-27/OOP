@@ -17,9 +17,5 @@ namespace CarShowroomLibrary.Models
         public int MaksSpeedRequired { set; get; }
         public int FinancialOpp { set; get; }
 
-        public void FindCar()
-        {
-            
-        }
     }
 }

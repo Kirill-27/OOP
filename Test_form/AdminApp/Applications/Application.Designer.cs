@@ -259,7 +259,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(723, 47);
             this.label1.TabIndex = 0;
-            this.label1.Text = "New Applicant";
+            this.label1.Text = "New Application";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // menuStrip1
