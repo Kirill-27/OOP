@@ -22,12 +22,6 @@ namespace CarShowroomLibrary
             carShowroom1 = new CarShowroom();
         }
 
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void Login_but_Click(object sender, EventArgs e)
         { 
             bool chek = false;
@@ -62,7 +56,6 @@ namespace CarShowroomLibrary
             var buyerF = new BuyerMenu(curentBuyer);
             this.Hide();
             buyerF.ShowDialog();
-            carShowroom1.Save();
             this.Close();
         }
 

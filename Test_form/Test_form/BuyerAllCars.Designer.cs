@@ -1,4 +1,4 @@
-﻿namespace CarShowroomLibrary
+﻿namespace BuyerApp
 {
     partial class BuyerAllCars
     {

@@ -1,4 +1,5 @@
 ﻿using BuyerApp;
+using CarShowroomLibrary;
 using CarShowroomLibrary.Models;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CarShowroomLibrary
+namespace BuyerApp
 {
     public partial class BuyerMenu : Form //форма основого меню покупателя
     {
@@ -67,13 +68,18 @@ namespace CarShowroomLibrary
                 " of your opportunities", "Help");
         }
 
-        private void exitToolStripMenuItem_Click_1(object sender, EventArgs e)
+        private void ExitToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Close();
         }
 
         private void AccountBut_Click(object sender, EventArgs e)
         {
+            carShowroom1.Load();
+            foreach(var b in carShowroom1.Buyers)
+            {
+                if (b.Name.Equals(CurentBuyer.Name)) CurentBuyer = b;
+            }
             var f = new Register(CurentBuyer);
             f.ShowDialog();
             carShowroom1.Save();

@@ -7,10 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BuyerApp;
 using CarShowroomLibrary.Models;
 
-namespace CarShowroomLibrary
+namespace BuyerApp
 {
     public partial class BuyerAllCars : Form // форма для просмотра всех авто в автосалоне и для покупки
     {
