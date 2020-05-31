@@ -20,9 +20,9 @@ namespace AdminApp
             InitializeComponent();
         }
 
-        public ApplicationDialog(CarInApplic Edited) : this()
+        public ApplicationDialog(CarInApplic edited) : this()
         {
-            Appl = Edited;
+            Appl = edited;
             AmountNumretic.Value = Appl.Amount;
             ModelcomboBox.Text = Appl.Model;
             Yearnumeric.Value = Appl.YearOfIssue;

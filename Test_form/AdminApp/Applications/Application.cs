@@ -14,13 +14,13 @@ namespace AdminApp
     //класс формы окна для составления новой заявки поставщикам
     public partial class Application : Form
     {
-        CarShowroom CarShowroom1;
+        CarShowroom carShowroom1;
         public Application()
         {
             InitializeComponent();
-            CarShowroom1 = new CarShowroom();
-            CarShowroom1.ifSaved = false;
-            carInApplicBindingSource.DataSource = CarShowroom1.Application;
+            carShowroom1 = new CarShowroom();
+            carShowroom1.ifSaved = false;
+            carInApplicBindingSource.DataSource = carShowroom1.Application;
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace AdminApp
 
         private void Application_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (CarShowroom1.ifSaved != true&& CarShowroom1.Application.Count != 0)
+            if (carShowroom1.ifSaved != true&& carShowroom1.Application.Count != 0)
                 {
                     var res = MessageBox.Show("Send the application before exit?", "Verification", MessageBoxButtons.YesNoCancel);
                     switch (res)
@@ -39,7 +39,7 @@ namespace AdminApp
                             e.Cancel = true;
                             break;
                         case DialogResult.Yes:
-                            CarShowroom1.Send();
+                            carShowroom1.Send();
                             break;
                         case DialogResult.No:
                             break;
@@ -51,13 +51,13 @@ namespace AdminApp
 
         private void SaveBut_Click(object sender, EventArgs e)
         {
-            if (CarShowroom1.Application.Count == 0)
+            if (carShowroom1.Application.Count == 0)
             {
                 MessageBox.Show("Application is empty", "Attention!", MessageBoxButtons.OK);
                 return;
             }
-            CarShowroom1.Send();
-            CarShowroom1.ifSaved = true;
+            carShowroom1.Send();
+            carShowroom1.ifSaved = true;
             Close();
         }
 
@@ -66,21 +66,21 @@ namespace AdminApp
             var fo = new ApplicationDialog();
             if (fo.ShowDialog() == DialogResult.OK)
             {
-                CarShowroom1.Application.Add(fo.Appl);
+                carShowroom1.Application.Add(fo.Appl);
                 carInApplicBindingSource.ResetBindings(false);
             }
         }
 
         private void SendToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (CarShowroom1.Application.Count == 0)
+            if (carShowroom1.Application.Count == 0)
             {
                 MessageBox.Show("Application is empty", "Attention!", MessageBoxButtons.OK);
                 return;
             }
             DialogResult = DialogResult.Yes;
-            CarShowroom1.Send();
-            CarShowroom1.ifSaved = true;
+            carShowroom1.Send();
+            carShowroom1.ifSaved = true;
             Close();
         }
 
@@ -89,7 +89,7 @@ namespace AdminApp
             var fo = new ApplicationDialog();
             if (fo.ShowDialog() == DialogResult.OK)
             {
-                CarShowroom1.Application.Add(fo.Appl);
+                carShowroom1.Application.Add(fo.Appl);
                 carInApplicBindingSource.ResetBindings(false);
             }
         }
@@ -104,14 +104,14 @@ namespace AdminApp
 
         private void Delete_Click(object sender, EventArgs e)
         {
-            if (CarShowroom1.Application.Count != 0)
+            if (carShowroom1.Application.Count != 0)
             {
                 var toDel = AppldataGridView.SelectedRows[0].DataBoundItem as CarInApplic;
                 var res = MessageBox.Show($"Delete {toDel.Model} ?", "Сonfirmation", MessageBoxButtons.YesNo);
                 switch (res)
                 {
                     case DialogResult.Yes:
-                        CarShowroom1.Application.Remove(toDel);
+                        carShowroom1.Application.Remove(toDel);
                         carInApplicBindingSource.ResetBindings(false);
                         break;
                     case DialogResult.No:
@@ -122,14 +122,14 @@ namespace AdminApp
 
         private void removeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (CarShowroom1.Application.Count != 0)
+            if (carShowroom1.Application.Count != 0)
             {
                 var toDel = AppldataGridView.SelectedRows[0].DataBoundItem as CarInApplic;
                 var res = MessageBox.Show($"Delete {toDel.Model} ?", "Сonfirmation", MessageBoxButtons.YesNo);
                 switch (res)
                 {
                     case DialogResult.Yes:
-                        CarShowroom1.Application.Remove(toDel);
+                        carShowroom1.Application.Remove(toDel);
                         carInApplicBindingSource.ResetBindings(false);
                         break;
                     case DialogResult.No:
@@ -140,7 +140,7 @@ namespace AdminApp
 
         private void EditBut_Click(object sender, EventArgs e)
         {
-            if(CarShowroom1.Application.Count!=0)
+            if(carShowroom1.Application.Count!=0)
             {
                 var ToEdit = AppldataGridView.SelectedRows[0].DataBoundItem as CarInApplic;
                 var fo = new ApplicationDialog(ToEdit);
@@ -151,7 +151,7 @@ namespace AdminApp
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (CarShowroom1.Application.Count != 0)
+            if (carShowroom1.Application.Count != 0)
             {
                 var ToEdit = AppldataGridView.SelectedRows[0].DataBoundItem as CarInApplic;
                 var fo = new ApplicationDialog(ToEdit);

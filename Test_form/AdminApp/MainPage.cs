@@ -13,13 +13,11 @@ namespace AdminApp
 {
     public partial class MainPage : Form // класс формы авторизации админа
     {
-        CarShowroom CarShowroom1;
+        CarShowroom carShowroom1;
         public MainPage()
         {
             InitializeComponent();
-            CarShowroom1 = new CarShowroom();
-            CarShowroom1.FillTestData(20);
-            CarShowroom1.Save();
+            carShowroom1 = new CarShowroom();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -43,8 +41,8 @@ namespace AdminApp
             if (chek == true) return;
             string cheklog = LogTextbox.Text;
             string chekpass = PassTextBox.Text;
-            CarShowroom1.Load();
-            foreach (var b in CarShowroom1.Admins)
+            carShowroom1.Load();
+            foreach (var b in carShowroom1.Admins)
             {
                 if (b.Name.Equals(cheklog) && b.Password.Equals(chekpass))
                 {

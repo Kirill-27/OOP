@@ -22,7 +22,8 @@ namespace BuyerApp
         }
         public Register(Buyer edited) : this()
         {
-            
+            Buyer = new Buyer();
+            Text = "Edit information";
             Buyer = edited;
             BuyerN = edited.Name;
             ContacttextBox.Text = edited.Contacts;
@@ -93,7 +94,7 @@ namespace BuyerApp
                 }
                 if (e.Cancel == false)
                 {
-                    if(Buyer==null) Buyer = new Buyer();
+                    if(Buyer == null)Buyer = new Buyer();
                     Buyer.Contacts = ContacttextBox.Text;
                     Buyer.FinancialOpp = Convert.ToInt32(Prise_numericUp.Value);
                     Buyer.MaksSpeedRequired = Convert.ToInt32(Speed_numeric.Value);
@@ -106,7 +107,6 @@ namespace BuyerApp
                         Buyer.ModelRequired = "nope";
                     }
                 }
-                CarShowroom1.Save();
             }
         }
 

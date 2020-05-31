@@ -15,14 +15,14 @@ namespace AdminApp
     //предоставляется возможность взаимодействия с базой автомобилей
     public partial class AdmListCars : Form 
     {
-        CarShowroom CarShowroom1;
+        CarShowroom carShowroom1;
         public AdmListCars()
         {
             InitializeComponent();
-            CarShowroom1 = new CarShowroom();
+            carShowroom1 = new CarShowroom();
             //CarShowroom1.FillTestData(100);
-            CarShowroom1.Load();
-            carBindingSource.DataSource = CarShowroom1.Cars; 
+            carShowroom1.Load();
+            carBindingSource.DataSource = carShowroom1.Cars; 
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -32,15 +32,15 @@ namespace AdminApp
 
         private void removeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (CarShowroom1.Cars.Count != 0)
+            if (carShowroom1.Cars.Count != 0)
             {
                 var toDel = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
                 var res = MessageBox.Show($"Delete {toDel.Model} ?", "Сonfirmation", MessageBoxButtons.YesNo);
                 switch (res)
                 {
                     case DialogResult.Yes:
-                        CarShowroom1.Cars.Remove(toDel);
-                        CarShowroom1.ifSaved = false;
+                        carShowroom1.Cars.Remove(toDel);
+                        carShowroom1.ifSaved = false;
                         carBindingSource.ResetBindings(false);
                         break;
                     case DialogResult.No:
@@ -51,7 +51,7 @@ namespace AdminApp
 
         private void AdmListCars_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (!CarShowroom1.ifSaved)
+            if (!carShowroom1.ifSaved)
             {
                 var res = MessageBox.Show("Save the data before exit?", "Verification", MessageBoxButtons.YesNoCancel);
                 switch (res)
@@ -60,7 +60,7 @@ namespace AdminApp
                         e.Cancel = true;
                         break;
                     case DialogResult.Yes:
-                        CarShowroom1.Save();
+                        carShowroom1.Save();
                         break;
                     case DialogResult.No:
                         break;
@@ -70,22 +70,22 @@ namespace AdminApp
 
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CarShowroom1.Save();
-            CarShowroom1.ifSaved = true;
+            carShowroom1.Save();
+            carShowroom1.ifSaved = true;
         }
 
         private void Delete_Click(object sender, EventArgs e)
         {
 
-            if (CarShowroom1.Cars.Count != 0)
+            if (carShowroom1.Cars.Count != 0)
             {
                 var toDel = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
                 var res = MessageBox.Show($"Delete {toDel.Model} ?", "Сonfirmation", MessageBoxButtons.YesNo);
                 switch (res)
                 {
                     case DialogResult.Yes:
-                        CarShowroom1.Cars.Remove(toDel);
-                        CarShowroom1.ifSaved = false;
+                        carShowroom1.Cars.Remove(toDel);
+                        carShowroom1.ifSaved = false;
                         carBindingSource.ResetBindings(false);
                         break;
                     case DialogResult.No:
@@ -97,9 +97,9 @@ namespace AdminApp
 
         private void LoadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CarShowroom1.Load();
+            carShowroom1.Load();
             carBindingSource.ResetBindings(false);
-            CarShowroom1.ifSaved = true;
+            carShowroom1.ifSaved = true;
         }
 
         private void AddCar_Click(object sender, EventArgs e)
@@ -107,21 +107,21 @@ namespace AdminApp
             var fo = new CarsDialog();
             if(fo.ShowDialog()==DialogResult.OK)
             {
-                CarShowroom1.ifSaved = false;
-                CarShowroom1.AddCar(fo.Car);
+                carShowroom1.ifSaved = false;
+                carShowroom1.AddCar(fo.Car);
                 carBindingSource.ResetBindings(false);
             }
         }
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (CarShowroom1.Cars.Count != 0)
+            if (carShowroom1.Cars.Count != 0)
             {
                 var ToEdit = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
                 var fo = new CarsDialog(ToEdit);
                 if (fo.ShowDialog() == DialogResult.OK)
                 {
-                    CarShowroom1.ifSaved = false;
+                    carShowroom1.ifSaved = false;
                     carBindingSource.ResetBindings(false);
                 }
             }
@@ -130,13 +130,13 @@ namespace AdminApp
         private void EditBut_Click(object sender, EventArgs e)
         {
 
-            if (CarShowroom1.Cars.Count != 0)
+            if (carShowroom1.Cars.Count != 0)
             {
                 var ToEdit = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
                 var fo = new CarsDialog(ToEdit);
                 if (fo.ShowDialog() == DialogResult.OK)
                 {
-                    CarShowroom1.ifSaved = false;
+                    carShowroom1.ifSaved = false;
                     carBindingSource.ResetBindings(false);
                 }
             }
@@ -157,8 +157,8 @@ namespace AdminApp
             var fo = new CarsDialog();
             if (fo.ShowDialog() == DialogResult.OK) 
             {
-                CarShowroom1.ifSaved = false;
-                CarShowroom1.AddCar(fo.Car);
+                carShowroom1.ifSaved = false;
+                carShowroom1.AddCar(fo.Car);
                 carBindingSource.ResetBindings(false);
             }
         }

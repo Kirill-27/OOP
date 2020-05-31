@@ -15,11 +15,11 @@ namespace CarShowroomLibrary
     
     public partial class login : Form // форма, которая открывается в при запуске приложения от лица покупателя
     {
-        CarShowroom CarShowroom1;
+        CarShowroom carShowroom1;
         public login()
         {
             InitializeComponent();
-            CarShowroom1 = new CarShowroom();
+            carShowroom1 = new CarShowroom();
         }
 
 
@@ -31,7 +31,7 @@ namespace CarShowroomLibrary
         private void Login_but_Click(object sender, EventArgs e)
         { 
             bool chek = false;
-            Buyer CurentBuyer=new Buyer();
+            Buyer curentBuyer=new Buyer();
             if (string.IsNullOrWhiteSpace(PassTextBox.Text))
             {
                 PassTextBox.BackColor = Color.LightPink;
@@ -45,13 +45,13 @@ namespace CarShowroomLibrary
             if (chek == true) return;
             string cheklog = LogTextbox.Text;
             string chekpass= PassTextBox.Text;
-            CarShowroom1.Load();
-            foreach(var b in CarShowroom1.Buyers)
+            carShowroom1.Load();
+            foreach(var b in carShowroom1.Buyers)
             {
                 if (b.Name.Equals(cheklog)&&b.Password.Equals(chekpass))
                 {
                     chek = true;
-                    CurentBuyer = b;
+                    curentBuyer = b;
                 }
             }
             if (chek == false)
@@ -59,22 +59,22 @@ namespace CarShowroomLibrary
                 MessageBox.Show("No user with this username and password", "Attantion!", MessageBoxButtons.OK);
                 return;
             }
-            var buyerF = new BuyerMenu(CurentBuyer);
+            var buyerF = new BuyerMenu(curentBuyer);
             this.Hide();
             buyerF.ShowDialog();
+            carShowroom1.Save();
             this.Close();
         }
 
 
         private void RegistrationBut_Click(object sender, EventArgs e)
         {
-            CarShowroom1.Load();
+            carShowroom1.Load();
             var fo = new Register();
             if (fo.ShowDialog() == DialogResult.OK)
             {
-                CarShowroom1.ifSaved = false;
-                CarShowroom1.Buyers.Add(fo.Buyer);
-                CarShowroom1.Save();
+                carShowroom1.Buyers.Add(fo.Buyer);
+                carShowroom1.Save();
             }
         }
 

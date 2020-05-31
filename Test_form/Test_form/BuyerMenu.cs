@@ -15,15 +15,19 @@ namespace CarShowroomLibrary
     public partial class BuyerMenu : Form //форма основого меню покупателя
     {
         public Buyer CurentBuyer { get; set; }
-        
+        CarShowroom carShowroom1 = new CarShowroom();
+       
         public BuyerMenu()
         {
-            InitializeComponent();
+           
+           InitializeComponent();
+            carShowroom1.Load();
         }
         public BuyerMenu(Buyer curent)
         {
             InitializeComponent();
             this.CurentBuyer = curent;
+            carShowroom1.Load();
         }
         private void AllCars_but_Click(object sender, EventArgs e)
         {
@@ -72,6 +76,7 @@ namespace CarShowroomLibrary
         {
             var f = new Register(CurentBuyer);
             f.ShowDialog();
+            carShowroom1.Save();
         }
     }
 }

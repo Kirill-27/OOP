@@ -19,9 +19,9 @@ namespace AdminApp
         {
             InitializeComponent();
         }
-        public CarsDialog(Car Edited): this()
+        public CarsDialog(Car edited): this()
         {
-            Car = Edited;
+            Car = edited;
             ModelcomboBox.Text = Car.Model;
             Speed_numeric.Value = Car.MaksSpeed;
             Prise_numericUp.Value = Car.Price;

@@ -14,21 +14,21 @@ namespace CarShowroomLibrary
 {
     public partial class BuyerAllCars : Form // форма для просмотра всех авто в автосалоне и для покупки
     {
-        CarShowroom CarShowroom1;
+        CarShowroom carShowroom1;
         public Buyer CurentBuyer { get; set; }
         public BuyerAllCars()
         {
-            CarShowroom1 = new CarShowroom();
+            carShowroom1 = new CarShowroom();
             InitializeComponent();
-            CarShowroom1.Load();
-            carBindingSource.DataSource = CarShowroom1.Cars;
+            carShowroom1.Load();
+            carBindingSource.DataSource = carShowroom1.Cars;
         }
         public BuyerAllCars(Buyer curent)
         {
-            CarShowroom1 = new CarShowroom();
+            carShowroom1 = new CarShowroom();
             InitializeComponent();
-            CarShowroom1.Load();
-            carBindingSource.DataSource = CarShowroom1.Cars;
+            carShowroom1.Load();
+            carBindingSource.DataSource = carShowroom1.Cars;
             this.CurentBuyer = curent;
         }
         private void Back_but_Click(object sender, EventArgs e)
@@ -43,19 +43,19 @@ namespace CarShowroomLibrary
 
         private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CarShowroom1.Save();
+            carShowroom1.Save();
         }
 
         private void LoadToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CarShowroom1.Load();
+            carShowroom1.Load();
             carBindingSource.ResetBindings(false);
         }
 
 
         private void Buy_but_Click(object sender, EventArgs e)
         {
-            if (CarShowroom1.ShoppingCart.Count == 0)
+            if (carShowroom1.ShoppingCart.Count == 0)
             {
                 MessageBox.Show("Shopping cart is empty", "Attention!");
                 return;
@@ -63,7 +63,7 @@ namespace CarShowroomLibrary
             var res = MessageBox.Show("Buy all cars from the shopping cart?", "Сonfirmation", MessageBoxButtons.YesNo);
             if (res==DialogResult.No) return;
             List<Car>ForBuy = new List<Car>();
-            foreach (var shop in CarShowroom1.ShoppingCart)
+            foreach (var shop in carShowroom1.ShoppingCart)
             {
                 ForBuy.Add(new Car
                 {
@@ -78,30 +78,30 @@ namespace CarShowroomLibrary
                 }) ;
             }
             Report buy = new Report(ForBuy, CurentBuyer.Name, DateTime.Now);
-            CarShowroom1.Reports.Add(buy);
-            while(CarShowroom1.ShoppingCart.Count>0)
+            carShowroom1.Reports.Add(buy);
+            while(carShowroom1.ShoppingCart.Count>0)
             {
-                foreach (var shop in CarShowroom1.ShoppingCart)
+                foreach (var shop in carShowroom1.ShoppingCart)
                 {
-                    foreach (var car in CarShowroom1.Cars)
+                    foreach (var car in carShowroom1.Cars)
                     {
                         if (shop.ID == car.ID)
                         {
-                            CarShowroom1.Cars.Remove(car);
+                            carShowroom1.Cars.Remove(car);
                             break;
                         }
                     }
-                    CarShowroom1.ShoppingCart.Remove(shop);
+                    carShowroom1.ShoppingCart.Remove(shop);
                     break;
                 }
             }
-            CarShowroom1.Save();
+            carShowroom1.Save();
             carBindingSource.ResetBindings(false);
         }
 
         private void ShowBut_Click(object sender, EventArgs e)
         {
-            carBindingSource.DataSource = CarShowroom1.ShoppingCart;
+            carBindingSource.DataSource = carShowroom1.ShoppingCart;
             AllCars.BackColor = Color.PaleGreen;
             ShowBut.BackColor = Color.LimeGreen;
             
@@ -109,18 +109,18 @@ namespace CarShowroomLibrary
 
         private void AllCars_Click(object sender, EventArgs e)
         {
-            carBindingSource.DataSource = CarShowroom1.Cars;
+            carBindingSource.DataSource = carShowroom1.Cars;
             ShowBut.BackColor = Color.PaleGreen;
             AllCars.BackColor = Color.LimeGreen;
         }
 
         private void AddCarBut_Click(object sender, EventArgs e)
         {
-            if (CarShowroom1.Cars.Count != 0 && carBindingSource.DataSource == CarShowroom1.Cars)
+            if (carShowroom1.Cars.Count != 0 && carBindingSource.DataSource == carShowroom1.Cars)
             {
                 var toAdd = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
                 bool chekincart = false;
-                foreach(var c in CarShowroom1.ShoppingCart)
+                foreach(var c in carShowroom1.ShoppingCart)
                 {
                     if(c.ID.Equals(toAdd.ID))
                     {
@@ -134,7 +134,7 @@ namespace CarShowroomLibrary
                 switch (res)
                 {
                     case DialogResult.Yes:
-                        CarShowroom1.ShoppingCart.Add(
+                        carShowroom1.ShoppingCart.Add(
                             new Car
                             {
                                 Features = toAdd.Features,
@@ -152,14 +152,14 @@ namespace CarShowroomLibrary
                         break;
                 }
             }
-            if (CarShowroom1.ShoppingCart.Count != 0 && carBindingSource.DataSource == CarShowroom1.ShoppingCart)
+            if (carShowroom1.ShoppingCart.Count != 0 && carBindingSource.DataSource == carShowroom1.ShoppingCart)
             {
                 var toDel = CarsdataGridView.SelectedRows[0].DataBoundItem as Car;
                 var res = MessageBox.Show($"Remove{toDel.Model} from the shopping cart?", "Сonfirmation", MessageBoxButtons.YesNo);
                 switch (res)
                 {
                     case DialogResult.Yes:
-                        CarShowroom1.ShoppingCart.Remove(toDel);
+                        carShowroom1.ShoppingCart.Remove(toDel);
                         carBindingSource.ResetBindings(false);
                         break;
                     case DialogResult.No:
@@ -170,7 +170,7 @@ namespace CarShowroomLibrary
 
         private void BuyerAllCars_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if(CarShowroom1.ShoppingCart.Count!=0)
+            if(carShowroom1.ShoppingCart.Count!=0)
             {
                 var res = MessageBox.Show($"Exit and empty the shopping cart?", "Сonfirmation", MessageBoxButtons.YesNo);
                 switch (res)
@@ -187,14 +187,14 @@ namespace CarShowroomLibrary
 
         private void shopingCartToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            carBindingSource.DataSource = CarShowroom1.ShoppingCart;
+            carBindingSource.DataSource = carShowroom1.ShoppingCart;
             AllCars.BackColor = Color.PaleGreen;
             ShowBut.BackColor = Color.LimeGreen;
         }
 
         private void allCarsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            carBindingSource.DataSource = CarShowroom1.Cars;
+            carBindingSource.DataSource = carShowroom1.Cars;
             ShowBut.BackColor = Color.PaleGreen;
             AllCars.BackColor = Color.LimeGreen;
         }

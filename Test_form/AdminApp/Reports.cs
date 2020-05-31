@@ -13,13 +13,13 @@ namespace AdminApp
 {
     public partial class Reports : Form // класс формы на которой отображаются отчеты
     {
-        CarShowroom CarShowroom1;
+        CarShowroom carShowroom1;
         public Reports()
         {
             InitializeComponent();
-            CarShowroom1 = new CarShowroom();
-            CarShowroom1.Load();
-            reportBindingSource.DataSource = CarShowroom1.Reports;
+            carShowroom1 = new CarShowroom();
+            carShowroom1.Load();
+            reportBindingSource.DataSource = carShowroom1.Reports;
         }
 
         private void back_Click(object sender, EventArgs e)
