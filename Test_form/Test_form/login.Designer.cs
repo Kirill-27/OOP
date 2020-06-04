@@ -1,4 +1,4 @@
-﻿namespace CarShowroomLibrary
+﻿namespace BuyerApp
 {
     partial class login
     {
@@ -122,7 +122,7 @@
             this.Loginbut.Name = "Loginbut";
             this.Loginbut.Size = new System.Drawing.Size(113, 42);
             this.Loginbut.TabIndex = 5;
-            this.Loginbut.Text = "Lod in";
+            this.Loginbut.Text = "Log in";
             this.Loginbut.UseVisualStyleBackColor = false;
             this.Loginbut.Click += new System.EventHandler(this.Login_but_Click);
             // 

@@ -7,10 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BuyerApp;
 using CarShowroomLibrary.Models;
 
-namespace CarShowroomLibrary
+
+namespace BuyerApp
 {
     
     public partial class login : Form // форма, которая открывается в при запуске приложения от лица покупателя

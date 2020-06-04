@@ -1,14 +1,11 @@
-103
-Buyer_1
-31.05.2020 21:20:32
-2
+198
 nope
 1
 100
 Lifan
 6000
 China
-20
+21
 2000
 nope
 2
@@ -16,18 +13,15 @@ nope
 Tesla
 7000
 USA
-23
+24
 2001
-Buyer_2
-01.06.2020 21:20:32
-2
 nope
 3
 120
 Toyota
 8000
 Japan
-26
+27
 2002
 nope
 4
@@ -35,18 +29,15 @@ nope
 BMW
 9000
 Germany
-29
+30
 2003
-Buyer_3
-02.06.2020 21:20:32
-2
 nope
 5
 140
 Kia
 10000
 South Korea
-32
+33
 2004
 nope
 6
@@ -54,18 +45,15 @@ nope
 TATA Motors
 11000
 India
-35
+36
 2005
-Buyer_4
-03.06.2020 21:20:32
-2
 nope
 7
 160
 SEAT
 12000
 Spain
-38
+39
 2006
 nope
 8
@@ -73,18 +61,15 @@ nope
 Suzuki
 13000
 Japan
-41
+42
 2007
-Buyer_5
-04.06.2020 21:20:32
-2
 nope
 9
 180
 Audi
 14000
 Germany
-44
+45
 2008
 nope
 10
@@ -92,18 +77,15 @@ nope
 Porsche
 15000
 Germany
-47
+48
 2009
-Buyer_6
-05.06.2020 21:20:32
-2
 nope
 11
 200
 Mitsubishi
 16000
 Japan
-50
+51
 2010
 nope
 12
@@ -111,18 +93,15 @@ nope
 Subaru
 17000
 Japan
-53
+54
 2011
-Buyer_7
-06.06.2020 21:20:32
-2
 nope
 13
 220
 Lifan
 18000
 China
-56
+57
 2012
 nope
 14
@@ -130,18 +109,15 @@ nope
 Tesla
 19000
 USA
-59
+60
 2013
-Buyer_8
-07.06.2020 21:20:32
-2
 nope
 15
 240
 Toyota
 20000
 Japan
-62
+63
 2014
 nope
 16
@@ -149,18 +125,15 @@ nope
 BMW
 21000
 Germany
-65
+66
 2015
-Buyer_9
-08.06.2020 21:20:32
-2
 nope
 17
 260
 Kia
 22000
 South Korea
-68
+69
 2016
 nope
 18
@@ -168,18 +141,15 @@ nope
 TATA Motors
 23000
 India
-71
+72
 2017
-Buyer_10
-09.06.2020 21:20:32
-2
 nope
 19
 100
 SEAT
 24000
 Spain
-74
+75
 2018
 nope
 20
@@ -187,18 +157,15 @@ nope
 Suzuki
 25000
 Japan
-77
+78
 2019
-Buyer_11
-10.06.2020 21:20:32
-2
 nope
 21
 120
 Audi
 6000
 Germany
-80
+81
 2000
 nope
 22
@@ -206,18 +173,15 @@ nope
 Porsche
 7000
 Germany
-83
+84
 2001
-Buyer_12
-11.06.2020 21:20:32
-2
 nope
 23
 140
 Mitsubishi
 8000
 Japan
-86
+87
 2002
 nope
 24
@@ -225,18 +189,15 @@ nope
 Subaru
 9000
 Japan
-89
+90
 2003
-Buyer_13
-12.06.2020 21:20:32
-2
 nope
 25
 160
 Lifan
 10000
 China
-92
+93
 2004
 nope
 26
@@ -244,18 +205,15 @@ nope
 Tesla
 11000
 USA
-95
+96
 2005
-Buyer_14
-13.06.2020 21:20:32
-2
 nope
 27
 180
 Toyota
 12000
 Japan
-98
+99
 2006
 nope
 28
@@ -263,18 +221,15 @@ nope
 BMW
 13000
 Germany
-1
-2007
-Buyer_15
-14.06.2020 21:20:32
 2
+2007
 nope
 29
 200
 Kia
 14000
 South Korea
-4
+5
 2008
 nope
 30
@@ -282,18 +237,15 @@ nope
 TATA Motors
 15000
 India
-7
+8
 2009
-Buyer_16
-15.06.2020 21:20:32
-2
 nope
 31
 220
 SEAT
 16000
 Spain
-10
+11
 2010
 nope
 32
@@ -301,18 +253,15 @@ nope
 Suzuki
 17000
 Japan
-13
+14
 2011
-Buyer_17
-16.06.2020 21:20:32
-2
 nope
 33
 240
 Audi
 18000
 Germany
-16
+17
 2012
 nope
 34
@@ -320,18 +269,15 @@ nope
 Porsche
 19000
 Germany
-19
+20
 2013
-Buyer_18
-17.06.2020 21:20:32
-2
 nope
 35
 260
 Mitsubishi
 20000
 Japan
-22
+23
 2014
 nope
 36
@@ -339,18 +285,15 @@ nope
 Subaru
 21000
 Japan
-25
+26
 2015
-Buyer_19
-18.06.2020 21:20:32
-2
 nope
 37
 100
 Lifan
 22000
 China
-28
+29
 2016
 nope
 38
@@ -358,18 +301,15 @@ nope
 Tesla
 23000
 USA
-31
+32
 2017
-Buyer_20
-19.06.2020 21:20:32
-2
 nope
 39
 120
 Toyota
 24000
 Japan
-34
+35
 2018
 nope
 40
@@ -377,18 +317,15 @@ nope
 BMW
 25000
 Germany
-37
+38
 2019
-Buyer_21
-20.06.2020 21:20:32
-2
 nope
 41
 140
 Kia
 6000
 South Korea
-40
+41
 2000
 nope
 42
@@ -396,18 +333,15 @@ nope
 TATA Motors
 7000
 India
-43
+44
 2001
-Buyer_22
-21.06.2020 21:20:32
-2
 nope
 43
 160
 SEAT
 8000
 Spain
-46
+47
 2002
 nope
 44
@@ -415,18 +349,15 @@ nope
 Suzuki
 9000
 Japan
-49
+50
 2003
-Buyer_23
-22.06.2020 21:20:32
-2
 nope
 45
 180
 Audi
 10000
 Germany
-52
+53
 2004
 nope
 46
@@ -434,18 +365,15 @@ nope
 Porsche
 11000
 Germany
-55
+56
 2005
-Buyer_24
-23.06.2020 21:20:32
-2
 nope
 47
 200
 Mitsubishi
 12000
 Japan
-58
+59
 2006
 nope
 48
@@ -453,18 +381,15 @@ nope
 Subaru
 13000
 Japan
-61
+62
 2007
-Buyer_25
-24.06.2020 21:20:32
-2
 nope
 49
 220
 Lifan
 14000
 China
-64
+65
 2008
 nope
 50
@@ -472,18 +397,15 @@ nope
 Tesla
 15000
 USA
-67
+68
 2009
-Buyer_26
-25.06.2020 21:20:32
-2
 nope
 51
 240
 Toyota
 16000
 Japan
-70
+71
 2010
 nope
 52
@@ -491,18 +413,15 @@ nope
 BMW
 17000
 Germany
-73
+74
 2011
-Buyer_27
-26.06.2020 21:20:32
-2
 nope
 53
 260
 Kia
 18000
 South Korea
-76
+77
 2012
 nope
 54
@@ -510,18 +429,15 @@ nope
 TATA Motors
 19000
 India
-79
+80
 2013
-Buyer_28
-27.06.2020 21:20:32
-2
 nope
 55
 100
 SEAT
 20000
 Spain
-82
+83
 2014
 nope
 56
@@ -529,18 +445,15 @@ nope
 Suzuki
 21000
 Japan
-85
+86
 2015
-Buyer_29
-28.06.2020 21:20:32
-2
 nope
 57
 120
 Audi
 22000
 Germany
-88
+89
 2016
 nope
 58
@@ -548,18 +461,15 @@ nope
 Porsche
 23000
 Germany
-91
+92
 2017
-Buyer_30
-29.06.2020 21:20:32
-2
 nope
 59
 140
 Mitsubishi
 24000
 Japan
-94
+95
 2018
 nope
 60
@@ -567,18 +477,15 @@ nope
 Subaru
 25000
 Japan
-97
+98
 2019
-Buyer_31
-30.06.2020 21:20:32
-2
 nope
 61
 160
 Lifan
 6000
 China
-0
+1
 2000
 nope
 62
@@ -586,18 +493,15 @@ nope
 Tesla
 7000
 USA
-3
+4
 2001
-Buyer_32
-01.07.2020 21:20:32
-2
 nope
 63
 180
 Toyota
 8000
 Japan
-6
+7
 2002
 nope
 64
@@ -605,18 +509,15 @@ nope
 BMW
 9000
 Germany
-9
+10
 2003
-Buyer_33
-02.07.2020 21:20:32
-2
 nope
 65
 200
 Kia
 10000
 South Korea
-12
+13
 2004
 nope
 66
@@ -624,18 +525,15 @@ nope
 TATA Motors
 11000
 India
-15
+16
 2005
-Buyer_34
-03.07.2020 21:20:32
-2
 nope
 67
 220
 SEAT
 12000
 Spain
-18
+19
 2006
 nope
 68
@@ -643,18 +541,15 @@ nope
 Suzuki
 13000
 Japan
-21
+22
 2007
-Buyer_35
-04.07.2020 21:20:32
-2
 nope
 69
 240
 Audi
 14000
 Germany
-24
+25
 2008
 nope
 70
@@ -662,18 +557,15 @@ nope
 Porsche
 15000
 Germany
-27
+28
 2009
-Buyer_36
-05.07.2020 21:20:32
-2
 nope
 71
 260
 Mitsubishi
 16000
 Japan
-30
+31
 2010
 nope
 72
@@ -681,18 +573,15 @@ nope
 Subaru
 17000
 Japan
-33
+34
 2011
-Buyer_37
-06.07.2020 21:20:32
-2
 nope
 73
 100
 Lifan
 18000
 China
-36
+37
 2012
 nope
 74
@@ -700,18 +589,15 @@ nope
 Tesla
 19000
 USA
-39
+40
 2013
-Buyer_38
-07.07.2020 21:20:32
-2
 nope
 75
 120
 Toyota
 20000
 Japan
-42
+43
 2014
 nope
 76
@@ -719,18 +605,15 @@ nope
 BMW
 21000
 Germany
-45
+46
 2015
-Buyer_39
-08.07.2020 21:20:32
-2
 nope
 77
 140
 Kia
 22000
 South Korea
-48
+49
 2016
 nope
 78
@@ -738,18 +621,15 @@ nope
 TATA Motors
 23000
 India
-51
+52
 2017
-Buyer_40
-09.07.2020 21:20:32
-2
 nope
 79
 160
 SEAT
 24000
 Spain
-54
+55
 2018
 nope
 80
@@ -757,18 +637,15 @@ nope
 Suzuki
 25000
 Japan
-57
+58
 2019
-Buyer_41
-10.07.2020 21:20:32
-2
 nope
 81
 180
 Audi
 6000
 Germany
-60
+61
 2000
 nope
 82
@@ -776,18 +653,15 @@ nope
 Porsche
 7000
 Germany
-63
+64
 2001
-Buyer_42
-11.07.2020 21:20:32
-2
 nope
 83
 200
 Mitsubishi
 8000
 Japan
-66
+67
 2002
 nope
 84
@@ -795,18 +669,15 @@ nope
 Subaru
 9000
 Japan
-69
+70
 2003
-Buyer_43
-12.07.2020 21:20:32
-2
 nope
 85
 220
 Lifan
 10000
 China
-72
+73
 2004
 nope
 86
@@ -814,18 +685,15 @@ nope
 Tesla
 11000
 USA
-75
+76
 2005
-Buyer_44
-13.07.2020 21:20:32
-2
 nope
 87
 240
 Toyota
 12000
 Japan
-78
+79
 2006
 nope
 88
@@ -833,18 +701,15 @@ nope
 BMW
 13000
 Germany
-81
+82
 2007
-Buyer_45
-14.07.2020 21:20:32
-2
 nope
 89
 260
 Kia
 14000
 South Korea
-84
+85
 2008
 nope
 90
@@ -852,18 +717,15 @@ nope
 TATA Motors
 15000
 India
-87
+88
 2009
-Buyer_46
-15.07.2020 21:20:32
-2
 nope
 91
 100
 SEAT
 16000
 Spain
-90
+91
 2010
 nope
 92
@@ -871,18 +733,15 @@ nope
 Suzuki
 17000
 Japan
-93
+94
 2011
-Buyer_47
-16.07.2020 21:20:32
-2
 nope
 93
 120
 Audi
 18000
 Germany
-96
+97
 2012
 nope
 94
@@ -890,18 +749,15 @@ nope
 Porsche
 19000
 Germany
-99
+100
 2013
-Buyer_48
-17.07.2020 21:20:32
-2
 nope
 95
 140
 Mitsubishi
 20000
 Japan
-2
+3
 2014
 nope
 96
@@ -909,18 +765,15 @@ nope
 Subaru
 21000
 Japan
-5
+6
 2015
-Buyer_49
-18.07.2020 21:20:32
-2
 nope
 97
 160
 Lifan
 22000
 China
-8
+9
 2016
 nope
 98
@@ -928,18 +781,15 @@ nope
 Tesla
 23000
 USA
-11
+12
 2017
-Buyer_50
-19.07.2020 21:20:32
-2
 nope
 99
 180
 Toyota
 24000
 Japan
-14
+15
 2018
 nope
 100
@@ -947,18 +797,15 @@ nope
 BMW
 25000
 Germany
-17
+18
 2019
-Buyer_51
-20.07.2020 21:20:32
-2
 nope
 101
 200
 Kia
 6000
 South Korea
-20
+21
 2000
 nope
 102
@@ -966,18 +813,15 @@ nope
 TATA Motors
 7000
 India
-23
+24
 2001
-Buyer_52
-21.07.2020 21:20:32
-2
 nope
 103
 220
 SEAT
 8000
 Spain
-26
+27
 2002
 nope
 104
@@ -985,18 +829,15 @@ nope
 Suzuki
 9000
 Japan
-29
+30
 2003
-Buyer_53
-22.07.2020 21:20:32
-2
 nope
 105
 240
 Audi
 10000
 Germany
-32
+33
 2004
 nope
 106
@@ -1004,18 +845,15 @@ nope
 Porsche
 11000
 Germany
-35
+36
 2005
-Buyer_54
-23.07.2020 21:20:32
-2
 nope
 107
 260
 Mitsubishi
 12000
 Japan
-38
+39
 2006
 nope
 108
@@ -1023,18 +861,15 @@ nope
 Subaru
 13000
 Japan
-41
+42
 2007
-Buyer_55
-24.07.2020 21:20:32
-2
 nope
 109
 100
 Lifan
 14000
 China
-44
+45
 2008
 nope
 110
@@ -1042,18 +877,15 @@ nope
 Tesla
 15000
 USA
-47
+48
 2009
-Buyer_56
-25.07.2020 21:20:32
-2
 nope
 111
 120
 Toyota
 16000
 Japan
-50
+51
 2010
 nope
 112
@@ -1061,18 +893,15 @@ nope
 BMW
 17000
 Germany
-53
+54
 2011
-Buyer_57
-26.07.2020 21:20:32
-2
 nope
 113
 140
 Kia
 18000
 South Korea
-56
+57
 2012
 nope
 114
@@ -1080,18 +909,15 @@ nope
 TATA Motors
 19000
 India
-59
+60
 2013
-Buyer_58
-27.07.2020 21:20:32
-2
 nope
 115
 160
 SEAT
 20000
 Spain
-62
+63
 2014
 nope
 116
@@ -1099,18 +925,15 @@ nope
 Suzuki
 21000
 Japan
-65
+66
 2015
-Buyer_59
-28.07.2020 21:20:32
-2
 nope
 117
 180
 Audi
 22000
 Germany
-68
+69
 2016
 nope
 118
@@ -1118,18 +941,15 @@ nope
 Porsche
 23000
 Germany
-71
+72
 2017
-Buyer_60
-29.07.2020 21:20:32
-2
 nope
 119
 200
 Mitsubishi
 24000
 Japan
-74
+75
 2018
 nope
 120
@@ -1137,18 +957,15 @@ nope
 Subaru
 25000
 Japan
-77
+78
 2019
-Buyer_61
-30.07.2020 21:20:32
-2
 nope
 121
 220
 Lifan
 6000
 China
-80
+81
 2000
 nope
 122
@@ -1156,18 +973,15 @@ nope
 Tesla
 7000
 USA
-83
+84
 2001
-Buyer_62
-31.07.2020 21:20:32
-2
 nope
 123
 240
 Toyota
 8000
 Japan
-86
+87
 2002
 nope
 124
@@ -1175,18 +989,15 @@ nope
 BMW
 9000
 Germany
-89
+90
 2003
-Buyer_63
-01.08.2020 21:20:32
-2
 nope
 125
 260
 Kia
 10000
 South Korea
-92
+93
 2004
 nope
 126
@@ -1194,18 +1005,15 @@ nope
 TATA Motors
 11000
 India
-95
+96
 2005
-Buyer_64
-02.08.2020 21:20:32
-2
 nope
 127
 100
 SEAT
 12000
 Spain
-98
+99
 2006
 nope
 128
@@ -1213,18 +1021,15 @@ nope
 Suzuki
 13000
 Japan
-1
-2007
-Buyer_65
-03.08.2020 21:20:32
 2
+2007
 nope
 129
 120
 Audi
 14000
 Germany
-4
+5
 2008
 nope
 130
@@ -1232,18 +1037,15 @@ nope
 Porsche
 15000
 Germany
-7
+8
 2009
-Buyer_66
-04.08.2020 21:20:32
-2
 nope
 131
 140
 Mitsubishi
 16000
 Japan
-10
+11
 2010
 nope
 132
@@ -1251,18 +1053,15 @@ nope
 Subaru
 17000
 Japan
-13
+14
 2011
-Buyer_67
-05.08.2020 21:20:32
-2
 nope
 133
 160
 Lifan
 18000
 China
-16
+17
 2012
 nope
 134
@@ -1270,18 +1069,15 @@ nope
 Tesla
 19000
 USA
-19
+20
 2013
-Buyer_68
-06.08.2020 21:20:32
-2
 nope
 135
 180
 Toyota
 20000
 Japan
-22
+23
 2014
 nope
 136
@@ -1289,18 +1085,15 @@ nope
 BMW
 21000
 Germany
-25
+26
 2015
-Buyer_69
-07.08.2020 21:20:32
-2
 nope
 137
 200
 Kia
 22000
 South Korea
-28
+29
 2016
 nope
 138
@@ -1308,18 +1101,15 @@ nope
 TATA Motors
 23000
 India
-31
+32
 2017
-Buyer_70
-08.08.2020 21:20:32
-2
 nope
 139
 220
 SEAT
 24000
 Spain
-34
+35
 2018
 nope
 140
@@ -1327,18 +1117,15 @@ nope
 Suzuki
 25000
 Japan
-37
+38
 2019
-Buyer_71
-09.08.2020 21:20:32
-2
 nope
 141
 240
 Audi
 6000
 Germany
-40
+41
 2000
 nope
 142
@@ -1346,18 +1133,15 @@ nope
 Porsche
 7000
 Germany
-43
+44
 2001
-Buyer_72
-10.08.2020 21:20:32
-2
 nope
 143
 260
 Mitsubishi
 8000
 Japan
-46
+47
 2002
 nope
 144
@@ -1365,18 +1149,15 @@ nope
 Subaru
 9000
 Japan
-49
+50
 2003
-Buyer_73
-11.08.2020 21:20:32
-2
 nope
 145
 100
 Lifan
 10000
 China
-52
+53
 2004
 nope
 146
@@ -1384,18 +1165,15 @@ nope
 Tesla
 11000
 USA
-55
+56
 2005
-Buyer_74
-12.08.2020 21:20:32
-2
 nope
 147
 120
 Toyota
 12000
 Japan
-58
+59
 2006
 nope
 148
@@ -1403,18 +1181,15 @@ nope
 BMW
 13000
 Germany
-61
+62
 2007
-Buyer_75
-13.08.2020 21:20:32
-2
 nope
 149
 140
 Kia
 14000
 South Korea
-64
+65
 2008
 nope
 150
@@ -1422,18 +1197,15 @@ nope
 TATA Motors
 15000
 India
-67
+68
 2009
-Buyer_76
-14.08.2020 21:20:32
-2
 nope
 151
 160
 SEAT
 16000
 Spain
-70
+71
 2010
 nope
 152
@@ -1441,18 +1213,15 @@ nope
 Suzuki
 17000
 Japan
-73
+74
 2011
-Buyer_77
-15.08.2020 21:20:32
-2
 nope
 153
 180
 Audi
 18000
 Germany
-76
+77
 2012
 nope
 154
@@ -1460,18 +1229,15 @@ nope
 Porsche
 19000
 Germany
-79
+80
 2013
-Buyer_78
-16.08.2020 21:20:32
-2
 nope
 155
 200
 Mitsubishi
 20000
 Japan
-82
+83
 2014
 nope
 156
@@ -1479,18 +1245,15 @@ nope
 Subaru
 21000
 Japan
-85
+86
 2015
-Buyer_79
-17.08.2020 21:20:32
-2
 nope
 157
 220
 Lifan
 22000
 China
-88
+89
 2016
 nope
 158
@@ -1498,18 +1261,15 @@ nope
 Tesla
 23000
 USA
-91
+92
 2017
-Buyer_80
-18.08.2020 21:20:32
-2
 nope
 159
 240
 Toyota
 24000
 Japan
-94
+95
 2018
 nope
 160
@@ -1517,18 +1277,15 @@ nope
 BMW
 25000
 Germany
-97
+98
 2019
-Buyer_81
-19.08.2020 21:20:32
-2
 nope
 161
 260
 Kia
 6000
 South Korea
-0
+1
 2000
 nope
 162
@@ -1536,18 +1293,15 @@ nope
 TATA Motors
 7000
 India
-3
+4
 2001
-Buyer_82
-20.08.2020 21:20:32
-2
 nope
 163
 100
 SEAT
 8000
 Spain
-6
+7
 2002
 nope
 164
@@ -1555,18 +1309,15 @@ nope
 Suzuki
 9000
 Japan
-9
+10
 2003
-Buyer_83
-21.08.2020 21:20:32
-2
 nope
 165
 120
 Audi
 10000
 Germany
-12
+13
 2004
 nope
 166
@@ -1574,18 +1325,15 @@ nope
 Porsche
 11000
 Germany
-15
+16
 2005
-Buyer_84
-22.08.2020 21:20:32
-2
 nope
 167
 140
 Mitsubishi
 12000
 Japan
-18
+19
 2006
 nope
 168
@@ -1593,18 +1341,15 @@ nope
 Subaru
 13000
 Japan
-21
+22
 2007
-Buyer_85
-23.08.2020 21:20:32
-2
 nope
 169
 160
 Lifan
 14000
 China
-24
+25
 2008
 nope
 170
@@ -1612,18 +1357,15 @@ nope
 Tesla
 15000
 USA
-27
+28
 2009
-Buyer_86
-24.08.2020 21:20:32
-2
 nope
 171
 180
 Toyota
 16000
 Japan
-30
+31
 2010
 nope
 172
@@ -1631,18 +1373,15 @@ nope
 BMW
 17000
 Germany
-33
+34
 2011
-Buyer_87
-25.08.2020 21:20:32
-2
 nope
 173
 200
 Kia
 18000
 South Korea
-36
+37
 2012
 nope
 174
@@ -1650,18 +1389,15 @@ nope
 TATA Motors
 19000
 India
-39
+40
 2013
-Buyer_88
-26.08.2020 21:20:32
-2
 nope
 175
 220
 SEAT
 20000
 Spain
-42
+43
 2014
 nope
 176
@@ -1669,18 +1405,15 @@ nope
 Suzuki
 21000
 Japan
-45
+46
 2015
-Buyer_89
-27.08.2020 21:20:32
-2
 nope
 177
 240
 Audi
 22000
 Germany
-48
+49
 2016
 nope
 178
@@ -1688,18 +1421,15 @@ nope
 Porsche
 23000
 Germany
-51
+52
 2017
-Buyer_90
-28.08.2020 21:20:32
-2
 nope
 179
 260
 Mitsubishi
 24000
 Japan
-54
+55
 2018
 nope
 180
@@ -1707,18 +1437,15 @@ nope
 Subaru
 25000
 Japan
-57
+58
 2019
-Buyer_91
-29.08.2020 21:20:32
-2
 nope
 181
 100
 Lifan
 6000
 China
-60
+61
 2000
 nope
 182
@@ -1726,18 +1453,15 @@ nope
 Tesla
 7000
 USA
-63
+64
 2001
-Buyer_92
-30.08.2020 21:20:32
-2
 nope
 183
 120
 Toyota
 8000
 Japan
-66
+67
 2002
 nope
 184
@@ -1745,18 +1469,15 @@ nope
 BMW
 9000
 Germany
-69
+70
 2003
-Buyer_93
-31.08.2020 21:20:32
-2
 nope
 185
 140
 Kia
 10000
 South Korea
-72
+73
 2004
 nope
 186
@@ -1764,18 +1485,15 @@ nope
 TATA Motors
 11000
 India
-75
+76
 2005
-Buyer_94
-01.09.2020 21:20:32
-2
 nope
 187
 160
 SEAT
 12000
 Spain
-78
+79
 2006
 nope
 188
@@ -1783,18 +1501,15 @@ nope
 Suzuki
 13000
 Japan
-81
+82
 2007
-Buyer_95
-02.09.2020 21:20:32
-2
 nope
 189
 180
 Audi
 14000
 Germany
-84
+85
 2008
 nope
 190
@@ -1802,18 +1517,15 @@ nope
 Porsche
 15000
 Germany
-87
+88
 2009
-Buyer_96
-03.09.2020 21:20:32
-2
 nope
 191
 200
 Mitsubishi
 16000
 Japan
-90
+91
 2010
 nope
 192
@@ -1821,18 +1533,15 @@ nope
 Subaru
 17000
 Japan
-93
+94
 2011
-Buyer_97
-04.09.2020 21:20:32
-2
 nope
 193
 220
 Lifan
 18000
 China
-96
+97
 2012
 nope
 194
@@ -1840,37 +1549,15 @@ nope
 Tesla
 19000
 USA
-99
+100
 2013
-Buyer_98
-05.09.2020 21:20:32
-2
-nope
-195
-240
-Toyota
-20000
-Japan
-2
-2014
-nope
-196
-255
-BMW
-21000
-Germany
-5
-2015
-Buyer_99
-06.09.2020 21:20:32
-2
 nope
 197
 260
 Kia
 22000
 South Korea
-8
+9
 2016
 nope
 198
@@ -1878,18 +1565,15 @@ nope
 TATA Motors
 23000
 India
-11
+12
 2017
-Buyer_100
-07.09.2020 21:20:32
-2
 nope
 199
 100
 SEAT
 24000
 Spain
-14
+15
 2018
 nope
 200
@@ -1897,38 +1581,5 @@ nope
 Suzuki
 25000
 Japan
-17
+18
 2019
-123
-31.05.2020 22:37:53
-1
-nope
-11
-200
-Mitsubishi
-16000
-Japan
-50
-2010
-111
-31.05.2020 22:53:04
-1
-nope
-1
-100
-Lifan
-6000
-China
-20
-2000
-Buyer_1
-04.06.2020 23:48:54
-1
-nope
-2
-115
-Tesla
-7000
-USA
-23
-2001

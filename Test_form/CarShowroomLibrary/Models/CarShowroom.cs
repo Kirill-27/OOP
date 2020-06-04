@@ -137,7 +137,7 @@ namespace CarShowroomLibrary.Models
                     Price = (i * 1000) % 20000 + 6000,
                     ProdCountry = coun[i % coun.Length],
                     Model = mar[i % mar.Length],
-                    TechState = (3*i + 20) % 100,
+                    TechState = (3*i + 20) % 100+1,
                     YearOfIssue = 2000 + i % 20
                 }) ; 
             }
@@ -145,15 +145,15 @@ namespace CarShowroomLibrary.Models
             for (int i = 1; i <= n; i++)
             {
                 int numb = 80042900 + i % 100000;
-                Buyer newB= new Buyer()
-                { 
+                Buyer newB = new Buyer()
+                {
                     Contacts = $"+{numb}",
                     FinancialOpp = ((i * i + 1) * 1000) % 50000 + 7000,
                     MaksSpeedRequired = (i * 10) % 140 + 60,
                     ModelRequired = mar[(i + 3) % mar.Length],
                     Name = $"Buyer_{i}",
                     Password = "9999",
-                    PerfomanceRequired = i
+                    PerfomanceRequired = i % 100 + 1
                 };
                 if (i % 5 == 0) newB.ModelRequired = "nope";
                 Buyers.Add(newB);

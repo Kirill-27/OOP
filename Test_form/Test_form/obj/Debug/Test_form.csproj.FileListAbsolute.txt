@@ -17,7 +17,6 @@ C:\КурсачГит\OOP\Test_form\Test_form\bin\Debug\CarShowroomLibrary.pdb
 C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.csprojAssemblyReference.cache
 C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.csproj.GenerateResource.cache
 C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\Test_form.csproj.CopyComplete
-C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\CarShowroomLibrary.login.resources
 C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\BuyerApp.Properties.Resources.resources
 C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\BuyerApp.Register.resources
 C:\КурсачГит\OOP\Test_form\Test_form\bin\Debug\BuyerApp.exe.config
@@ -28,3 +27,4 @@ C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\BuyerApp.pdb
 C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\BuyerApp.FindBest.resources
 C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\BuyerApp.BuyerMenu.resources
 C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\BuyerApp.BuyerAllCars.resources
+C:\КурсачГит\OOP\Test_form\Test_form\obj\Debug\BuyerApp.login.resources

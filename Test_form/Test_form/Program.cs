@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CarShowroomLibrary.Models;
 
-namespace CarShowroomLibrary
+namespace BuyerApp
 {
     static class Program 
     {

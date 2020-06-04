@@ -1,0 +1,21 @@
+Date: 31.05.2020 20:46:14
+Number of positions: 3
+  
+Amount: 5
+Model: BMW
+ProdCountry: Germany
+TechState: 60
+YearOfIssue: 2020
+  
+Amount: 3
+Model: Porsche
+ProdCountry: Germany
+TechState: 90
+YearOfIssue: 2018
+  
+Amount: 19
+Model: Mitsubishi
+ProdCountry: Japan
+TechState: 67
+YearOfIssue: 2000
+  
