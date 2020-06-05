@@ -14,3 +14,11 @@ C:\КурсачГит\OOP\Test_form\CarShowroomLibrary\obj\Debug\netstandard2.0\
 C:\КурсачГит\OOP\Test_form\CarShowroomLibrary\obj\Debug\netstandard2.0\CarShowroomLibrary.AssemblyInfo.cs
 C:\КурсачГит\OOP\Test_form\CarShowroomLibrary\obj\Debug\netstandard2.0\CarShowroomLibrary.dll
 C:\КурсачГит\OOP\Test_form\CarShowroomLibrary\obj\Debug\netstandard2.0\CarShowroomLibrary.pdb
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\CarShowroomLibrary\bin\Debug\netstandard2.0\CarShowroomLibrary.deps.json
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\CarShowroomLibrary\bin\Debug\netstandard2.0\CarShowroomLibrary.dll
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\CarShowroomLibrary\bin\Debug\netstandard2.0\CarShowroomLibrary.pdb
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\CarShowroomLibrary\obj\Debug\netstandard2.0\CarShowroomLibrary.csprojAssemblyReference.cache
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\CarShowroomLibrary\obj\Debug\netstandard2.0\CarShowroomLibrary.AssemblyInfoInputs.cache
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\CarShowroomLibrary\obj\Debug\netstandard2.0\CarShowroomLibrary.AssemblyInfo.cs
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\CarShowroomLibrary\obj\Debug\netstandard2.0\CarShowroomLibrary.dll
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\CarShowroomLibrary\obj\Debug\netstandard2.0\CarShowroomLibrary.pdb

@@ -1,0 +1,16 @@
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\bin\Debug\BuyerApp.exe.config
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\bin\Debug\BuyerApp.exe
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\bin\Debug\BuyerApp.pdb
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\bin\Debug\CarShowroomLibrary.dll
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\bin\Debug\CarShowroomLibrary.pdb
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\obj\Debug\BuyerApp.csprojAssemblyReference.cache
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\obj\Debug\BuyerApp.BuyerAllCars.resources
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\obj\Debug\BuyerApp.BuyerMenu.resources
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\obj\Debug\BuyerApp.FindBest.resources
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\obj\Debug\BuyerApp.login.resources
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\obj\Debug\BuyerApp.Properties.Resources.resources
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\obj\Debug\BuyerApp.Register.resources
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\obj\Debug\BuyerApp.csproj.GenerateResource.cache
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\obj\Debug\BuyerApp.csproj.CopyComplete
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\obj\Debug\BuyerApp.exe
+C:\Users\NAKIKO\Source\Repos\OOP2\Test_form\Test_form\obj\Debug\BuyerApp.pdb

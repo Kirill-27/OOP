@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\КурсачГит\\OOP\\Test_form\\CarShowroomLibrary\\CarShowroomLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\NAKIKO\\Source\\Repos\\OOP2\\Test_form\\CarShowroomLibrary\\CarShowroomLibrary.csproj",
       "projectName": "CarShowroomLibrary",
-      "projectPath": "C:\\КурсачГит\\OOP\\Test_form\\CarShowroomLibrary\\CarShowroomLibrary.csproj",
+      "projectPath": "C:\\Users\\NAKIKO\\Source\\Repos\\OOP2\\Test_form\\CarShowroomLibrary\\CarShowroomLibrary.csproj",
       "packagesPath": "C:\\Users\\NAKIKO\\.nuget\\packages\\",
-      "outputPath": "C:\\КурсачГит\\OOP\\Test_form\\CarShowroomLibrary\\obj\\",
+      "outputPath": "C:\\Users\\NAKIKO\\Source\\Repos\\OOP2\\Test_form\\CarShowroomLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\NAKIKO\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_form", "Test_form\Test_form.csproj", "{19FB4026-62B5-45D3-90BB-1BAD2815FCF9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuyerApp", "Test_form\BuyerApp.csproj", "{19FB4026-62B5-45D3-90BB-1BAD2815FCF9}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarShowroomLibrary", "CarShowroomLibrary\CarShowroomLibrary.csproj", "{FAE9D52E-460C-4BC8-8AF1-EBAF8CE493EE}"
 EndProject
